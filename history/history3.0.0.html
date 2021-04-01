@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="jp">
+
+<!--head-->
+	<head>
+		<meta charset="utf-8"/>
+		<link rev=made href="mailto:hengband-dev@lists.sourceforge.jp">
+		<link rel="stylesheet" type="text/css" href="/hengband.css">
+		<title>変愚蛮怒 公式WEB</title>
+	</head>
+
+	<body>
+
+<!--header-->
+		<header>
+
+			<section id="title">
+				<img class="tama1" src="/image/tama.gif" alt="tama">
+				<img class="tama2" src="/image/tama.gif" alt="tama">
+				<img class="tama3" src="/image/tama.gif" alt="tama">
+				<img class="tama4" src="/image/tama.gif" alt="tama">
+				<img id="hengTitle" src="/image/hengband_title.png" alt="変愚蛮怒 Hengband">
+				<img class="tama4" src="/image/tama.gif" alt="tama">
+				<img class="tama3" src="/image/tama.gif" alt="tama">
+				<img class="tama2" src="/image/tama.gif" alt="tama">
+				<img class="tama1" src="/image/tama.gif" alt="tama">
+			</section>
+
+			<section id="mainMenu">
+				<a href="/index.html">トップ</a>
+				<a href="/download.html">ダウンロード</a>
+				<a href="/score.html">スコア</a>
+				<a href="/development.html">開発</a>
+				<a href="/lists.html">コミュニティ</a>
+				<a href="/history.html">バージョン履歴</a>
+				<a href="/link.html">関連リンク</a>
+				<a href="/jlicense.html">著作権表記</a>
+				<span>English (Coming Soon?)</span>
+			</section>
+
+		</header>
+
+
+		<div id="main">
+<!--main contents-->
+<div class="sect1">
+<h2 id="_2021年2月_予定_ver_3_0_0_正式版">2021年2月(予定) Ver.3.0.0 (正式版)</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_概要">概要</h3>
+<div class="paragraph">
+<p>正式版の3.0.0を2021年2月の間にリリース予定とします。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_予定実装及び修正内容">予定実装及び修正内容</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>帰還と階段昇降が同ターンに発生した時の不具合 (チケット <a href="https://osdn.net/projects/hengband/ticket/29960">#29960</a> 参照)</p>
+</li>
+<li>
+<p>騎乗可能モンスターの追加調整 (チケット <a href="https://osdn.net/projects/hengband/ticket/37291">#37291</a> 参照)</p>
+</li>
+<li>
+<p>古い城報酬の調整の正式確定 (チケット <a href="https://osdn.net/projects/hengband/ticket/37329">#37329</a> 参照)</p>
+</li>
+<li>
+<p>小規模な街の施設もある程度通常通りに充実させる (チケット <a href="https://osdn.net/projects/hengband/ticket/37368">#37368</a> 参照)</p>
+</li>
+<li>
+<p>メッセージ容量の拡張と調整 (チケット <a href="https://osdn.net/projects/hengband/ticket/37466">#37466</a> 参照)</p>
+</li>
+<li>
+<p>街のBGM処理調整 (チケット <a href="https://osdn.net/projects/hengband/ticket/37474">#37474</a> 参照)</p>
+</li>
+<li>
+<p>折れ剣修復時の折れたダガーのベースアイテム選択バグ (チケット <a href="https://osdn.net/projects/hengband/ticket/37549">#37549</a> 参照)</p>
+</li>
+<li>
+<p>所持していない魔法書の呪文を唱えられてしまう不具合 (チケット <a href="https://osdn.net/projects/hengband/ticket/37558">#37558</a> 参照)</p>
+</li>
+<li>
+<p>アリーナ勝利後の死亡時処理挙動がおかしくなる不具合 (チケット <a href="https://osdn.net/projects/hengband/ticket/37587">#37587</a> 参照)</p>
+</li>
+<li>
+<p>懐柔の魔法棒時の魅力参照テーブルの問題修正 (チケット <a href="https://osdn.net/projects/hengband/ticket/37783">#37783</a> 参照)</p>
+</li>
+<li>
+<p>落馬後に騎乗モンスターのブレスを受けて死亡する問題 (チケット <a href="https://osdn.net/projects/hengband/ticket/37869">#37869</a> 参照)</p>
+</li>
+<li>
+<p>パターンvaultによるRQ飛ばし対策 (チケット <a href="https://osdn.net/projects/hengband/ticket/37917">#37917</a> 参照)</p>
+</li>
+<li>
+<p>用語修正 (チケット <a href="https://osdn.net/projects/hengband/ticket/38509">#38509</a> 参照)</p>
+</li>
+<li>
+<p>マーフォークの仕様追加や修正 (チケット <a href="https://osdn.net/projects/hengband/ticket/41086">#41086</a> 参照)</p>
+</li>
+<li>
+<p>「盾技能」追加仕様 (<a href="https://osdn.net/projects/hengband/ticket/41087">#41087</a> 参照)</p>
+</li>
+<li>
+<p>☆生成の再度見直し (<a href="https://osdn.net/projects/hengband/ticket/38860">#38860</a> 参照)</p>
+</li>
+<li>
+<p>player_teleport_to()処理の仕様確認 (<a href="https://osdn.net/projects/hengband/ticket/38922">#38922</a> 参照)</p>
+</li>
+<li>
+<p>一部再描画処理オプションが正しく動作していない問題を修正 (<a href="https://osdn.net/projects/hengband/ticket/39221">#39221</a> 参照)</p>
+</li>
+<li>
+<p>釣りの描画処理が怪しいのを確認、場合によっては修正 (<a href="https://osdn.net/projects/hengband/ticket/39222">#39222</a> 参照)</p>
+</li>
+<li>
+<p>武器以外を２つ持っている場合の盾の持ち替え仕様の変更 (<a href="https://osdn.net/projects/hengband/ticket/39462">#39462</a> 参照)</p>
+</li>
+<li>
+<p>player-status.h からplayer-type-definition.h の分離 (<a href="https://osdn.net/projects/hengband/ticket/40498">#40498</a> 参照)</p>
+</li>
+<li>
+<p>プレイヤーのフラグについて耐性処理と表示処理を一致させる (<a href="https://osdn.net/projects/hengband/ticket/40652">#40652</a> 参照)</p>
+</li>
+<li>
+<p>関数整理 (<a href="https://osdn.net/projects/hengband/ticket/40709">#40709</a> 参照)</p>
+</li>
+<li>
+<p>水流耐性持ち固定アーティファクト追加 (<a href="https://osdn.net/projects/hengband/ticket/40710">#40710</a> 参照)</p>
+</li>
+<li>
+<p>自己変容の薬の仕様追加検討 (<a href="https://osdn.net/projects/hengband/ticket/40908">#40908</a> 参照)</p>
+</li>
+<li>
+<p>ダンプ時にプレイヤーに一切装備なしの場合には「装備なし」と表示させる (<a href="https://osdn.net/projects/hengband/ticket/41002">#41002</a> 参照)</p>
+</li>
+<li>
+<p>ダンプ時に装備していない箇所が「(なし)」から「何か」に変わったエンバグを修正 (<a href="https://osdn.net/projects/hengband/ticket/41003">#41003</a> 参照)</p>
+</li>
+<li>
+<p>さらにモンスター追加 (<a href="https://osdn.net/projects/hengband/ticket/41042">#41042</a> 参照)</p>
+</li>
+<li>
+<p>さらにアイテム追加 (<a href="https://osdn.net/projects/hengband/ticket/41073">#41073</a> 参照)</p>
+</li>
+<li>
+<p>clang-format による整形の貫徹 (<a href="https://osdn.net/projects/hengband/ticket/41052">#41052</a> 参照)</p>
+</li>
+<li>
+<p>銘刻みの不具合修正 (<a href="https://osdn.net/projects/hengband/ticket/41059">#41059</a> 参照)</p>
+</li>
+<li>
+<p>マーフォークの仕様調整 (<a href="https://osdn.net/projects/hengband/ticket/41086">#41086</a> 参照)</p>
+</li>
+<li>
+<p>盾技能追加仕様 (<a href="https://osdn.net/projects/hengband/ticket/41087">#41087</a> 参照)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>		</div>
+
+<!--footer-->
+		<footer>
+
+			<section>
+				各ページへのリンクは御自由にどうぞ。/ Link Free.<br>
+				2021 Hengband Dev Team. <a href="mailto:hengband-dev@lists.sourceforge.jp">hengband-dev@lists.sourceforge.jp</a><br>
+			</section>
+
+			<section>
+				Powered by <a href="https://osdn.net/" class="footer_banner">
+				<img src="//osdn.net/sflogo.php?group_id=541" border="0" alt="OSDN">
+				</a>
+			</section>
+
+		</footer>
+
+
+	</body>
+
+</html>
+

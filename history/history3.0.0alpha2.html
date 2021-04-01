@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html lang="jp">
+
+<!--head-->
+	<head>
+		<meta charset="utf-8"/>
+		<link rev=made href="mailto:hengband-dev@lists.sourceforge.jp">
+		<link rel="stylesheet" type="text/css" href="/hengband.css">
+		<title>変愚蛮怒 公式WEB</title>
+	</head>
+
+	<body>
+
+<!--header-->
+		<header>
+
+			<section id="title">
+				<img class="tama1" src="/image/tama.gif" alt="tama">
+				<img class="tama2" src="/image/tama.gif" alt="tama">
+				<img class="tama3" src="/image/tama.gif" alt="tama">
+				<img class="tama4" src="/image/tama.gif" alt="tama">
+				<img id="hengTitle" src="/image/hengband_title.png" alt="変愚蛮怒 Hengband">
+				<img class="tama4" src="/image/tama.gif" alt="tama">
+				<img class="tama3" src="/image/tama.gif" alt="tama">
+				<img class="tama2" src="/image/tama.gif" alt="tama">
+				<img class="tama1" src="/image/tama.gif" alt="tama">
+			</section>
+
+			<section id="mainMenu">
+				<a href="/index.html">トップ</a>
+				<a href="/download.html">ダウンロード</a>
+				<a href="/score.html">スコア</a>
+				<a href="/development.html">開発</a>
+				<a href="/lists.html">コミュニティ</a>
+				<a href="/history.html">バージョン履歴</a>
+				<a href="/link.html">関連リンク</a>
+				<a href="/jlicense.html">著作権表記</a>
+				<span>English (Coming Soon?)</span>
+			</section>
+
+		</header>
+
+
+		<div id="main">
+<!--main contents-->
+<div class="sect1">
+<h2 id="_2021年1月24日_ver_3_0_0alpha2_アルファ版">2021年1月24日 Ver.3.0.0Alpha2 (アルファ版)</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_概要">概要</h3>
+<div class="paragraph">
+<p>Ver.3.0.0Alpha2は2021年1月24日にリリースされました。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_主な修正事項">主な修正事項</h3>
+<div class="sect3">
+<h4 id="_システム変更面">システム変更面</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>ゲームシステム中バージョン番号表記の変更 (<a href="https://osdn.net/projects/hengband/ticket/41179">#41179</a> 参照)</p>
+</li>
+<li>
+<p>発動処理IDの変数サイズを8bitから16bitに拡張 (<a href="https://osdn.net/projects/hengband/ticket/41230">#41230</a> 参照)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ソース管理面">ソース管理面</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>gitignore更新 (<a href="https://osdn.net/projects/hengband/ticket/41301">#41301</a> 参照)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_バランス調整面">バランス調整面</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>モンスターについて以下の修正 (<a href="https://osdn.net/projects/hengband/ticket/41042">#41042</a> 参照)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>古代万色ドラゴン、グレート・インフェルノ・ドレイクのHPを調整</p>
+</li>
+<li>
+<p>殺人イタチのシンボルをr→fと変更しましたが、rに戻す</p>
+</li>
+<li>
+<p>『ゴライアス』の経験値、レアリティ及び魔法使用率を調整しました</p>
+</li>
+<li>
+<p>泡の出現率を低下させました。特に、特大の泡はやや出にくくした</p>
+</li>
+<li>
+<p>2周目の泡について、それぞれ標準出現階層を5F深くした</p>
+</li>
+<li>
+<p>『ヴァイフ』の打撃値を修正した</p>
+</li>
+<li>
+<p>クリスタル・キューブのパラメータを調整した</p>
+</li>
+<li>
+<p>『アポロ』、『サーロクニル』、『オダハヴィーング』の加速値を増やしました</p>
+</li>
+<li>
+<p>『パーサーナックス』の打撃値を調整</p>
+</li>
+<li>
+<p>ドラウグル類の打撃値を調整</p>
+</li>
+<li>
+<p>ファルメル類のHP及び索敵範囲を調整</p>
+</li>
+<li>
+<p>『ヘルハウンド』の打撃値を調整</p>
+</li>
+<li>
+<p>『ソラリス』の出現率を調整</p>
+</li>
+<li>
+<p>アイ・ホーンに電気オーラを付与</p>
+</li>
+<li>
+<p>以下のモンスターが喋る内容を追加・調整</p>
+<div class="ulist">
+<ul>
+<li>
+<p>『ブル・ゲイツ』</p>
+</li>
+<li>
+<p>『スティーヴン・ジョーブツ』</p>
+</li>
+<li>
+<p>インターネット・エクスプローダー</p>
+</li>
+<li>
+<p>エッヂ</p>
+</li>
+<li>
+<p>アイ・ホーン</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>シヴァ靴 (モンスター)の経験値を増加</p>
+</li>
+<li>
+<p>『久遠』のパラメータを全面調整</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>ミミックnestに出現するミミックを現状に合わせて追加</p>
+</li>
+<li>
+<p>アーティファクトについて以下の修正</p>
+<div class="ulist">
+<ul>
+<li>
+<p>エスカリボルグの弱体化</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_バグ修正">バグ修正</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>以下のモンスターに関する不具合を修正 (<a href="https://osdn.net/projects/hengband/ticket/41042">#41042</a> 参照)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>ユニコーンのフレーバーテキストが日英両方表示されていた不具合を修正</p>
+</li>
+<li>
+<p>『アポロ』が射撃しない不具合を修正</p>
+</li>
+<li>
+<p>『ダーネヴィール』、『アルドゥイン』に打撃値が定義されていない不具合を修正</p>
+</li>
+<li>
+<p>グレーター・ファルメル・スクルカーに不要なPOWERFULフラグが付いていた不具合を修正</p>
+</li>
+<li>
+<p>『ヤマト』に男性属性が付いていなかった不具合を修正</p>
+</li>
+<li>
+<p>『リュキアのキマイラ』に騎乗フラグが二重に付与されていた不具合を修正</p>
+</li>
+<li>
+<p>死亡時召喚を行う新規モンスターについて、効果音が鳴っていなかった不具合を修正</p>
+</li>
+<li>
+<p>『スティーヴン・ジョーブツ』がエッヂを召喚する不具合を修正</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>一部職業で麻痺耐性がある表記なのに麻痺する (<a href="https://osdn.net/projects/hengband/ticket/41174">#41174</a> 参照)</p>
+</li>
+<li>
+<p>モンスターからの充填魔力吸収の打撃でクラッシュする (<a href="https://osdn.net/projects/hengband/ticket/41192">#41192</a> 参照)</p>
+</li>
+<li>
+<p>熟練度やレベル差や馬に関係なく被弾時に落馬 (<a href="https://osdn.net/projects/hengband/ticket/41149">#41149</a> 参照)</p>
+</li>
+<li>
+<p>モンスターの簡易一覧スポイラーの文字コード不具合 (<a href="https://osdn.net/projects/hengband/ticket/41325">#41325</a> 参照)</p>
+</li>
+<li>
+<p>スペルマスター＆プリーストにとって素手が相応しくない武器として扱われる (<a href="https://osdn.net/projects/hengband/ticket/41320">#41320</a> 参照)</p>
+</li>
+<li>
+<p>spoil_out 関数におけるバッファオーバーラン (<a href="https://osdn.net/projects/hengband/ticket/41312">#41312</a> 参照)</p>
+</li>
+<li>
+<p>指輪の発動がキャンセルにも関わらず耐性を与えてしまう (<a href="https://osdn.net/projects/hengband/ticket/41302">#41302</a> 参照)</p>
+</li>
+<li>
+<p>善良ESPで無生物が感知できてしまう (<a href="https://osdn.net/projects/hengband/ticket/41299">#41299</a> 参照)</p>
+</li>
+<li>
+<p>青魔法がターン消費しない (<a href="https://osdn.net/projects/hengband/ticket/41298">#41298</a> 参照)</p>
+</li>
+<li>
+<p>破片耐性の傷無効が効かないことがある (<a href="https://osdn.net/projects/hengband/ticket/41297">#41297</a> 参照)</p>
+</li>
+<li>
+<p>狂戦士で地震を撃ったら画面中の敵以外のマスが@で埋め尽くされる (<a href="https://osdn.net/projects/hengband/ticket/41295">#41295</a> 参照)</p>
+</li>
+<li>
+<p>r_info.txt における高級品を落とすモンスターのドロップフラグについて「DROP_GOOD」なしの「DROP_GREAT」のみでは通常のアイテムしか落とさない問題を修正(<a href="https://osdn.net/projects/hengband/ticket/41268">#41268</a> 参照)</p>
+</li>
+<li>
+<p>長い名前のモンスターがモンスター検索で常に検出される (<a href="https://osdn.net/projects/hengband/ticket/41266">#41266</a> 参照)</p>
+</li>
+<li>
+<p>鏡の上で光のしずくを使うとほぼモンスターが行動しない (<a href="https://osdn.net/projects/hengband/ticket/41265">#41265</a> 参照)</p>
+</li>
+<li>
+<p>混沌属性武器によるカオス効果で高確率で地震が発生する (<a href="https://osdn.net/projects/hengband/ticket/41261">#41261</a> 参照)</p>
+</li>
+<li>
+<p>影フェアリーの反感装備ペナが機能していない (<a href="https://osdn.net/projects/hengband/ticket/41188">#41188</a> 参照)</p>
+</li>
+<li>
+<p>耐盲目があるのに盲目になる場合がある (<a href="https://osdn.net/projects/hengband/ticket/41185">#41185</a> 参照)</p>
+</li>
+<li>
+<p>アイテム「(なし)」を拾うことがある (<a href="https://osdn.net/projects/hengband/ticket/41183">#41183</a> 参照)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>関連してスリングで射撃し残弾0になった直後にクラッシュ (<a href="https://osdn.net/projects/hengband/ticket/41308">#41308</a> 参照)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>装備によっては攻撃回数が0回になることがある (<a href="https://osdn.net/projects/hengband/ticket/41180">#41180</a> 参照)</p>
+</li>
+<li>
+<p>飛び道具に関するバージョンインポート後データのクラッシュ (<a href="https://osdn.net/projects/hengband/ticket/41178">#41178</a> 参照)</p>
+</li>
+<li>
+<p>アーティファクトIDが正しく保存されず、デモニカスーツ以降のアーティファクトがおかしくなる (<a href="https://osdn.net/projects/hengband/ticket/41158">#41158</a> 参照)</p>
+</li>
+<li>
+<p>壁抜け時のモンスター挙動が従来通りにならない (<a href="https://osdn.net/projects/hengband/ticket/41148">#41148</a> 参照)</p>
+</li>
+<li>
+<p>Linux で忍者/修行僧/練気術師で始め、オートローラーを回すと落ちる (<a href="https://osdn.net/projects/hengband/ticket/41144">#41144</a> 参照)</p>
+</li>
+<li>
+<p>扉の鍵を開けた時点で視界が広がる不具合 (<a href="https://osdn.net/projects/hengband/ticket/41141">#41141</a> 参照)</p>
+</li>
+<li>
+<p>鍛冶師で武器/防具強化ができない不具合 (<a href="https://osdn.net/projects/hengband/ticket/38613">#38613</a> 参照)</p>
+</li>
+<li>
+<p>l/x で辺りを見回してもWEIRD_MINDの表示/非表示判定が発生する不具合(<a href="https://osdn.net/projects/hengband/ticket/41176">#41176</a> 参照)</p>
+</li>
+<li>
+<p>英語版に関するバグ修正 (<a href="https://osdn.net/projects/hengband/ticket/41324">#41324</a> <a href="https://osdn.net/projects/hengband/ticket/40947">#40947</a> <a href="https://osdn.net/projects/hengband/ticket/41309">#41309</a> <a href="https://osdn.net/projects/hengband/ticket/41306">#41306</a> <a href="https://osdn.net/projects/hengband/ticket/41304">#41304</a> <a href="https://osdn.net/projects/hengband/ticket/41136">#41136</a> <a href="https://osdn.net/projects/hengband/ticket/41231">#41231</a> <a href="https://osdn.net/projects/hengband/ticket/41303">#41303</a> 参照)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_謝辞">謝辞</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>フォーラムやチケットにて以下の方々にバグ報告や修正案をいただきました。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>long氏、zazaCS氏、oihagi氏、iyukyo氏、exp7氏、NGDC氏、meetname氏、Miyamasa氏(変愚蛮怒勝手版の人)、silvercat氏、rruikkuriryu氏、tanguband氏(短愚蛮怒の人)、amamori氏、TX105氏、taotao氏</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>以下のスタッフに具体的な修正を行ってもらいました。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Hourier氏、habu氏、dis-氏、backwardseric氏
+今回のご協力感謝いたします。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>(文責:Deskull・全て追いきれていない可能性がありますので他に修正や謝辞すべき方がありましたらお知らせください)</p>
+</div>
+</div>
+</div>
+</div>		</div>
+
+<!--footer-->
+		<footer>
+
+			<section>
+				各ページへのリンクは御自由にどうぞ。/ Link Free.<br>
+				2021 Hengband Dev Team. <a href="mailto:hengband-dev@lists.sourceforge.jp">hengband-dev@lists.sourceforge.jp</a><br>
+			</section>
+
+			<section>
+				Powered by <a href="https://osdn.net/" class="footer_banner">
+				<img src="//osdn.net/sflogo.php?group_id=541" border="0" alt="OSDN">
+				</a>
+			</section>
+
+		</footer>
+
+
+	</body>
+
+</html>
+

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html lang="jp">
+
+<!--head-->
+	<head>
+		<meta charset="utf-8"/>
+		<link rev=made href="mailto:hengband-dev@lists.sourceforge.jp">
+		<link rel="stylesheet" type="text/css" href="/hengband.css">
+		<title>変愚蛮怒 公式WEB</title>
+	</head>
+
+	<body>
+
+<!--header-->
+		<header>
+
+			<section id="title">
+				<img class="tama1" src="/image/tama.gif" alt="tama">
+				<img class="tama2" src="/image/tama.gif" alt="tama">
+				<img class="tama3" src="/image/tama.gif" alt="tama">
+				<img class="tama4" src="/image/tama.gif" alt="tama">
+				<img id="hengTitle" src="/image/hengband_title.png" alt="変愚蛮怒 Hengband">
+				<img class="tama4" src="/image/tama.gif" alt="tama">
+				<img class="tama3" src="/image/tama.gif" alt="tama">
+				<img class="tama2" src="/image/tama.gif" alt="tama">
+				<img class="tama1" src="/image/tama.gif" alt="tama">
+			</section>
+
+			<section id="mainMenu">
+				<a href="/index.html">トップ</a>
+				<a href="/download.html">ダウンロード</a>
+				<a href="/score.html">スコア</a>
+				<a href="/development.html">開発</a>
+				<a href="/lists.html">コミュニティ</a>
+				<a href="/history.html">バージョン履歴</a>
+				<a href="/link.html">関連リンク</a>
+				<a href="/jlicense.html">著作権表記</a>
+				<span>English (Coming Soon?)</span>
+			</section>
+
+		</header>
+
+
+		<div id="main">
+<!--main contents-->
+<div class="sect1">
+<h2 id="_2012_04_27_ver_2_0_0_安定版">2012/04/27 Ver.2.0.0 (安定版)</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_リリースノート">リリースノート</h3>
+<div class="paragraph">
+<p>Ver.2.0.0は2012/04/27に更新されました。</p>
+</div>
+<div class="paragraph">
+<p>(1.7.Xの修正が混じっています。後で整理します)</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>アイテムの並べ方と我が家に関する変更と修正。</p>
+</li>
+<li>
+<p>ペット維持計算処理の統合。</p>
+</li>
+<li>
+<p>ユニーク・モンスター召喚で, 召喚に応じたユニークが足りなかった場合の埋め合わせ召喚の仕様を変更。</p>
+</li>
+<li>
+<p>ペットのモンスターが変身しても親モンスターと名前を維持するように変更。</p>
+</li>
+<li>
+<p>鑑定に関する変更と修正。</p>
+</li>
+<li>
+<p>モンスターのアイテム拾い/破壊の仕様変更。</p>
+</li>
+<li>
+<p>切り裂きの大鎌『ブラッディ・ムーン』に関する変更。</p>
+</li>
+<li>
+<p>シンダリン銘を与えるコードをXAngbandより移植。</p>
+</li>
+<li>
+<p>クエスト "湖の洞窟" を削除。</p>
+</li>
+<li>
+<p>自動拾いの各種説明を修正。</p>
+</li>
+<li>
+<p>死の大鎌に SLAY_HUMAN を追加。野蛮人、獣人も跳ね返りスレイの対象にした。</p>
+</li>
+<li>
+<p>cast_meteor() を、壁の中には隕石を召喚しないように修正。</p>
+</li>
+<li>
+<p>teleport系の行動ではプレイヤーはトラップの上に行かないように修正。</p>
+</li>
+<li>
+<p>無双三段の途中で壁にぶつかる等して中断した時、MPを消費するように修正。</p>
+</li>
+<li>
+<p>毒針を装備している時は必ず攻撃回数を1にするようにした。(乱れ雪月花で増えない)</p>
+</li>
+<li>
+<p>無双三段の時は毒針の命中率が1/2になるように修正。</p>
+</li>
+<li>
+<p>ドラゴンスケイルメイルからエッセンスを抽出時に発動の充填時間がリセットされないように修正。</p>
+</li>
+<li>
+<p>必要エネルギーがマイナスになって無条件連続移動が発生する可能性をなくした。</p>
+</li>
+<li>
+<p>windows版で、windowsを最大化したときに元のウィンドウサイズを保持するように変更。</p>
+</li>
+<li>
+<p>windows版にマウスを使った画面コピーアンドペースト機能を追加。(Xangbandより)</p>
+</li>
+<li>
+<p>「`」キーで、指定した場所に自動移動するnethack風トラベルコマンドを実装。(Xangbandより)</p>
+</li>
+<li>
+<p>次元の扉などの場所指定で、「&lt;」「&gt;」で階段を指定できるように。(Xangbandより)</p>
+</li>
+<li>
+<p>画面が大きいときに、店や家のメニューが12個を超えて表示されるようにした。</p>
+</li>
+<li>
+<p>'~'コマンドの既知のモンスターリストで、賞金首とアンバーの王族を選択表示。(変愚スレよりパッチ拝領)</p>
+</li>
+<li>
+<p>魔道具術師の取り込んだ魔法道具一覧をダンプするようにした。(So-Miyaさんのパッチ)</p>
+</li>
+<li>
+<p>オプションメニューでカーソルを使用して項目を選択できるようにした。</p>
+</li>
+<li>
+<p>キャラ生成時に自動装備。(Angband3.1.0より拝領)</p>
+</li>
+<li>
+<p>新職業スナイパー追加。</p>
+</li>
+<li>
+<p>新or移植アーティファクト。</p>
+</li>
+<li>
+<p>新領域「呪術」(ハイメイジ専用)</p>
+</li>
+<li>
+<p>プレイ動画録画再生機能(']'キー)</p>
+</li>
+<li>
+<p>ユニーク追加</p>
+</li>
+<li>
+<p>家と博物館の収蔵アイテム数を表示するようにした。(so-miyaさんより拝領)</p>
+</li>
+<li>
+<p>魔法の難易度を下げる能力に「易/Es」を刻むようにした。</p>
+</li>
+<li>
+<p>あわせて、消費魔力減少をこれまでの「魔力/Ma」から「減/Dm」に変更。</p>
+</li>
+<li>
+<p>不可能な地形上での忍者の速駆け発動禁止。</p>
+</li>
+<li>
+<p>速駆けが終了した瞬間に、移動消費エネルギーが元に戻るよう設定。</p>
+</li>
+<li>
+<p>バグ修正</p>
+<div class="ulist">
+<ul>
+<li>
+<p>幻覚時のモンスター情報に関する各種バグ。</p>
+</li>
+<li>
+<p>ペットのターゲット指定であやしい影の正体が判明するバグ。</p>
+</li>
+<li>
+<p>モンスター写真のシンボル表示でデフォルト文字しか表示されないバグ。</p>
+</li>
+<li>
+<p>エレメンタルvaultに生成されたモンスターやアイテムが溶岩の鉱脈などに埋もれるバグ</p>
+</li>
+<li>
+<p>孤立した部屋ができるバグのうちbuild_tunnel()の失敗によるもの</p>
+</li>
+<li>
+<p>ランダムアーティファクトがロード時にランダムアーティファクトでなくなるバグ</p>
+</li>
+<li>
+<p>我が家やザックの詰替がうまくいかないバグ</p>
+</li>
+<li>
+<p>博物館のstack_force_notes, stack_fotce_costs判定の不整合によるバグ</p>
+</li>
+<li>
+<p>ゲーム開始やフロア移動直後にペットの存在判定すぐにが更新されなかったバグ</p>
+</li>
+<li>
+<p>モンスター格闘場でモンスターのテレポートを追尾できてしまうバグ</p>
+</li>
+<li>
+<p>変わり身かつ幻覚などの状態の忍者がダメージを全く受けない場合があるバグ。</p>
+</li>
+<li>
+<p>一定の処理で消滅する名前付きペットが正しい処理を経ないバグ。</p>
+</li>
+<li>
+<p>アイテムのソート条件に関する修正。</p>
+</li>
+<li>
+<p>分解属性で回避の彫像や爆発のルーンが壊れなかったバグ。</p>
+</li>
+<li>
+<p>特定条件のフロア移動時に一時的に乗馬から降りたメッセージが出るバグ。</p>
+</li>
+<li>
+<p>アイテムが増減する度にモンスター・ボールが不正に並べ替えられるバグ。</p>
+</li>
+<li>
+<p>'%'メニューのファイル書き出しでデータが正しく書き出されなかったバグ</p>
+</li>
+<li>
+<p>プレイヤーが死亡して次のプレイで名前を変えるとセーブファイルが新規作成されるバグ。</p>
+</li>
+<li>
+<p>プレイヤー名入力時Enterで空文字列を入力すると名無しになるバグ</p>
+</li>
+<li>
+<p>ヘルプの検索や強調で空の文字列を入力した場合にフリーズするバグ</p>
+</li>
+<li>
+<p>英語版のフォント設定で日本語フォントを指定すると次回に設定が反映されていなかった。</p>
+</li>
+<li>
+<p>魔法を唱える事が出来ない条件下で連続魔が使えてしまう。</p>
+</li>
+<li>
+<p>いくつかのアイテムの発動などで恐怖状態が解除されない。</p>
+</li>
+<li>
+<p>闘技場に入ったときに魔法の鎧が消えないバグ。</p>
+</li>
+<li>
+<p>守護魔神の抹殺系報酬時のメッセージバグ</p>
+</li>
+<li>
+<p>アンドロイドで最後の1服の油つぼを服用した際に腹が満たされないバグ。</p>
+</li>
+<li>
+<p>視界の狭いモンスターに、losトリックを使うと特定軌道で反撃がこないバグ</p>
+</li>
+<li>
+<p>誤簡易鑑定が装備警告に反映されないので修正。(討論スレ8 877さんのパッチ)</p>
+</li>
+<li>
+<p>剣術家の魔神斬りが当たらないバグを仕様を変更して修正。</p>
+</li>
+<li>
+<p>中継送信側のウィンドウサイズが大きくても、受信側が落ちない修正。()</p>
+</li>
+<li>
+<p>呪術で途中で解呪しても影のクロークの効果が消えないバグ。</p>
+</li>
+<li>
+<p>光速移動中は探索中であっても表示上の速度を+10しないように修正。</p>
+</li>
+<li>
+<p>光速移動の状態で広域マップに入ると効果が切れるように修正。</p>
+</li>
+<li>
+<p>割引価格の魔法棒の回数が過充填されないように修正。</p>
+</li>
+<li>
+<p>重量0のアイテムをサブウィンドウ表示した時に重量の表示が消えるのを修正。</p>
+</li>
+<li>
+<p>食事として杖や魔法棒を食べた時にサブウィンドウの表示が更新されるように修正。</p>
+</li>
+<li>
+<p>薬の最後の1服を飲んだ時、徳・満腹度が正しく増減されない不具合。</p>
+</li>
+<li>
+<p>性格選択時の配列外参照を修正。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_リポジトリ詳細">リポジトリ詳細</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Wed Apr 25 14:38:40 2012 +0000: (deskull) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/0bfe4fa8a9194a05c3ff5999ae70a0560643aa4a">現行の1.7.2を正式版2.0.0扱いに移行。</a></p>
+</li>
+<li>
+<p>Fri Aug 12 14:16:04 2011 +0000: (deskull) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/808cc0bbee998c0f2fe8da613595beb0304afdc7">main-gcu.c中で発見された環境依存問題を解決。</a></p>
+</li>
+<li>
+<p>Tue Mar 8 16:54:43 2011 +0000: (deskull) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/3b3300befbf7f67e6b65f29cf31d06344427b312">不可能な地形上での忍者の速駆け発動禁止。 速駆けが終了した瞬間に、移動消費エネルギーが元に戻るよう設定。</a></p>
+</li>
+<li>
+<p>Tue Mar 8 15:21:29 2011 +0000: (deskull) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/2ef5dc65c891bffe7556954a36a8a3a6a0990be1">effect.cの英文時メッセージバッファの不足を修正。</a></p>
+</li>
+<li>
+<p>Fri Nov 12 02:54:03 2010 +0000: (deskull) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/a8bb8ef6ea742b7ed3f776b36aa5e90192a65e39">性格選択時の配列外参照を修正。</a></p>
+</li>
+<li>
+<p>Tue Mar 2 10:47:41 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/86fec2ce368fc9f445819320098cfcd1dafbceae">薬の最後の1服を飲んだ時、徳・満腹度が正しく増減されない不具合を修正。</a></p>
+</li>
+<li>
+<p>Sat Feb 27 02:27:21 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/2d0248f769e02f8a83839889db2088e08b457063">ガラスの破片がモンスターを倒した時、ガラスの破片(who == -2)に対して経験値を与えようとするため配列外アクセスが起きていたバグを修正。 また、monster_gain_exp()の引数をチェックし配列外アクセスの発生を予防するようにした。</a></p>
+</li>
+<li>
+<p>Fri Feb 26 11:10:00 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/65bbcae6683567ca56d13de42d98da1ad1abebc3">えーいもう消しちゃえ。</a></p>
+</li>
+<li>
+<p>Sun Feb 14 04:06:08 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/722a4401ad0c11f6aa1b0c5a3d0974ed0d1c0617">autopick_new_entry()でautopick_type構造体のbonusメンバ変数の初期化がされていなかったのを修正。</a></p>
+</li>
+<li>
+<p>Sun Feb 14 04:06:06 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/2609f10ac22d21aa305e54826288e9bf3ad581a7">my_strcpy()で適切な文字列終端の検出がなされていないため、バッファオーバーアクセスする可能性があったのを修正。</a></p>
+</li>
+<li>
+<p>Fri Feb 12 14:40:38 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/5962806c8950a8e8ef14827f790bfb66f80942ca">terrain_table配列の範囲外参照をしている箇所を修正。</a></p>
+</li>
+<li>
+<p>Mon Feb 8 14:33:37 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/f1f94a4fda996b7b4a6140ba711f8f4d50dd93df">自動拾いエディタで、空行について確保したメモリ領域外アクセスを行ってしまうバグを修正。</a></p>
+</li>
+<li>
+<p>Mon Feb 8 14:33:35 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/1236ef40fbe11cf77d24f83bedeca60f277be990">autopick_free_entryで開放した領域へのポインタをNULLにするように修正。(領域の二重開放防止)</a></p>
+</li>
+<li>
+<p>Mon Feb 8 14:33:33 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/cb6e3e19d854d007261bff00910388dc0180d59c">自動拾いエディタのメモリリークを修正。</a></p>
+</li>
+<li>
+<p>Mon Feb 8 14:33:31 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/d12d215583281e4983ecda9ba3e6b64e9cd9666f">自動拾いエディタでfreeした領域をアクセスしているバグを修正。 (vがs_keepが保持しているヒープ領域上を指す事がある)</a></p>
+</li>
+<li>
+<p>Wed Jan 13 09:23:34 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/7888e57721b14102969272b90c3ab9dc17eebee8">shuffle_flavors関数にメモリリークがあり合計10kbytesほどリークしていたのを修正。</a></p>
+</li>
+<li>
+<p>Wed Jan 13 09:23:32 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/ae7d9f63662ac5133ee88dc0e7c61080bff45796">自動拾いファイルに重複するエントリがあった時にメモリリークしていたのを修正。</a></p>
+</li>
+<li>
+<p>Wed Jan 13 09:23:30 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/55a5cc7925efe5138c43b7b7ab73f352a34c9d19">食事として杖や魔法棒を食べた時にサブウィンドウの表示が更新されるように修正。</a></p>
+</li>
+<li>
+<p>Wed Jan 13 09:23:28 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/482ae4755d93e941172deb76a5581a260fb41c09">魔法の難易度を下げる能力に「易/Es」を刻むようにした。 あわせて、消費魔力減少をこれまでの「魔力/Ma」から「減/Dm」に変更。 Es:Easy Spell Dm:Decrease Mana</a></p>
+</li>
+<li>
+<p>Mon Jan 11 03:48:28 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/fb013ac2546b14f580e4fcb1c761f2351153ef52">角括弧の閉じ忘れを修正。</a></p>
+</li>
+<li>
+<p>Wed Jan 6 10:16:07 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/91f898fed45de9c9e5ce6129a6806b49d5e82fff">スナイパーの貫通弾を使った時、貫通した2匹目以降のダメージが、前の相手へのダメージを元に計算されてしまっていた。 こののバグにより、 ・無敵状態の敵に当たると以降のダメージが全部0になる ・スレイが有効な敵を連続して貫通するとダメージが倍々ゲームになる 等の現象が起きてしまう。 矢のダイスと弓の倍率で決まる基本ダメージを保存しておき、新しい敵に当たる毎にその基本ダメージから新たに計算しなおすように修正。</a></p>
+</li>
+<li>
+<p>Tue Jan 5 11:39:22 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/fc60c6296a387bd50fe334edafb543cb3f425217">snipe_concentrate および reset_concentration 関数で PU_BONUS フラグを立てていなかったため、集中が途切れた後も一時テレパシーが残る事があった。 PU_BONUS フラグを立てる事によりボーナスの更新を行ない、集中が切れた時に伊地知テレパシーも消えるよう修正。 また、ボーナス計算後の p_ptr&#8594;telepathy のみにより一時テレパシー状態を判断できるので、monster2.cでの集中度によるテレパシーの判定を削除。</a></p>
+</li>
+<li>
+<p>Tue Jan 5 07:51:40 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/7e7c0110e7e39031a20c25146cd8a24b568c08b5">重量0のアイテムをサブウィンドウで表示した時に重量の表示が無くならないように修正。</a></p>
+</li>
+<li>
+<p>Tue Jan 5 07:51:38 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/a357659e761c7fe4631d7428fda4eae05212e9da">割引価格の魔法棒の回数が過充填されないように修正。</a></p>
+</li>
+<li>
+<p>Tue Jan 5 07:51:36 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/f5b18fb048044ca364e009f49fecf44fd7231f28">GF_ICE属性の攻撃に対し、目には目を等の反撃ダメージが発動しないバグを修正。</a></p>
+</li>
+<li>
+<p>Tue Jan 5 07:51:34 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/3b5c14f9859def93d5738de6f8345b1a5cb7659f">光速移動の状態で広域マップに入ると効果が切れるように修正。</a></p>
+</li>
+<li>
+<p>Tue Jan 5 07:51:32 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/45ca5a591afb758d4d5617b7d4cf73fc540d9fb7">広域マップではトラベルコマンド(`)を使用できないように修正。</a></p>
+</li>
+<li>
+<p>Tue Jan 5 07:51:29 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/a1ef4cd2cfc1eae505e9674f536bdd386bb256b4">光速移動中は探索中であっても表示上の速度を+10しないように修正。</a></p>
+</li>
+<li>
+<p>Tue Jan 5 07:51:27 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/7f3a9e21751bac80718547d67e30c49a71a607fe">screen_object関数において、内部ブロックで宣言した変数をブロック外からアクセスしており、不正アドレスを参照していた。 変数宣言を関数の最初に移動して不正アドレスの参照にならないようにした。</a></p>
+</li>
+<li>
+<p>Tue Jan 5 07:51:25 2010 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/662d43a86ed3812065e817a195065b374f7d506a">./bootstrap 実行時に warning が出ないよう修正。</a></p>
+</li>
+<li>
+<p>Mon Sep 28 19:16:09 2009 +0000: (iks) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/97da10193955dcef40101654137d5fdd7ea903c0">GF_CLONEの発動条件を見直した。</a></p>
+</li>
+<li>
+<p>Wed Sep 23 11:01:52 2009 +0000: (iks) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/246fe3d7fd34dcd9b0c1e8a99affd23d04eb0944">typo修正。</a></p>
+</li>
+<li>
+<p>Tue Sep 22 16:43:19 2009 +0000: (iks) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/b84458ecb9fa304ef73bd33f5e9c60748b15fe3d">typoや表記の不統一を修正。</a></p>
+</li>
+<li>
+<p>Tue Sep 22 16:28:30 2009 +0000: (iks) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/57d50656cca6f87bf072e99ae8304c91c5913771">家と博物館の収蔵アイテム数を表示するようにした。(thanks to so-miyaさん)</a></p>
+</li>
+<li>
+<p>Tue Sep 22 16:02:57 2009 +0000: (iks) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/35a2f10448967a5413389af3763e86e025503432">ハイメイジで呪術選択時は、自己分析の結果に魔力吸いの説明が出ないようにした。</a></p>
+</li>
+<li>
+<p>Mon Sep 21 16:52:56 2009 +0000: (iks) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/54fddb0ba45761d7554e818f187f6ed814327a84">ユニーク2体追加。</a></p>
+</li>
+<li>
+<p>Sun Sep 20 07:08:50 2009 +0000: (iks) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/05ccead25c8882a93df7d45abef37fb16554a701">typoなどの修正。</a></p>
+</li>
+<li>
+<p>Sun Sep 20 07:04:01 2009 +0000: (iks) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/100e75be615ce0bd80ce9089390f51423caf4d6d">店内でのブラウズコマンドで射撃術を実行してしまうのを修正。</a></p>
+</li>
+<li>
+<p>Sun Sep 20 07:00:17 2009 +0000: (iks) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/a4217b39572eeb77b27bb3aa15d0a9e3a0268106">街の設定でおかしなところと不足しているところを修正。</a></p>
+</li>
+<li>
+<p>Sat Sep 19 13:57:00 2009 +0000: (iks) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/a71c13d36b80a3dd714c8a129987271604d189bd">200点たまって我慢を解いた後、また我慢を解くことがあるバグを修正。</a></p>
+</li>
+<li>
+<p>Sat Sep 19 10:48:59 2009 +0000: (iks) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/86517529385ae4bf62454f731c48c2cb69682b17">復讐の宣告の呪文の説明文が古かったので修正。</a></p>
+</li>
+<li>
+<p>Wed Sep 16 17:50:21 2009 +0000: (iks) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/9f04977be93833d0a320d68c885261b26caa0b00">呪術の吸血の刃詠唱時と中止時のメッセージが逆なので修正。</a></p>
+</li>
+<li>
+<p>Wed Sep 16 04:19:05 2009 +0000: (iks) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/093eacd8df86ad9db721c2ce35945c26253be48c">呪術の我慢の呪文の説明文が古かったので修正。</a></p>
+</li>
+<li>
+<p>Wed Sep 16 02:51:03 2009 +0000: (iks) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/bf4aa17fbd525765b7a3d5251b831ba2b37bb58d">呪術で途中で解呪しても影のクロークの効果が消えないのを修正。解呪すると詠唱を中止する。</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>		</div>
+
+<!--footer-->
+		<footer>
+
+			<section>
+				各ページへのリンクは御自由にどうぞ。/ Link Free.<br>
+				2021 Hengband Dev Team. <a href="mailto:hengband-dev@lists.sourceforge.jp">hengband-dev@lists.sourceforge.jp</a><br>
+			</section>
+
+			<section>
+				Powered by <a href="https://osdn.net/" class="footer_banner">
+				<img src="//osdn.net/sflogo.php?group_id=541" border="0" alt="OSDN">
+				</a>
+			</section>
+
+		</footer>
+
+
+	</body>
+
+</html>
+
