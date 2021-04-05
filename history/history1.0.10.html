@@ -45,7 +45,7 @@
 		<div id="main">
 <!--main contents-->
 <div class="sect1">
-<h2 id="_2002_03_06_ver_1_0_10_安定版">2002/03/06 Ver.1.0.10 (安定版)</h2>
+<h2 id="_20020306_ver_1_0_10_安定版">2002/03/06 Ver.1.0.10 (安定版)</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_リリースノート">リリースノート</h3>
@@ -494,7 +494,7 @@
 <p>Fri Feb 15 13:49:18 2002 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/2f0a3f4be0bb024ec1f57aa4063621978d6fa218">ﾊｬ､ｫ､熙荀ｹ､､､隍ｦ､ﾋ｡｢rand_int()､andint0()｡｢randint()､andint1()､ﾋ､ｹ､ﾙ､ﾆﾃﾖ､ｭﾊﾑ､ｨ､ｿ｡｣ ､ｳ､ﾎﾃﾖｴｹ､ﾏｴﾊﾃｱ､ﾊ､ﾎ､ﾇｴﾖｰ网ﾃ､ﾆ､ﾊ､､､ﾈｻﾗ､ｦ｡｣</a></p>
 </li>
 <li>
-<p>Fri Feb 15 13:29:31 2002 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/f20dd18f65b23597ee27e3d91245c5763f1d99c2">randint() == 1, rand_int() == 0, rand_int() == 1 を全て one_in_()に、 randint() != 1, rand_int() != 0, rand_int() != 1 を全て !one_in_()に置き変えた。 この作業中にユニークにダメージを与えた時に1/3でV_INDIVIDUALISMを-1する所の判定が&amp;と&amp;&amp;を間違えているのを見つけたのでついでに直した。 ちゃんとできてるか不安なので、作業前の状態にone_in_prev,作業後の状態にone_in_afterというタグを付けておく。</a></p>
+<p>Fri Feb 15 13:29:31 2002 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/f20dd18f65b23597ee27e3d91245c5763f1d99c2">randint() == 1</a></p>
 </li>
 <li>
 <p>Fri Feb 15 10:37:42 2002 +0000: (habu) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/5d5eb90ca9359ceb3cfa44b8a7d64398bcd1139b">クローカーやデスソードなど、固定種類のアイテムを落とす敵を倒した時、稀に常時伝説物のアーティファクトが生成される可能性があった。この時、アイテムの候補のテーブルもクリアされない為、次のアイテム生成時に固定種類のアイテムが適用されてしまう。 なので、make_artifact_special()内で、get_obj_num_hookに何か関数が設定されている場合はアーティファクトが生成されないようにした。</a></p>

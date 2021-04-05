@@ -45,7 +45,7 @@
 		<div id="main">
 <!--main contents-->
 <div class="sect1">
-<h2 id="_2004_01_09_ver_1_4_5_安定版_ver_1_6_0_安定版">2004/01/09 Ver.1.4.5 (安定版)/Ver.1.6.0 (安定版)</h2>
+<h2 id="_20040109_ver_1_4_5_安定版ver_1_6_0_安定版">2004/01/09 Ver.1.4.5 (安定版)/Ver.1.6.0 (安定版)</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_リリースノート">リリースノート</h3>
@@ -218,7 +218,7 @@
 <p>Wed Jan 7 09:20:44 2004 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/0eb70fcacbaab17b39952f87e2a46af2ee775f28">英語版で, 自分で光っているモンスターは "%^s is shining." と思い出に表 記するように変更.</a></p>
 </li>
 <li>
-<p>Wed Jan 7 08:25:52 2004 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/15322c396497d4ccf9016b2cabc833e6067ed367">character_dungeon == FALSEであってもGLOW地形に対応する処理が必要な場 合が考えられる (generate_cave()が終わりcharacter_dungeon = TRUE; され るまでの間) ので再修正.</a></p>
+<p>Wed Jan 7 08:25:52 2004 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/15322c396497d4ccf9016b2cabc833e6067ed367" class="bare">https://osdn.net/projects/hengband/scm/git/hengband/commits/15322c396497d4ccf9016b2cabc833e6067ed367</a></p>
 </li>
 <li>
 <p>Wed Jan 7 08:08:26 2004 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/44be41f563d325f88fc7f1fb127de095202bb7e1">暗闇の洞窟で鏡が消えた時, 鏡があった位置が明るいままだったバグを修正. また, cave_set_feat()でのcharacter_dungeonの判定は1箇所だけにした.</a></p>
@@ -305,16 +305,16 @@
 <p>Sat Dec 27 18:13:42 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/67f93c62bc7f5325cc7db67e24884c27b7c8b928">｡ﾘｷｵ､ﾎｳｻ｡ﾙ､ﾈ｡ﾘﾀﾄﾎｶ､ﾎﾎ錂ｩ｡ﾙ､ﾎ･ﾙ｡ｼ･ｹAC､ｬ30､ﾎ､ﾞ､ﾞ､ﾀ､ﾃ､ｿ･ﾐ･ｰ､､ﾀｵ.</a></p>
 </li>
 <li>
-<p>Sat Dec 27 11:54:10 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/5e65d427c076142928c0d9f2dffece6e2181d646">ダンジョン生成時の階段配置の仕様を変更. * 階段生成の成功/失敗に関わらず, 階段の隣に必要な壁の数wallsを減らし   ていたので, 階段生成成功時は減らさないように変更. * 3000回の試行で階段が配置できなかった場合, 現在のwallsを引数として   cannot_place_stairs()を使い, 配置可能かどうか調べてwallsを減らし,   walls == 0で失敗したらダンジョン生成失敗とした. * cannot_place_stairs()内で, 候補にできるグリッド数が極端に少なければ   配置可能と判定されないようにするため, 条件を満たすグリッド数が20に   満たなければ配置可能としないように変更.</a></p>
+<p>Sat Dec 27 11:54:10 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/5e65d427c076142928c0d9f2dffece6e2181d646">ダンジョン生成時の階段配置の仕様を変更. * 階段生成の成功/失敗に関わらず</a></p>
 </li>
 <li>
 <p>Fri Dec 26 19:57:34 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/7d3126a1a2a09cdc6b2b0f0b16cd31e9107baeb5">実行されないコードの削除.</a></p>
 </li>
 <li>
-<p>Fri Dec 26 19:54:24 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/531b41de02793c9c455ce57b000c1df210ad7f0f">alloc_stairs()の変更によりダンジョン生成が失敗しそうにないダンジョン で失敗判定が多くなりすぎたので, walls == 0で失敗したら本当に階段が置 けないかどうかを判定する関数を呼び, 不可能ならば本当に生成失敗, そう でないならば階段が置けるまで無限ループを許すように再修正.</a></p>
+<p>Fri Dec 26 19:54:24 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/531b41de02793c9c455ce57b000c1df210ad7f0f">alloc_stairs()の変更によりダンジョン生成が失敗しそうにないダンジョン で失敗判定が多くなりすぎたので</a></p>
 </li>
 <li>
-<p>Fri Dec 26 19:00:35 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/5bb6933c6823530ff9544a0528534ed31d46a4d6">ironman_rooms適用時には最初の部屋を必ず通常の部屋にすることにより, 川 や*破壊*が生成されるのを待たなくとも狭い階でのプレイヤー配置をしやす いように変更. また, alloc_stairs()ではwalls == 0で階段配置に失敗した ら失敗を返し, アイテムで埋まった階で無限ループに陥らないように修正.</a></p>
+<p>Fri Dec 26 19:00:35 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/5bb6933c6823530ff9544a0528534ed31d46a4d6">ironman_rooms適用時には最初の部屋を必ず通常の部屋にすることにより</a></p>
 </li>
 <li>
 <p>Fri Dec 26 15:56:02 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/166592cb16f0b6e9301f6dae9b836c9f5fa528bb">プレイヤーが盲目である等の理由で未知のアイテムの上にいる場合に, その 未知のアイテムをget_item()の選択肢に加えていて, アイテムがあることが わかっていたバグを修正.</a></p>
@@ -1475,7 +1475,7 @@
 <p>Sat Sep 27 18:38:16 2003 +0000: (iks) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/ec8163b9c9aa72c5a96e5dcb2fc7c7f8a19b54d4">サブウィンドウからのキー入力に対するマクロトリガの処理がおかしかったのを修正。 キー入力処理を外部関数化するなど、ソースを少し整形。</a></p>
 </li>
 <li>
-<p>Sat Sep 27 17:06:53 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/ee881a41d9678cfa7d866f34b494609c65b22569">非タイルモードで'='といったミミック系モンスターは幻覚時にアルファベッ トにしかならず, 普通のモンスターが幻覚でミミック系に見えることもな かったので, 幻覚時にはSHAPECHANGER同様に1/25でアイテムのシンボルに見 えるように変更.</a></p>
+<p>Sat Sep 27 17:06:53 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/ee881a41d9678cfa7d866f34b494609c65b22569">非タイルモードで'='といったミミック系モンスターは幻覚時にアルファベッ トにしかならず</a></p>
 </li>
 <li>
 <p>Sat Sep 27 16:27:52 2003 +0000: (iks) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/f7be9f483d89793534b404498cb04146d2d0faa5">deleteキーのマクロを'\x7f'(Delete)に修正。</a></p>
@@ -1676,7 +1676,7 @@
 <p>Mon Sep 15 07:46:49 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/56c03f6fd0df0d54265d25e1cf3abef154b1d505">ランダムに長い階段/坑道になる記述が残っていたので削除.</a></p>
 </li>
 <li>
-<p>Mon Sep 15 07:16:01 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/4e69604403414dbb54c48de4eb602998da99f9ea">SJIS環境で, 例として{八咫}と刻んだアイテムを鑑定の巻物や杖で鑑定しよ うとすると選択肢の文字が指定していない文字に変わっていた. これはSJIS では "八咫" の文字コードが0x94, 0xAA, 0x9A, 0x40であるため, この銘は {(文字列)@'\0'} とみなされていた. 2回目以降のアイテム選択では command_cmd = 0としたため, '@' の次である '\0' がマッチし, 文字列の次 にあるゴミを選択肢として使ってしまい, 場合によっては配列外アクセスも 起こす可能性があった. このバグに対処するため, init1.cにある_strchr() をjapanese.cに移転し, strchr_j()と変更. アイテムの銘を始めとして日本 語文字列からstrchr()する場合に限りstrchr_j()を適切に#defineでかぶせて 使うようにした.</a></p>
+<p>Mon Sep 15 07:16:01 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/4e69604403414dbb54c48de4eb602998da99f9ea">SJIS環境で</a></p>
 </li>
 <li>
 <p>Fri Sep 12 10:32:10 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/e7a5eccd5791095a024318b4b8cb449106e60481">死天使『アズリエル』, 告知者『ラファエル』の死亡時の台詞が一般モンス ターと同じになっていたバグを修正.</a></p>
@@ -1775,7 +1775,7 @@
 <p>Thu Sep 4 07:12:26 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/8f11886978d6cff60d49b8e009a41d1888ec4807">12:00-18:00の時間帯に宿屋に泊まれていたバグを修正.</a></p>
 </li>
 <li>
-<p>Wed Sep 3 19:15:56 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/17ef031a4c177b79e1d22e8b57781db57c7e4d5e">モンスターのセービングスロー系魔法に関する変更. * モンスター対モンスターでの魔力吸収, 精神攻撃, 脳攻撃, 各種呪いを   扱いの整理を兼ねてproject()で扱うように変更. なお, プレイヤーが   使った場合とモンスターが使った場合で判定式や状態変化期間が異なる部   分は可能な限りそのままにしている. * プレイヤーに対する魔力吸収をproject()で扱うように変更. * 精神攻撃, 脳攻撃をEMPTY_MINDには無効, WEIRD_MINDは耐性がありダメー   ジ1/3とした. * project_m()内の詠唱モンスターレベルが除算で細かく違っていたので, 扱   いを少し変更. 最初は除算しないようにした. * "破滅の手" &#8594; "&lt;破滅の手&gt;". * モンスター同士での魔力吸収の判定がおかしかったバグ修正. * who_name[0]を2重に初期化していた部分の修正. * monspell == -1の場合でも落ちないようにlearn_spell()内にパラノイア   コード追加. * project_p()内でのMS_*直接指定を変数monspellに修正.</a></p>
+<p>Wed Sep 3 19:15:56 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/17ef031a4c177b79e1d22e8b57781db57c7e4d5e">モンスターのセービングスロー系魔法に関する変更. * モンスター対モンスターでの魔力吸収</a></p>
 </li>
 <li>
 <p>Wed Sep 3 15:57:38 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/50b905bae62405b2bb840179d39e9595e685d665">乗馬中のプレイヤーとモンスターに対する半径0のボールの挙動のバグ修正. PROJECT_MONSTERは全く参照されていなかったので, 新しくPROJECT_AIMEDと いうフラグを導入. このフラグと同時にPROJECT_PLAYERがあれば乗馬中の モンスターには絶対に当たらず, このフラグだけの場合は乗馬中のプレイ ヤーには当たらない. これらを用い, プレイヤーに対する呪い系魔法, モン スター同士の打撃戦 (実装上は至近距離でのボール魔法の撃ち合い) の挙動 を修正. プレイヤーに対する呪い系魔法では乗馬は巻き添えにならず, 乗馬 に対する打撃ではプレイヤーが巻き添えにならないように修正. この過程で, 以下の修正を含む. * 乗馬中のプレイヤーが呪い系攻撃を受けるとその直後にプレイヤー自身が   乗馬を呪ったメッセージが出ていたバグを修正. * 乗馬中のモンスターが劣化属性打撃を受けるとプレイヤーが劣化ボールの   巻き添えになり, プレイヤーの装備まで劣化していたバグを修正. * 座標に関する論理演算のミスと思われる部分の修正. "||" &#8594; "&amp;&amp;". * Typo fix.</a></p>
@@ -1796,7 +1796,7 @@
 <p>Tue Sep 2 14:18:14 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/a24b4d2e311b1a91ef3dcfd3513dc1ec75ec3aac">初期オプションを参照専用で見ている場合は変更キーの説明を出さないよう にし, 'y' 'n' キーでは反応しないように変更. また, "Startup" &#8594; "Birth" と変更.</a></p>
 </li>
 <li>
-<p>Tue Sep 2 13:59:53 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/521fc126a007d6a86b5571d9a7598c13b62b6a98">'=' から初期オプションを参照専用で見られるようにした. ウィザードモー ドかつデバッグコマンド許可の場合のみ操作を許可した.</a></p>
+<p>Tue Sep 2 13:59:53 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/521fc126a007d6a86b5571d9a7598c13b62b6a98">=</a></p>
 </li>
 <li>
 <p>Tue Sep 2 13:22:00 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/cfc268668c0c4ff43af5dc9a2f44b3d2d269febc">Typo fix.</a></p>
@@ -1835,7 +1835,7 @@
 <p>Sat Aug 30 20:16:05 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/c5d249287249f564aba3e5b02675fb2fe8dc8932">武器を持たない忍者が不意打ちを使えていたバグを修正. また, 忍者や盗賊 が盾しか持たない場合でも不意打ち判定が動いていたバグを修正.</a></p>
 </li>
 <li>
-<p>Sat Aug 30 19:47:02 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/227bbc5b773769a6a6abcc1151ba9a5145ac78ff">* バーノール, ルパート, バーノール=ルパートを倒した場合の生存数や殺害   回数に関する処理は, 仮にクローンだった場合は実行されないように変更. * 徳のコードの一部の微妙な整理. * monster_death()内での変数clonedの細かい修正.</a></p>
+<p>Sat Aug 30 19:47:02 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/227bbc5b773769a6a6abcc1151ba9a5145ac78ff">* バーノール</a></p>
 </li>
 <li>
 <p>Sat Aug 30 18:34:32 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/1a09b23fe3228cfe0e2cbec562525fa3795f4fa1">インターネット・エクスプローダーと超人ロックのクローンの召喚でIDが直 接使われていたので, 記号定数化.</a></p>
@@ -1856,7 +1856,7 @@
 <p>Fri Aug 29 16:37:56 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/ce84a02f370c16bbd08605d0e53a3fbbd3ad2941">"ミノタウルス" &#8594; "ミノタウロス".</a></p>
 </li>
 <li>
-<p>Fri Aug 29 16:34:34 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/4af8b11bc2a81638632f1a6cc5d3bfd838801cd5">モンスターのフラグの調整. * ピラニア, メカジキ, 巨大ヒル, バラクーダ, カツオノエボシ, ジャイ   アント・ピラニア, ヒッポカンポス, イクシツザチトル, ニクシー, シュ   モクザメ, 白鮫, イクシツザチトル・プリースト, フグ, シャチ, 大白鮫,   吸血イクシツザチトル, タツノオトシゴ, 水トロル, 『ジョーズ』, 空飛   ぶ鯨, ファスティトカロン, リヴァイアサン, クラーケンの子, 水棲ゴー   レム, アンデッド・チョウチンアンコウ, チョウチンアンコウ, 水棲ナー   ガ, 白ワニにRES_WATE追加. * シルバー・ゼリーにHAS_DARK_1追加. * 『柳じじい』, フオルン, エント, 木の鬚『ファンゴルン』にHURT_FIRE追   加. * リヴァイアサンにEVIL追加. * 黄色い光にRES_LITE追加. * 混沌の落し子にRES_CHAO追加. * 目のドルジの説明テキスト変更. * ナイトウィング, ナイトクローラーを進化しないようにした. * 金色の怪人『ワッハマン』からEMPTY_MIND削除. * ニーベルング族の『ミーメ』, ニーベルング族の王『アルベリヒ』, ダー   クエルフの鍛冶師『エオル』にRES_DARK追加. * アルベリヒの息子『ハーゲン』にRES_DARK, RES_DISE追加. * プラネター, ソーラーにNO_FEAR追加. * 見習超能力者 (単体, 集団両方) にMALE追加. * 凍った球体にCOLD_BLOOD追加. * 地のスピリット, スタンウォール, 動く岩, レッサー・ウォールモンス   ター, 『究極ダンジョン=クリーナー』, 地のエレメンタル, 大地の主   『クェイカー』, 長老岩, 花崗岩の壁, 溶岩の壁, 石英の壁, ダオ, 鋼鉄   ドラゴンにRES_SHAR追加. * "ミノタウルス" &#8594; "ミノタウロス".</a></p>
+<p>Fri Aug 29 16:34:34 2003 +0000: (nothere) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/4af8b11bc2a81638632f1a6cc5d3bfd838801cd5">モンスターのフラグの調整. * ピラニア</a></p>
 </li>
 <li>
 <p>Fri Aug 29 14:13:26 2003 +0000: (mogami) <a href="https://osdn.net/projects/hengband/scm/git/hengband/commits/1a4cf1fbc02d2ff5d78e94aeaa4a8756253e60be">change_numeral も削除。</a></p>
