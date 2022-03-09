@@ -1,174 +1,321 @@
 <!DOCTYPE html>
 
 <html lang="jp">
+  <!--head-->
+  <head>
+    <meta charset="utf-8" />
+    <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
+    <link rel="stylesheet" type="text/css" href="/hengband.css" />
+    <link rel="shortcut icon" href="/image/hangband.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/image/hengband_icon180.png"
+    />
+    <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
+    <title>変愚蛮怒 公式WEB</title>
+  </head>
 
-<!--head-->
-	<head>
-		<meta charset="utf-8"/>
-		<link rev=made href="mailto:hengband-dev@lists.sourceforge.jp">
-		<link rel="stylesheet" type="text/css" href="/hengband.css">
-		<link rel="shortcut icon" href="/image/hangband.ico">
-		<link rel="apple-touch-icon" sizes="180x180" href="/image/hengband_icon180.png">
-		<link rel="icon" type="image/png" href="/image/hengband_icon256.png">
-		<title>変愚蛮怒 公式WEB</title>
-	</head>
+  <body>
+    <!--header-->
+    <header>
+      <section id="title">
+        <img class="tama1" src="/image/tama.gif" alt="tama" />
+        <img class="tama2" src="/image/tama.gif" alt="tama" />
+        <img class="tama3" src="/image/tama.gif" alt="tama" />
+        <img class="tama4" src="/image/tama.gif" alt="tama" />
+        <img
+          id="hengTitle"
+          src="/image/hengband_title2021.png"
+          alt="変愚蛮怒 Hengband"
+        />
+        <img class="tama4" src="/image/tama.gif" alt="tama" />
+        <img class="tama3" src="/image/tama.gif" alt="tama" />
+        <img class="tama2" src="/image/tama.gif" alt="tama" />
+        <img class="tama1" src="/image/tama.gif" alt="tama" />
+      </section>
 
-	<body>
+      <section id="mainMenu">
+        <a href="/index.html">トップ</a>
+        <a href="/download.html">ダウンロード</a>
+        <a href="/score.html">スコア</a>
+        <a href="/development.html">開発</a>
+        <a href="/lists.html">コミュニティ</a>
+        <a href="/history.html">バージョン履歴</a>
+        <a href="/link.html">関連リンク</a>
+        <a href="/jlicense.html">著作権表記</a>
+        <span>English (Coming Soon?)</span>
+      </section>
+    </header>
 
-<!--header-->
-		<header>
+    <div id="main">
+      <!--main contents-->
+      <div class="sect1">
+        <h2 id="_2021年夏以降予定_ver_3_2_0_正式版">
+          2021年夏以降(予定) Ver.3.2.0 (正式版)
+        </h2>
+        <div class="sectionbody">
+          <div class="sect2">
+            <h3 id="_概要">概要</h3>
+            <div class="paragraph">
+              <p>正式版の3.2.0を2021年の夏以降にリリース予定とします。</p>
+            </div>
+          </div>
+          <div class="sect2">
+            <h3 id="_予定実装内容">予定実装内容</h3>
+            <div class="paragraph">
+              <p>将来変更、あるいは廃止される可能性もあります。</p>
+            </div>
+            <div class="ulist">
+              <ul>
+                <li>
+                  <p>
+                    当バージョンでの包括的なバランス調整
+                    <a href="https://osdn.net/projects/hengband/ticket/36973"
+                      >#36973</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    マインドフレアの食事仕様変更(チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/3248"
+                      >#3248</a
+                    >
+                    参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    ヘルプファイルの再編成、もしくはチュートリアルなど導入システムに抜本的な変更
+                    (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/3250"
+                      >#3250</a
+                    >
+                    参照)
+                  </p>
+                  <div class="ulist">
+                    <ul>
+                      <li>
+                        <p>
+                          死亡時アドバイス機能の実装 (チケット
+                          <a
+                            href="https://osdn.net/projects/hengband/ticket/3250"
+                            >#3250</a
+                          >
+                          参照)
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <p>
+                    一部Linuxディストリビューションへのパッケージ採用情報と更新ための交渉等
+                    (<a href="https://osdn.net/projects/hengband/ticket/28222"
+                      >#28222</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    新タイル作成の模索(あるいは新インターフェースなどの抜本的改変)
+                    (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/33108"
+                      >#33108</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    武器経験値の統合と調整 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/37299"
+                      >#37299</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    新スコア計算導入検討 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/37300"
+                      >#37300</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    乗騎システムのさらなるバランス調整 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/37301"
+                      >#37301</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Angband4.X系のmonster_base実装 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/37320"
+                      >#37320</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    知覚/探索能力の拡張 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/37332"
+                      >#37332</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    新種族追加 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/37344"
+                      >#37344</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    不人気種族調整 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/37333"
+                      >#37333</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    新職追加検討 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/37335"
+                      >#37335</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    ダンジョンに関する仕様の分化 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/37341"
+                      >#37341</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    ダンジョン内店舗の仕様拡張 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/37342"
+                      >#37342</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    コマンド処理とゲーム中のアクションの実行処理を分離する
+                    (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/38833"
+                      >#38833</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    レギュレーションバージョンの追加 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/38835"
+                      >#38835</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    モンスター集団生成データ「group_info」の追加 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/38842"
+                      >#38842</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    ダンジョン毎の部屋バイアス作成拡張 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/38851"
+                      >#38851</a
+                    >
+                    <a href="https://osdn.net/projects/hengband/ticket/41007"
+                      >#41007</a
+                    >
+                    参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    saved_floor_type構造体とfloor_type構造体の統一 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/41088"
+                      >#41088</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    handle_stuff()などのステータス更新タイミング整理 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/39075"
+                      >#39075</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    main-win.c の分割/整理 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/40274"
+                      >#40274</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    店の中で記念撮影すると異常なデータが生成される不具合の修正
+                    (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/40342"
+                      >#40342</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    ゲームシステム上のコンフィグとキャラクターデータの分離
+                    (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/40455"
+                      >#40455</a
+                    >参照)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    saved_floor_type構造体とfloor_type構造体の統一 (チケット
+                    <a href="https://osdn.net/projects/hengband/ticket/41088"
+                      >#41088</a
+                    >参照)
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			<section id="title">
-				<img class="tama1" src="/image/tama.gif" alt="tama">
-				<img class="tama2" src="/image/tama.gif" alt="tama">
-				<img class="tama3" src="/image/tama.gif" alt="tama">
-				<img class="tama4" src="/image/tama.gif" alt="tama">
-				<img id="hengTitle" src="/image/hengband_title2021.png" alt="変愚蛮怒 Hengband">
-				<img class="tama4" src="/image/tama.gif" alt="tama">
-				<img class="tama3" src="/image/tama.gif" alt="tama">
-				<img class="tama2" src="/image/tama.gif" alt="tama">
-				<img class="tama1" src="/image/tama.gif" alt="tama">
-			</section>
+    <!--footer-->
+    <footer>
+      <section>
+        各ページへのリンクは御自由にどうぞ。/ Link Free.<br />
+        2021 Hengband Dev Team.
+        <a href="mailto:hengband-dev@lists.sourceforge.jp"
+          >hengband-dev@lists.sourceforge.jp</a
+        ><br />
+      </section>
 
-			<section id="mainMenu">
-				<a href="/index.html">トップ</a>
-				<a href="/download.html">ダウンロード</a>
-				<a href="/score.html">スコア</a>
-				<a href="/development.html">開発</a>
-				<a href="/lists.html">コミュニティ</a>
-				<a href="/history.html">バージョン履歴</a>
-				<a href="/link.html">関連リンク</a>
-				<a href="/jlicense.html">著作権表記</a>
-				<span>English (Coming Soon?)</span>
-			</section>
-
-		</header>
-
-
-		<div id="main">
-<!--main contents-->
-<div class="sect1">
-<h2 id="_2021年夏以降予定_ver_3_2_0_正式版">2021年夏以降(予定) Ver.3.2.0 (正式版)</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_概要">概要</h3>
-<div class="paragraph">
-<p>正式版の3.2.0を2021年の夏以降にリリース予定とします。</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_予定実装内容">予定実装内容</h3>
-<div class="paragraph">
-<p>将来変更、あるいは廃止される可能性もあります。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>当バージョンでの包括的なバランス調整 <a href="https://osdn.net/projects/hengband/ticket/36973">#36973</a></p>
-</li>
-<li>
-<p>マインドフレアの食事仕様変更(チケット <a href="https://osdn.net/projects/hengband/ticket/3248">#3248</a> 参照)</p>
-</li>
-<li>
-<p>ヘルプファイルの再編成、もしくはチュートリアルなど導入システムに抜本的な変更 (チケット <a href="https://osdn.net/projects/hengband/ticket/3250">#3250</a> 参照)</p>
-<div class="ulist">
-<ul>
-<li>
-<p>死亡時アドバイス機能の実装  (チケット <a href="https://osdn.net/projects/hengband/ticket/3250">#3250</a> 参照)</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>一部Linuxディストリビューションへのパッケージ採用情報と更新ための交渉等 (<a href="https://osdn.net/projects/hengband/ticket/28222">#28222</a>参照)</p>
-</li>
-<li>
-<p>新タイル作成の模索(あるいは新インターフェースなどの抜本的改変) (チケット <a href="https://osdn.net/projects/hengband/ticket/33108">#33108</a>参照)</p>
-</li>
-<li>
-<p>武器経験値の統合と調整 (チケット <a href="https://osdn.net/projects/hengband/ticket/37299">#37299</a>参照)</p>
-</li>
-<li>
-<p>新スコア計算導入検討 (チケット <a href="https://osdn.net/projects/hengband/ticket/37300">#37300</a>参照)</p>
-</li>
-<li>
-<p>乗騎システムのさらなるバランス調整 (チケット <a href="https://osdn.net/projects/hengband/ticket/37301">#37301</a>参照)</p>
-</li>
-<li>
-<p>Angband4.X系のmonster_base実装 (チケット <a href="https://osdn.net/projects/hengband/ticket/37320">#37320</a>参照)</p>
-</li>
-<li>
-<p>知覚/探索能力の拡張 (チケット <a href="https://osdn.net/projects/hengband/ticket/37332">#37332</a>参照)</p>
-</li>
-<li>
-<p>新種族追加 (チケット <a href="https://osdn.net/projects/hengband/ticket/37344">#37344</a>参照)</p>
-</li>
-<li>
-<p>不人気種族調整 (チケット <a href="https://osdn.net/projects/hengband/ticket/37333">#37333</a>参照)</p>
-</li>
-<li>
-<p>新職追加検討 (チケット <a href="https://osdn.net/projects/hengband/ticket/37335">#37335</a>参照)</p>
-</li>
-<li>
-<p>ダンジョンに関する仕様の分化 (チケット <a href="https://osdn.net/projects/hengband/ticket/37341">#37341</a>参照)</p>
-</li>
-<li>
-<p>ダンジョン内店舗の仕様拡張 (チケット <a href="https://osdn.net/projects/hengband/ticket/37342">#37342</a>参照)</p>
-</li>
-<li>
-<p>コマンド処理とゲーム中のアクションの実行処理を分離する (チケット <a href="https://osdn.net/projects/hengband/ticket/38833">#38833</a>参照)</p>
-</li>
-<li>
-<p>レギュレーションバージョンの追加 (チケット <a href="https://osdn.net/projects/hengband/ticket/38835">#38835</a>参照)</p>
-</li>
-<li>
-<p>モンスター集団生成データ「group_info」の追加 (チケット <a href="https://osdn.net/projects/hengband/ticket/38842">#38842</a>参照)</p>
-</li>
-<li>
-<p>ダンジョン毎の部屋バイアス作成拡張 (チケット <a href="https://osdn.net/projects/hengband/ticket/38851">#38851</a> <a href="https://osdn.net/projects/hengband/ticket/41007">#41007</a> 参照)</p>
-</li>
-<li>
-<p>saved_floor_type構造体とfloor_type構造体の統一 (チケット <a href="https://osdn.net/projects/hengband/ticket/41088">#41088</a>参照)</p>
-</li>
-<li>
-<p>handle_stuff()などのステータス更新タイミング整理 (チケット <a href="https://osdn.net/projects/hengband/ticket/39075">#39075</a>参照)</p>
-</li>
-<li>
-<p>main-win.c の分割/整理 (チケット <a href="https://osdn.net/projects/hengband/ticket/40274">#40274</a>参照)</p>
-</li>
-<li>
-<p>店の中で記念撮影すると異常なデータが生成される不具合の修正 (チケット <a href="https://osdn.net/projects/hengband/ticket/40342">#40342</a>参照)</p>
-</li>
-<li>
-<p>ゲームシステム上のコンフィグとキャラクターデータの分離 (チケット <a href="https://osdn.net/projects/hengband/ticket/40455">#40455</a>参照)</p>
-</li>
-<li>
-<p>saved_floor_type構造体とfloor_type構造体の統一 (チケット <a href="https://osdn.net/projects/hengband/ticket/41088">#41088</a>参照)</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>		</div>
-
-<!--footer-->
-		<footer>
-
-			<section>
-				各ページへのリンクは御自由にどうぞ。/ Link Free.<br>
-				2021 Hengband Dev Team. <a href="mailto:hengband-dev@lists.sourceforge.jp">hengband-dev@lists.sourceforge.jp</a><br>
-			</section>
-
-			<section>
-				Powered by <a href="https://osdn.net/" class="footer_banner">
-				<img src="//osdn.net/sflogo.php?group_id=541" border="0" alt="OSDN">
-				</a>
-			</section>
-
-		</footer>
-
-
-	</body>
-
+      <section>
+        Powered by
+        <a href="https://osdn.net/" class="footer_banner">
+          <img src="//osdn.net/sflogo.php?group_id=541" border="0" alt="OSDN" />
+        </a>
+      </section>
+    </footer>
+  </body>
 </html>
-
