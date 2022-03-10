@@ -1,236 +1,342 @@
 <!DOCTYPE html>
 
 <html lang="jp">
+  <!--head-->
+  <head>
+    <meta charset="utf-8" />
+    <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
+    <link rel="stylesheet" type="text/css" href="/hengband.css" />
+    <link rel="shortcut icon" href="/image/hangband.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/image/hengband_icon180.png"
+    />
+    <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
+    <title>変愚蛮怒 公式WEB</title>
+  </head>
 
-<!--head-->
-	<head>
-		<meta charset="utf-8"/>
-		<link rev=made href="mailto:hengband-dev@lists.sourceforge.jp">
-		<link rel="stylesheet" type="text/css" href="/hengband.css">
-		<link rel="shortcut icon" href="/image/hangband.ico">
-		<link rel="apple-touch-icon" sizes="180x180" href="/image/hengband_icon180.png">
-		<link rel="icon" type="image/png" href="/image/hengband_icon256.png">
-		<title>変愚蛮怒 公式WEB</title>
-	</head>
+  <body>
+    <!--header-->
+    <header>
+      <section id="title">
+        <img class="tama1" src="/image/tama.gif" alt="tama" />
+        <img class="tama2" src="/image/tama.gif" alt="tama" />
+        <img class="tama3" src="/image/tama.gif" alt="tama" />
+        <img class="tama4" src="/image/tama.gif" alt="tama" />
+        <img
+          id="hengTitle"
+          src="/image/hengband_title2021.png"
+          alt="変愚蛮怒 Hengband"
+        />
+        <img class="tama4" src="/image/tama.gif" alt="tama" />
+        <img class="tama3" src="/image/tama.gif" alt="tama" />
+        <img class="tama2" src="/image/tama.gif" alt="tama" />
+        <img class="tama1" src="/image/tama.gif" alt="tama" />
+      </section>
 
-	<body>
+      <section id="mainMenu">
+        <a href="/index.html">トップ</a>
+        <a href="/download.html">ダウンロード</a>
+        <a href="/score.html">スコア</a>
+        <a href="/development.html">開発</a>
+        <a href="/lists.html">コミュニティ</a>
+        <a href="/history.html">バージョン履歴</a>
+        <a href="/link.html">関連リンク</a>
+        <a href="/jlicense.html">著作権表記</a>
+        <span>English (Coming Soon?)</span>
+      </section>
+    </header>
 
-<!--header-->
-		<header>
+    <div id="main">
+      <!--main contents-->
+      <div class="sect1">
+        <h2 id="_2021年1月16日_ver_3_0_0alpha1_アルファ版">
+          2021年1月16日 Ver.3.0.0Alpha1 (アルファ版)
+        </h2>
+        <div class="sectionbody">
+          <div class="sect2">
+            <h3 id="_概要">概要</h3>
+            <div class="paragraph">
+              <p>Ver.3.0.0Alpha1を2021年1月16日にリリースしました。</p>
+            </div>
+            <div class="ulist">
+              <ul>
+                <li>
+                  <p>1/24に不足部分追記しました。</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sect2">
+            <h3 id="_主な修正事項">主な修正事項</h3>
+            <div class="sect3">
+              <h4 id="_ゲームバランス面">ゲームバランス面</h4>
+              <div class="ulist">
+                <ul>
+                  <li>
+                    <p>
+                      各種モンスターを調整 (
+                      <a href="https://osdn.net/projects/hengband/ticket/41042"
+                        >#41042</a
+                      >
+                      参照・詳細は後日まとめます)
+                    </p>
+                    <div class="ulist">
+                      <ul>
+                        <li>
+                          <p>
+                            デイドラDの経験値・ドロップアイテムを強さに応じて修正しました
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            インターネット・エクスプローダーの経験値と自爆打撃を修正しました
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            上位種属性コボルドのドロップ率
+                            (集団生成の1体当たり)を90%から60%に変更しました
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            開発チーム内での協議に基づき、『岩倉玲音』のパラメータを調整しました
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            泡シリーズの打撃性能を修正しました
+                            (下位種：打撃2回→1回、上位種：打撃3回→2回)
+                          </p>
+                        </li>
+                        <li>
+                          <p>鬼殺隊の名前ミスを修正しました</p>
+                        </li>
+                        <li>
+                          <p>
+                            チーターマン3兄弟の出現フロアを変更しました
+                            (長男：14→15F、次男：13→12F、三男：12→11F)
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            『パーサーナックス』の打撃が未入力だったので追加しました
+                            (ついでに出現フロアも45→55Fへ変更)
+                          </p>
+                        </li>
+                        <li>
+                          <p>『ミラーク』の二つ名を変更しました</p>
+                        </li>
+                        <li>
+                          <p>
+                            グレーター・ファルメル・スクルカーの出現階層を25F→33Fに変更しました
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            アイ・ホーン、『ハルコン』、ドラウグル・ワイトの経験値を修正しました
+                          </p>
+                        </li>
+                        <li>
+                          <p>『ペニーワイズ』のHPを120→1200に修正しました</p>
+                        </li>
+                        <li>
+                          <p>
+                            キューちゃんの経験値が『ビッグキューちゃん』と同一だったので修正しました
+                          </p>
+                        </li>
+                        <li>
+                          <p>『久遠』の出現階層を41→45Fに変更しました</p>
+                        </li>
+                        <li>
+                          <p>
+                            紅衣の修行僧の進化先を紅衣の上級修行僧に修正しました
+                          </p>
+                        </li>
+                        <li>
+                          <p>その他フレーバーテキストを変更しました</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sect3">
+              <h4 id="_インターフェース面">インターフェース面</h4>
+              <div class="ulist">
+                <ul>
+                  <li>
+                    <p>
+                      Alpha版のバージョン表記を変更(「3.0.0.1Alpha」から「3.0.0Alpha1」表記へ)
+                      (<a
+                        href="https://osdn.net/projects/hengband/ticket/41179/"
+                        >#41179</a
+                      >
+                      参照)
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sect3">
+              <h4 id="_ソースコード面">ソースコード面</h4>
+              <div class="ulist">
+                <ul>
+                  <li>
+                    <p>
+                      switch case文における意図しないfall throughを修正 (<a
+                        href="https://osdn.net/projects/hengband/ticket/40340/"
+                        >#40340</a
+                      >
+                      参照)
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sect3">
+              <h4 id="_不具合修正">不具合修正</h4>
+              <div class="ulist">
+                <ul>
+                  <li>
+                    <p>
+                      盗み逃げ打撃でモンスターが逃げない現象を修正 (<a
+                        href="https://osdn.net/projects/hengband/ticket/41132"
+                        >#41132</a
+                      >
+                      参照)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      たいまつ/ランタンの燃料が残り0でも光る不具合を修正 (<a
+                        href="https://osdn.net/projects/hengband/ticket/41140"
+                        >#41140</a
+                      >
+                      参照)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      反テレポート効果が無効になる不具合を治すため、teleport_player_aux()
+                      の引数順ミスを修正 (<a
+                        href="https://osdn.net/projects/hengband/ticket/41155"
+                        >#41155</a
+                      >
+                      参照)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      魔力充填の破壊判定後の分岐が逆になっていたために破壊が頻発していた不具合を修正.
+                      (<a href="https://osdn.net/projects/hengband/ticket/41157"
+                        >#41157</a
+                      >
+                      参照)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      アリーナの景品が意図しない内容になっていた不具合を修正（列挙子の設定ミスが原因）
+                      (<a href="https://osdn.net/projects/hengband/ticket/41162"
+                        >#41162</a
+                      >
+                      参照)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      ウィンドウフラグに装備を表示した状態で射撃武器を装備すると強制終了する不具合を修正.
+                      (<a href="https://osdn.net/projects/hengband/ticket/41173"
+                        >#41173</a
+                      >
+                      参照)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      モンスターの進化テーブル指定ミスでありえない進化先が設定されている事象.
+                      (<a href="https://osdn.net/projects/hengband/ticket/41165"
+                        >#41165</a
+                      >
+                      参照)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      ペットに攻撃される事象 (一時解決から恒久解決へ) (<a
+                        href="https://osdn.net/projects/hengband/ticket/40962"
+                        >#40962</a
+                      >
+                      参照)
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="sect2">
+            <h3 id="_謝辞">謝辞</h3>
+            <div class="ulist">
+              <ul>
+                <li>
+                  <p>
+                    主要開発スタッフとして以下の人にバグ修正、仕様変更に対処していただきました。
+                  </p>
+                  <div class="ulist">
+                    <ul>
+                      <li>
+                        <p>Hourier氏、Habu氏、iks氏</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <p>
+                    チケット、フォーラムなどで以下の方々にバグ報告、アイデアの提供をいただきました。
+                  </p>
+                  <div class="ulist">
+                    <ul>
+                      <li>
+                        <p>
+                          iyukyo氏、rryukkuriryu氏、oihagi氏、pike氏、77t氏、tanguband氏（短愚版怒の人）、meetname氏、zazaCS氏、しょうぴー氏、Miyamasa氏（変愚勝手版の人）、wareneko氏、NGDC氏
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="paragraph">
+              <p>
+                皆様、ありがとうございました。
+                (文責:Deskull・全て追いきれていない可能性がありますので他に修正や謝辞すべき方がありましたらお知らせください)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			<section id="title">
-				<img class="tama1" src="/image/tama.gif" alt="tama">
-				<img class="tama2" src="/image/tama.gif" alt="tama">
-				<img class="tama3" src="/image/tama.gif" alt="tama">
-				<img class="tama4" src="/image/tama.gif" alt="tama">
-				<img id="hengTitle" src="/image/hengband_title2021.png" alt="変愚蛮怒 Hengband">
-				<img class="tama4" src="/image/tama.gif" alt="tama">
-				<img class="tama3" src="/image/tama.gif" alt="tama">
-				<img class="tama2" src="/image/tama.gif" alt="tama">
-				<img class="tama1" src="/image/tama.gif" alt="tama">
-			</section>
+    <!--footer-->
+    <footer>
+      <section>
+        各ページへのリンクは御自由にどうぞ。/ Link Free.<br />
+        2021 Hengband Dev Team.
+        <a href="mailto:hengband-dev@lists.sourceforge.jp"
+          >hengband-dev@lists.sourceforge.jp</a
+        ><br />
+      </section>
 
-			<section id="mainMenu">
-				<a href="/index.html">トップ</a>
-				<a href="/download.html">ダウンロード</a>
-				<a href="/score.html">スコア</a>
-				<a href="/development.html">開発</a>
-				<a href="/lists.html">コミュニティ</a>
-				<a href="/history.html">バージョン履歴</a>
-				<a href="/link.html">関連リンク</a>
-				<a href="/jlicense.html">著作権表記</a>
-				<span>English (Coming Soon?)</span>
-			</section>
-
-		</header>
-
-
-		<div id="main">
-<!--main contents-->
-<div class="sect1">
-<h2 id="_2021年1月16日_ver_3_0_0alpha1_アルファ版">2021年1月16日 Ver.3.0.0Alpha1 (アルファ版)</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_概要">概要</h3>
-<div class="paragraph">
-<p>Ver.3.0.0Alpha1を2021年1月16日にリリースしました。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>1/24に不足部分追記しました。</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_主な修正事項">主な修正事項</h3>
-<div class="sect3">
-<h4 id="_ゲームバランス面">ゲームバランス面</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>各種モンスターを調整 ( <a href="https://osdn.net/projects/hengband/ticket/41042">#41042</a> 参照・詳細は後日まとめます)</p>
-<div class="ulist">
-<ul>
-<li>
-<p>デイドラDの経験値・ドロップアイテムを強さに応じて修正しました</p>
-</li>
-<li>
-<p>インターネット・エクスプローダーの経験値と自爆打撃を修正しました</p>
-</li>
-<li>
-<p>上位種属性コボルドのドロップ率 (集団生成の1体当たり)を90%から60%に変更しました</p>
-</li>
-<li>
-<p>開発チーム内での協議に基づき、『岩倉玲音』のパラメータを調整しました</p>
-</li>
-<li>
-<p>泡シリーズの打撃性能を修正しました (下位種：打撃2回→1回、上位種：打撃3回→2回)</p>
-</li>
-<li>
-<p>鬼殺隊の名前ミスを修正しました</p>
-</li>
-<li>
-<p>チーターマン3兄弟の出現フロアを変更しました (長男：14→15F、次男：13→12F、三男：12→11F)</p>
-</li>
-<li>
-<p>『パーサーナックス』の打撃が未入力だったので追加しました (ついでに出現フロアも45→55Fへ変更)</p>
-</li>
-<li>
-<p>『ミラーク』の二つ名を変更しました</p>
-</li>
-<li>
-<p>グレーター・ファルメル・スクルカーの出現階層を25F→33Fに変更しました</p>
-</li>
-<li>
-<p>アイ・ホーン、『ハルコン』、ドラウグル・ワイトの経験値を修正しました</p>
-</li>
-<li>
-<p>『ペニーワイズ』のHPを120→1200に修正しました</p>
-</li>
-<li>
-<p>キューちゃんの経験値が『ビッグキューちゃん』と同一だったので修正しました</p>
-</li>
-<li>
-<p>『久遠』の出現階層を41→45Fに変更しました</p>
-</li>
-<li>
-<p>紅衣の修行僧の進化先を紅衣の上級修行僧に修正しました</p>
-</li>
-<li>
-<p>その他フレーバーテキストを変更しました</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_インターフェース面">インターフェース面</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Alpha版のバージョン表記を変更(「3.0.0.1Alpha」から「3.0.0Alpha1」表記へ) (<a href="https://osdn.net/projects/hengband/ticket/41179/">#41179</a> 参照)</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_ソースコード面">ソースコード面</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>switch case文における意図しないfall throughを修正 (<a href="https://osdn.net/projects/hengband/ticket/40340/">#40340</a> 参照)</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_不具合修正">不具合修正</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>盗み逃げ打撃でモンスターが逃げない現象を修正 (<a href="https://osdn.net/projects/hengband/ticket/41132">#41132</a> 参照)</p>
-</li>
-<li>
-<p>たいまつ/ランタンの燃料が残り0でも光る不具合を修正 (<a href="https://osdn.net/projects/hengband/ticket/41140">#41140</a> 参照)</p>
-</li>
-<li>
-<p>反テレポート効果が無効になる不具合を治すため、teleport_player_aux() の引数順ミスを修正 (<a href="https://osdn.net/projects/hengband/ticket/41155">#41155</a> 参照)</p>
-</li>
-<li>
-<p>魔力充填の破壊判定後の分岐が逆になっていたために破壊が頻発していた不具合を修正. (<a href="https://osdn.net/projects/hengband/ticket/41157">#41157</a> 参照)</p>
-</li>
-<li>
-<p>アリーナの景品が意図しない内容になっていた不具合を修正（列挙子の設定ミスが原因） (<a href="https://osdn.net/projects/hengband/ticket/41162">#41162</a> 参照)</p>
-</li>
-<li>
-<p>ウィンドウフラグに装備を表示した状態で射撃武器を装備すると強制終了する不具合を修正. (<a href="https://osdn.net/projects/hengband/ticket/41173">#41173</a> 参照)</p>
-</li>
-<li>
-<p>モンスターの進化テーブル指定ミスでありえない進化先が設定されている事象. (<a href="https://osdn.net/projects/hengband/ticket/41165">#41165</a> 参照)</p>
-</li>
-<li>
-<p>ペットに攻撃される事象 (一時解決から恒久解決へ) (<a href="https://osdn.net/projects/hengband/ticket/40962">#40962</a> 参照)</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_謝辞">謝辞</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>主要開発スタッフとして以下の人にバグ修正、仕様変更に対処していただきました。</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Hourier氏、Habu氏、iks氏</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>チケット、フォーラムなどで以下の方々にバグ報告、アイデアの提供をいただきました。</p>
-<div class="ulist">
-<ul>
-<li>
-<p>iyukyo氏、rryukkuriryu氏、oihagi氏、pike氏、77t氏、tanguband氏（短愚版怒の人）、meetname氏、zazaCS氏、しょうぴー氏、Miyamasa氏（変愚勝手版の人）、wareneko氏、NGDC氏</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>皆様、ありがとうございました。
-(文責:Deskull・全て追いきれていない可能性がありますので他に修正や謝辞すべき方がありましたらお知らせください)</p>
-</div>
-</div>
-</div>
-</div>		</div>
-
-<!--footer-->
-		<footer>
-
-			<section>
-				各ページへのリンクは御自由にどうぞ。/ Link Free.<br>
-				2021 Hengband Dev Team. <a href="mailto:hengband-dev@lists.sourceforge.jp">hengband-dev@lists.sourceforge.jp</a><br>
-			</section>
-
-			<section>
-				Powered by <a href="https://osdn.net/" class="footer_banner">
-				<img src="//osdn.net/sflogo.php?group_id=541" border="0" alt="OSDN">
-				</a>
-			</section>
-
-		</footer>
-
-
-	</body>
-
+      <section>
+        Powered by
+        <a href="https://osdn.net/" class="footer_banner">
+          <img src="//osdn.net/sflogo.php?group_id=541" border="0" alt="OSDN" />
+        </a>
+      </section>
+    </footer>
+  </body>
 </html>
-
