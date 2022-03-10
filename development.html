@@ -1,246 +1,354 @@
 <!DOCTYPE html>
 
 <html lang="jp">
+  <!--head-->
+  <head>
+    <meta charset="utf-8" />
+    <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
+    <link rel="stylesheet" type="text/css" href="/hengband.css" />
+    <link rel="shortcut icon" href="/image/hangband.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/image/hengband_icon180.png"
+    />
+    <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
+    <title>変愚蛮怒 公式WEB</title>
+  </head>
 
-<!--head-->
-	<head>
-		<meta charset="utf-8"/>
-		<link rev=made href="mailto:hengband-dev@lists.sourceforge.jp">
-		<link rel="stylesheet" type="text/css" href="/hengband.css">
-		<link rel="shortcut icon" href="/image/hangband.ico">
-		<link rel="apple-touch-icon" sizes="180x180" href="/image/hengband_icon180.png">
-		<link rel="icon" type="image/png" href="/image/hengband_icon256.png">
-		<title>変愚蛮怒 公式WEB</title>
-	</head>
+  <body>
+    <!--header-->
+    <header>
+      <section id="title">
+        <img class="tama1" src="/image/tama.gif" alt="tama" />
+        <img class="tama2" src="/image/tama.gif" alt="tama" />
+        <img class="tama3" src="/image/tama.gif" alt="tama" />
+        <img class="tama4" src="/image/tama.gif" alt="tama" />
+        <img
+          id="hengTitle"
+          src="/image/hengband_title2021.png"
+          alt="変愚蛮怒 Hengband"
+        />
+        <img class="tama4" src="/image/tama.gif" alt="tama" />
+        <img class="tama3" src="/image/tama.gif" alt="tama" />
+        <img class="tama2" src="/image/tama.gif" alt="tama" />
+        <img class="tama1" src="/image/tama.gif" alt="tama" />
+      </section>
 
-	<body>
+      <section id="mainMenu">
+        <a href="/index.html">トップ</a>
+        <a href="/download.html">ダウンロード</a>
+        <a href="/score.html">スコア</a>
+        <a href="/development.html">開発</a>
+        <a href="/lists.html">コミュニティ</a>
+        <a href="/history.html">バージョン履歴</a>
+        <a href="/link.html">関連リンク</a>
+        <a href="/jlicense.html">著作権表記</a>
+        <span>English (Coming Soon?)</span>
+      </section>
+    </header>
 
-<!--header-->
-		<header>
+    <div id="main">
+      <!--main contents-->
+      <div class="sect1">
+        <h2 id="_現在の開発状況について">現在の開発状況について</h2>
+        <div class="sectionbody">
+          <div class="ulist">
+            <ul>
+              <li>
+                <p>
+                  現在3.0.0Alpha36のリリースまでを行いました。以下をお読みください。
+                </p>
+              </li>
+              <li>
+                <p>
+                  2021/02/07追記:
+                  現在開発環境をOSDNから漸次GitHubに移行する予定があります。詳細は追って更新しますのでご了承ください。
+                </p>
+              </li>
+              <li>
+                <p>
+                  2021/02/13追記:
+                  GitHubへの各リンク先を追加しました。当分は並列して利用していきます。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="sect1">
+        <h2 id="_開発に貢献したい方へ更新20210124">
+          開発に貢献したい方へ(更新…2021/01/24)
+        </h2>
+        <div class="sectionbody">
+          <div class="sect2">
+            <h3 id="_バグの報告をしたい">バグの報告をしたい</h3>
+            <div class="paragraph">
+              <p>3.0.0Alphaのリリースにつき、バグの報告は歓迎しております。</p>
+            </div>
+            <div class="ulist">
+              <ul>
+                <li>
+                  <p>
+                    開発者やプレイヤー他関係者への誹謗中傷や、開発の貢献にならない諸要素の書き込みはお控えください。
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    念の為不具合内容に重複がないか確認の上、報告いただけると幸いですが、あっても重複上による作業管理は開発側で行います。
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    数十時間のプレイ成果が失われるような多大かつ致命的なバグの場合は、即興でそれらを救済復帰するバージョンをアップすることも一応、想定しています。必要ならばご相談ください。
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="paragraph">
+              <p>以上を踏まえて、下記の形で報告ください。</p>
+            </div>
+            <div class="ulist">
+              <ul>
+                <li>
+                  <p>
+                    <a href="https://github.com/hengband/hengband/issues"
+                      >GitHubのIssue</a
+                    >に上げる。
+                  </p>
+                  <div class="ulist">
+                    <ul>
+                      <li>
+                        <p>
+                          2021年2月現在もっとも頻繁に拾い上げられる状態になっています。
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <p>
+                    <a href="https://osdn.net/projects/hengband/forums/37402/"
+                      >変愚蛮怒3.0.0Alpha開発フォーラム</a
+                    >に投稿
+                  </p>
+                  <div class="ulist">
+                    <ul>
+                      <li>
+                        <p>
+                          2021年の3.0.0.0Alphaリリースに伴い、フォーラムのスレッドをバージョン更新毎に切り替える方針にしています。
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          詳細な運用についてはまだ決めかねていますが、現状は不具合、要望一件ごとに新しくスレッドを作成していただいて結構です。
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          2021年2月以降のGitHub以降に伴い、将来閉鎖する可能性があります。ご了承下さい。
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <p>
+                    <span class="line-through"
+                      >OSDNのチケットに新しく課題を投稿</span
+                    >
+                    →
+                    OSDNでのチケット追加は今後無しとし、GitHubのIssueを代替をいたします。
+                  </p>
+                  <div class="ulist">
+                    <ul>
+                      <li>
+                        <p>
+                          <span class="line-through"
+                            >こちらに直接新しいチケットを作成していただくのも結構です。必要な検証セーブデータやスクリーンショットのアップも行うことができるのでより仔細な報告が可能でしょう。</span
+                          >
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span class="line-through"
+                            >OSDNのアカウントを取ってハンドルネームを取得していただければ、謝辞のリストに加えさせていただきます。</span
+                          >
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sect2">
+            <h3
+              id="_ゲーム中にモンスターやアイテムなどのアイデア新システムを持ち込みたい"
+            >
+              ゲーム中にモンスターやアイテムなどのアイデア、新システムを持ち込みたい
+            </h3>
+            <div class="paragraph">
+              <p>
+                変愚蛮怒はAngbandのトールキン的世界に、ゼラズニィやムアコック的な多元宇宙の
+                <span class="line-through">クッソ汚い掃き溜め</span>
+                混沌を加えたZangband的鉄獄の有様に愛着を持ち、常日頃からさらに拡張し続けたいと考えています。既に鉄獄にたむろす連中やその所産がもたらす争いに、さらに付け加えたいものがあるならば常にお待ちしています。
+              </p>
+            </div>
+            <div class="ulist">
+              <ul>
+                <li>
+                  <p>
+                    開発者各人のタスク量の問題や、極端にシステムやフレーバーに合わない場合など、
+                    <strong>必ず採用されるとは限りません。</strong>
+                    また採用されるとしても、現在アクティブな開発者の見解から、意図されない調整が行われる可能性があることはご了承ください。
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    単純なアイデアの提示でも結構ですが、/edit/内のテキストデータに即採用できるようなフォーマットでの提示をしていただくと、採用そのものも、持ち込みした人の意図に適った採用の可能性も高まります。
+                  </p>
+                  <div class="ulist">
+                    <ul>
+                      <li>
+                        <p>
+                          コーディング上の拡張を求めるものならば、実装のためのソースコードの寄稿もしていただくことを推奨します。ただし、2020年11月現在、一部のメンバーは相談と内容次第でそのような拡張にも取り組みたい意欲を示していますので、交渉してみるのもいいでしょう。
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          実際にテキストデータのフォーマット、作成方法、開発情報については同ファイル内に記述されていたり、開発者が個人ブログなどでまとめているものもありますが、散逸していたり、現在のバージョンとは異なる仕様となっているものも多くなっています。近日時間を見てまとめ直しや修正を考えていますのでお待ちください。
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="paragraph">
+              <p>持ち込みは現在以下で募集しています。</p>
+            </div>
+            <div class="ulist">
+              <ul>
+                <li>
+                  <p>
+                    <span class="line-through"
+                      ><a href="https://osdn.net/projects/hengband/ticket/37285"
+                        >チケット #37285 v3.0.0のモンスター追加/調整</a
+                      ></span
+                    >
+                  </p>
+                  <div class="ulist">
+                    <ul>
+                      <li>
+                        <p>
+                          モンスターについては3.0.0Alpha分は一度締め切りました。今後は
+                          <a
+                            href="https://osdn.net/projects/hengband/ticket/41042"
+                            >チケット #41042 Ver3.0.0Beta(仮)のモンスター追加</a
+                          >へお願いします。しばらくはAlpha下の調整を要するので当分対応は先になると思われますがご了承ください。
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <p>
+                    <span class="line-through"
+                      ><a href="https://osdn.net/projects/hengband/ticket/37324"
+                        >チケット #37324 v3.0.0のアイテム追加/調整</a
+                      ></span
+                    >
+                  </p>
+                  <div class="ulist">
+                    <ul>
+                      <li>
+                        <p>
+                          こちらも3.0.0Alphaへの導入は一度締め切りました。Ver3.0.0Beta(仮)用のチケットは再度作成しますが、その間までは上記のチケットでも一応お待ちします。ただしモンスター同様当分実装は先になると思われますのでご了承ください。
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <p>
+                    <span class="line-through"
+                      >これらの際、ソースコードの寄稿などが合わせて必要ならばOSDNアカウントを取りプルリクエストを行うことと合わせて開発メンバーにご相談ください。</span
+                    >
+                  </p>
+                  <div class="ulist">
+                    <ul>
+                      <li>
+                        <p>
+                          リモートリポジトリのGitHub以降に伴いプルリクエストは<a
+                            href="https://github.com/hengband/hengband/"
+                            >https://github.com/hengband/hengband/</a
+                          >からのフォークを通じてお願いします。
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sect2">
+            <h3 id="_いっそバリアントを作りたい">いっそバリアントを作りたい</h3>
+            <div class="paragraph">
+              <p>
+                オープンソース活動の繁栄の証左として大いに歓迎しております。現在具体的な協力を明示はできませんが、追々何か取り掛かりになるものを用意できないか検討しています。しばらくお待ちください。
+              </p>
+            </div>
+            <div class="paragraph">
+              <p>
+                GitHub移行に伴いフォークも簡単になった上に相互のプルリクエストも容易になりつつます。是非これを機に考えていただけば幸いです。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sect1">
+        <h2 id="_公式開発記事">公式開発記事</h2>
+        <div class="sectionbody">
+          <div class="ulist">
+            <ul>
+              <li>
+                <p>
+                  <a href="/development/development201110.html"
+                    >2020/11/10 Alpha版の経緯と意義──コード変更の軌跡</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="/development/development201103.html"
+                    >2020/11/03
+                    Alpha版の経緯と意義──大規模リファクタリングに伴うエンバグと暗黙の仕様変化の可能性</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			<section id="title">
-				<img class="tama1" src="/image/tama.gif" alt="tama">
-				<img class="tama2" src="/image/tama.gif" alt="tama">
-				<img class="tama3" src="/image/tama.gif" alt="tama">
-				<img class="tama4" src="/image/tama.gif" alt="tama">
-				<img id="hengTitle" src="/image/hengband_title2021.png" alt="変愚蛮怒 Hengband">
-				<img class="tama4" src="/image/tama.gif" alt="tama">
-				<img class="tama3" src="/image/tama.gif" alt="tama">
-				<img class="tama2" src="/image/tama.gif" alt="tama">
-				<img class="tama1" src="/image/tama.gif" alt="tama">
-			</section>
+    <!--footer-->
+    <footer>
+      <section>
+        各ページへのリンクは御自由にどうぞ。/ Link Free.<br />
+        2021 Hengband Dev Team.
+        <a href="mailto:hengband-dev@lists.sourceforge.jp"
+          >hengband-dev@lists.sourceforge.jp</a
+        ><br />
+      </section>
 
-			<section id="mainMenu">
-				<a href="/index.html">トップ</a>
-				<a href="/download.html">ダウンロード</a>
-				<a href="/score.html">スコア</a>
-				<a href="/development.html">開発</a>
-				<a href="/lists.html">コミュニティ</a>
-				<a href="/history.html">バージョン履歴</a>
-				<a href="/link.html">関連リンク</a>
-				<a href="/jlicense.html">著作権表記</a>
-				<span>English (Coming Soon?)</span>
-			</section>
-
-		</header>
-
-
-		<div id="main">
-<!--main contents-->
-<div class="sect1">
-<h2 id="_現在の開発状況について">現在の開発状況について</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>現在3.0.0Alpha36のリリースまでを行いました。以下をお読みください。</p>
-</li>
-<li>
-<p>2021/02/07追記: 現在開発環境をOSDNから漸次GitHubに移行する予定があります。詳細は追って更新しますのでご了承ください。</p>
-</li>
-<li>
-<p>2021/02/13追記: GitHubへの各リンク先を追加しました。当分は並列して利用していきます。</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_開発に貢献したい方へ更新20210124">開発に貢献したい方へ(更新…2021/01/24)</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_バグの報告をしたい">バグの報告をしたい</h3>
-<div class="paragraph">
-<p>3.0.0Alphaのリリースにつき、バグの報告は歓迎しております。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>開発者やプレイヤー他関係者への誹謗中傷や、開発の貢献にならない諸要素の書き込みはお控えください。</p>
-</li>
-<li>
-<p>念の為不具合内容に重複がないか確認の上、報告いただけると幸いですが、あっても重複上による作業管理は開発側で行います。</p>
-</li>
-<li>
-<p>数十時間のプレイ成果が失われるような多大かつ致命的なバグの場合は、即興でそれらを救済復帰するバージョンをアップすることも一応、想定しています。必要ならばご相談ください。</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>以上を踏まえて、下記の形で報告ください。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://github.com/hengband/hengband/issues">GitHubのIssue</a>に上げる。</p>
-<div class="ulist">
-<ul>
-<li>
-<p>2021年2月現在もっとも頻繁に拾い上げられる状態になっています。</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><a href="https://osdn.net/projects/hengband/forums/37402/">変愚蛮怒3.0.0Alpha開発フォーラム</a>に投稿</p>
-<div class="ulist">
-<ul>
-<li>
-<p>2021年の3.0.0.0Alphaリリースに伴い、フォーラムのスレッドをバージョン更新毎に切り替える方針にしています。</p>
-</li>
-<li>
-<p>詳細な運用についてはまだ決めかねていますが、現状は不具合、要望一件ごとに新しくスレッドを作成していただいて結構です。</p>
-</li>
-<li>
-<p>2021年2月以降のGitHub以降に伴い、将来閉鎖する可能性があります。ご了承下さい。</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><span class="line-through">OSDNのチケットに新しく課題を投稿</span> → OSDNでのチケット追加は今後無しとし、GitHubのIssueを代替をいたします。</p>
-<div class="ulist">
-<ul>
-<li>
-<p><span class="line-through">こちらに直接新しいチケットを作成していただくのも結構です。必要な検証セーブデータやスクリーンショットのアップも行うことができるのでより仔細な報告が可能でしょう。</span></p>
-</li>
-<li>
-<p><span class="line-through">OSDNのアカウントを取ってハンドルネームを取得していただければ、謝辞のリストに加えさせていただきます。</span></p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_ゲーム中にモンスターやアイテムなどのアイデア新システムを持ち込みたい">ゲーム中にモンスターやアイテムなどのアイデア、新システムを持ち込みたい</h3>
-<div class="paragraph">
-<p>変愚蛮怒はAngbandのトールキン的世界に、ゼラズニィやムアコック的な多元宇宙の <span class="line-through">クッソ汚い掃き溜め</span> 混沌を加えたZangband的鉄獄の有様に愛着を持ち、常日頃からさらに拡張し続けたいと考えています。既に鉄獄にたむろす連中やその所産がもたらす争いに、さらに付け加えたいものがあるならば常にお待ちしています。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>開発者各人のタスク量の問題や、極端にシステムやフレーバーに合わない場合など、 <strong>必ず採用されるとは限りません。</strong> また採用されるとしても、現在アクティブな開発者の見解から、意図されない調整が行われる可能性があることはご了承ください。</p>
-</li>
-<li>
-<p>単純なアイデアの提示でも結構ですが、/edit/内のテキストデータに即採用できるようなフォーマットでの提示をしていただくと、採用そのものも、持ち込みした人の意図に適った採用の可能性も高まります。</p>
-<div class="ulist">
-<ul>
-<li>
-<p>コーディング上の拡張を求めるものならば、実装のためのソースコードの寄稿もしていただくことを推奨します。ただし、2020年11月現在、一部のメンバーは相談と内容次第でそのような拡張にも取り組みたい意欲を示していますので、交渉してみるのもいいでしょう。</p>
-</li>
-<li>
-<p>実際にテキストデータのフォーマット、作成方法、開発情報については同ファイル内に記述されていたり、開発者が個人ブログなどでまとめているものもありますが、散逸していたり、現在のバージョンとは異なる仕様となっているものも多くなっています。近日時間を見てまとめ直しや修正を考えていますのでお待ちください。</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>持ち込みは現在以下で募集しています。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><span class="line-through"><a href="https://osdn.net/projects/hengband/ticket/37285">チケット #37285 v3.0.0のモンスター追加/調整</a></span></p>
-<div class="ulist">
-<ul>
-<li>
-<p>モンスターについては3.0.0Alpha分は一度締め切りました。今後は <a href="https://osdn.net/projects/hengband/ticket/41042">チケット #41042 Ver3.0.0Beta(仮)のモンスター追加</a>へお願いします。しばらくはAlpha下の調整を要するので当分対応は先になると思われますがご了承ください。</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><span class="line-through"><a href="https://osdn.net/projects/hengband/ticket/37324">チケット #37324 v3.0.0のアイテム追加/調整</a></span></p>
-<div class="ulist">
-<ul>
-<li>
-<p>こちらも3.0.0Alphaへの導入は一度締め切りました。Ver3.0.0Beta(仮)用のチケットは再度作成しますが、その間までは上記のチケットでも一応お待ちします。ただしモンスター同様当分実装は先になると思われますのでご了承ください。</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><span class="line-through">これらの際、ソースコードの寄稿などが合わせて必要ならばOSDNアカウントを取りプルリクエストを行うことと合わせて開発メンバーにご相談ください。</span></p>
-<div class="ulist">
-<ul>
-<li>
-<p>リモートリポジトリのGitHub以降に伴いプルリクエストは<a href="https://github.com/hengband/hengband/">https://github.com/hengband/hengband/</a>からのフォークを通じてお願いします。</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_いっそバリアントを作りたい">いっそバリアントを作りたい</h3>
-<div class="paragraph">
-<p>オープンソース活動の繁栄の証左として大いに歓迎しております。現在具体的な協力を明示はできませんが、追々何か取り掛かりになるものを用意できないか検討しています。しばらくお待ちください。</p>
-</div>
-<div class="paragraph">
-<p>GitHub移行に伴いフォークも簡単になった上に相互のプルリクエストも容易になりつつます。是非これを機に考えていただけば幸いです。</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_公式開発記事">公式開発記事</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="/development/development201110.html">2020/11/10 Alpha版の経緯と意義──コード変更の軌跡</a></p>
-</li>
-<li>
-<p><a href="/development/development201103.html">2020/11/03 Alpha版の経緯と意義──大規模リファクタリングに伴うエンバグと暗黙の仕様変化の可能性</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>		</div>
-
-<!--footer-->
-		<footer>
-
-			<section>
-				各ページへのリンクは御自由にどうぞ。/ Link Free.<br>
-				2021 Hengband Dev Team. <a href="mailto:hengband-dev@lists.sourceforge.jp">hengband-dev@lists.sourceforge.jp</a><br>
-			</section>
-
-			<section>
-				Powered by <a href="https://osdn.net/" class="footer_banner">
-				<img src="//osdn.net/sflogo.php?group_id=541" border="0" alt="OSDN">
-				</a>
-			</section>
-
-		</footer>
-
-
-	</body>
-
+      <section>
+        Powered by
+        <a href="https://osdn.net/" class="footer_banner">
+          <img src="//osdn.net/sflogo.php?group_id=541" border="0" alt="OSDN" />
+        </a>
+      </section>
+    </footer>
+  </body>
 </html>
-
