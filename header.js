@@ -28,7 +28,20 @@ new Vue({
       <a href="/link.html">関連リンク</a> \
       <a href="/jlicense.html">著作権表記</a> \
       <span>English (Coming Soon?)</span> \
-    </section></header>'
+    </section></header>',
+    footer: '<footer>\
+      <section>\
+        各ページへのリンクは御自由にどうぞ。/ Link Free.<br />\
+        2021 Hengband Dev Team.\
+        <a href="mailto:hengband-dev@lists.sourceforge.jp">hengband-dev@lists.sourceforge.jp</a><br />\
+      </section>\
+      <section>\
+        Powered by\
+        <a href="https://osdn.net/" class="footer_banner">\
+          <img src="//osdn.net/sflogo.php?group_id=541" border="0" alt="OSDN" />\
+        </a>\
+      </section>\
+    </footer>'
     }
   }
 });
