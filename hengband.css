@@ -34,6 +34,9 @@ body {
 	margin: 0 auto;
 }
 
+#app {
+	width: 100%;
+}
 /* ヘッダ/フッタ ////////////////////////////////////////////////// */
 
 header{
@@ -174,6 +177,7 @@ div#main
 	display: flex;
 	flex-direction: column;
 	flex: 1 0 auto;
+	margin: auto;
 }
 
 .paragraph > p
