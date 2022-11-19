@@ -1,52 +1,22 @@
 <!DOCTYPE html>
 
 <html lang="jp">
-  <!--head-->
-  <head>
-    <meta charset="utf-8" />
-    <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
-    <link rel="stylesheet" type="text/css" href="/hengband.css" />
-    <link rel="shortcut icon" href="/image/hangband.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/image/hengband_icon180.png"
-    />
-    <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
-    <title>変愚蛮怒 公式WEB</title>
-  </head>
+<!--head-->
 
-  <body>
-    <!--header-->
-    <header>
-      <section id="title">
-        <img class="tama1" src="/image/tama.gif" alt="tama" />
-        <img class="tama2" src="/image/tama.gif" alt="tama" />
-        <img class="tama3" src="/image/tama.gif" alt="tama" />
-        <img class="tama4" src="/image/tama.gif" alt="tama" />
-        <img
-          id="hengTitle"
-          src="/image/hengband_title2021.png"
-          alt="変愚蛮怒 Hengband"
-        />
-        <img class="tama4" src="/image/tama.gif" alt="tama" />
-        <img class="tama3" src="/image/tama.gif" alt="tama" />
-        <img class="tama2" src="/image/tama.gif" alt="tama" />
-        <img class="tama1" src="/image/tama.gif" alt="tama" />
-      </section>
+<head>
+  <meta charset="utf-8" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
+  <link rel="stylesheet" type="text/css" href="/hengband.css" />
+  <link rel="shortcut icon" href="/image/hangband.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/image/hengband_icon180.png" />
+  <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
+  <title>変愚蛮怒 公式WEB</title>
+</head>
 
-      <section id="mainMenu">
-        <a href="/index.html">トップ</a>
-        <a href="/download.html">ダウンロード</a>
-        <a href="/score.html">スコア</a>
-        <a href="/development.html">開発</a>
-        <a href="/lists.html">コミュニティ</a>
-        <a href="/history.html">バージョン履歴</a>
-        <a href="/link.html">関連リンク</a>
-        <a href="/jlicense.html">著作権表記</a>
-        <span>English (Coming Soon?)</span>
-      </section>
-    </header>
+<body>
+  <div id="app">
+    <div v-html="header"></div>
 
     <div id="main">
       <!--main contents-->
@@ -64,7 +34,8 @@
                     </li>
                   </ul>
                 </div>
-              </li>              <li>
+              </li>
+              <li>
                 <p>2022/11/14</p>
                 <div class="ulist">
                   <ul>
@@ -1851,22 +1822,9 @@
       </div>
     </div>
 
-    <!--footer-->
-    <footer>
-      <section>
-        各ページへのリンクは御自由にどうぞ。/ Link Free.<br />
-        2021 Hengband Dev Team.
-        <a href="mailto:hengband-dev@lists.sourceforge.jp"
-          >hengband-dev@lists.sourceforge.jp</a
-        ><br />
-      </section>
+    <div v-html="footer"></div>
+  </div>
+</body>
 
-      <section>
-        Powered by
-        <a href="https://osdn.net/" class="footer_banner">
-          <img src="//osdn.net/sflogo.php?group_id=541" border="0" alt="OSDN" />
-        </a>
-      </section>
-    </footer>
-  </body>
 </html>
+<script src="header.js"></script>
