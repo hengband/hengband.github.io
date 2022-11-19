@@ -1,52 +1,22 @@
 <!DOCTYPE html>
 
 <html lang="jp">
-  <!--head-->
-  <head>
-    <meta charset="utf-8" />
-    <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
-    <link rel="stylesheet" type="text/css" href="/hengband.css" />
-    <link rel="shortcut icon" href="/image/hangband.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/image/hengband_icon180.png"
-    />
-    <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
-    <title>変愚蛮怒 公式WEB</title>
-  </head>
+<!--head-->
 
-  <body>
-    <!--header-->
-    <header>
-      <section id="title">
-        <img class="tama1" src="/image/tama.gif" alt="tama" />
-        <img class="tama2" src="/image/tama.gif" alt="tama" />
-        <img class="tama3" src="/image/tama.gif" alt="tama" />
-        <img class="tama4" src="/image/tama.gif" alt="tama" />
-        <img
-          id="hengTitle"
-          src="/image/hengband_title2021.png"
-          alt="変愚蛮怒 Hengband"
-        />
-        <img class="tama4" src="/image/tama.gif" alt="tama" />
-        <img class="tama3" src="/image/tama.gif" alt="tama" />
-        <img class="tama2" src="/image/tama.gif" alt="tama" />
-        <img class="tama1" src="/image/tama.gif" alt="tama" />
-      </section>
+<head>
+  <meta charset="utf-8" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
+  <link rel="stylesheet" type="text/css" href="/hengband.css" />
+  <link rel="shortcut icon" href="/image/hangband.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/image/hengband_icon180.png" />
+  <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
+  <title>変愚蛮怒 公式WEB</title>
+</head>
 
-      <section id="mainMenu">
-        <a href="/index.html">トップ</a>
-        <a href="/download.html">ダウンロード</a>
-        <a href="/score.html">スコア</a>
-        <a href="/development.html">開発</a>
-        <a href="/lists.html">コミュニティ</a>
-        <a href="/history.html">バージョン履歴</a>
-        <a href="/link.html">関連リンク</a>
-        <a href="/jlicense.html">著作権表記</a>
-        <span>English (Coming Soon?)</span>
-      </section>
-    </header>
+<body>
+  <div id="app">
+    <div v-html="header"></div>
 
     <div id="main">
       <!--main contents-->
@@ -76,10 +46,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a
-                        href="https://www.chiark.greenend.org.uk/~sgtatham/bugs-jp.html"
-                        >効果的にバグを報告するには</a
-                      >
+                      <a href="https://www.chiark.greenend.org.uk/~sgtatham/bugs-jp.html">効果的にバグを報告するには</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -91,10 +58,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a
-                        href="http://mars.kmc.gr.jp/~dis/heng_wiki/?バグ報告をする前に"
-                        >バグ報告をする前に</a
-                      >
+                      <a href="http://mars.kmc.gr.jp/~dis/heng_wiki/?バグ報告をする前に">バグ報告をする前に</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -106,9 +70,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://sikabane-works.net/monzetsu_diary/"
-                        >屍公園悶絶日誌</a
-                      >
+                      <a href="http://sikabane-works.net/monzetsu_diary/">屍公園悶絶日誌</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -121,9 +83,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="https://hourier.livedoor.blog/"
-                        >ローグライク攻略＆開発雑記</a
-                      >
+                      <a href="https://hourier.livedoor.blog/">ローグライク攻略＆開発雑記</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -147,9 +107,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="https://rlbuild.herokuapp.com/"
-                        >ローグライク実験室</a
-                      >
+                      <a href="https://rlbuild.herokuapp.com/">ローグライク実験室</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -161,9 +119,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="https://backwardseric.github.io/hengband/"
-                        >Hengband Application for macOS</a
-                      >
+                      <a href="https://backwardseric.github.io/hengband/">Hengband Application for macOS</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -176,9 +132,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://tanguband.github.io/heng_mac.html"
-                        >http://tanguband.github.io/heng_mac.html</a
-                      >
+                      <a href="http://tanguband.github.io/heng_mac.html">http://tanguband.github.io/heng_mac.html</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -201,9 +155,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="https://jbbs.shitaraba.com/game/9358/"
-                        >＠の溜まり場II</a
-                      >
+                      <a href="https://jbbs.shitaraba.com/game/9358/">＠の溜まり場II</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -228,9 +180,7 @@
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
                       <a
-                        href="https://groups.google.com/forum/#!forum/rec.games.roguelike.angband"
-                        >rec.games.roguelike.angband</a
-                      >
+                        href="https://groups.google.com/forum/#!forum/rec.games.roguelike.angband">rec.games.roguelike.angband</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -242,9 +192,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://hccweb1.bai.ne.jp/pekokichi/"
-                        >不思議なホームページ</a
-                      >
+                      <a href="http://hccweb1.bai.ne.jp/pekokichi/">不思議なホームページ</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -269,9 +217,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://yozvox.web.fc2.com/526F677565.html"
-                        >Rogue</a
-                      >
+                      <a href="http://yozvox.web.fc2.com/526F677565.html">Rogue</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -283,9 +229,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="https://britzl.github.io/roguearchive/"
-                        >The roguelike archive</a
-                      >
+                      <a href="https://britzl.github.io/roguearchive/">The roguelike archive</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -297,10 +241,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a
-                        href="https://store.steampowered.com/app/1443430/Rogue/"
-                        >Rogue (Steam版)</a
-                      >
+                      <a href="https://store.steampowered.com/app/1443430/Rogue/">Rogue (Steam版)</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -312,9 +253,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://www.thangorodrim.net/"
-                        >Thangorodrim - The Angband Page</a
-                      >
+                      <a href="http://www.thangorodrim.net/">Thangorodrim - The Angband Page</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -338,9 +277,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="https://umoria.org/"
-                        >Umoria - a free roguelike video game</a
-                      >
+                      <a href="https://umoria.org/">Umoria - a free roguelike video game</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -352,9 +289,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://www.miyamasa.net/heng_th_katte.html"
-                        >変愚蛮怒の勝手版</a
-                      >
+                      <a href="http://www.miyamasa.net/heng_th_katte.html">変愚蛮怒の勝手版</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -428,9 +363,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="https://crawl.develz.org/"
-                        >Dungeon Crawl Stone Soup</a
-                      >
+                      <a href="https://crawl.develz.org/">Dungeon Crawl Stone Soup</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -443,9 +376,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://crawlj.osdn.jp/"
-                        >ぬるぽ堂 日本語版DungeonCrawl</a
-                      >
+                      <a href="http://crawlj.osdn.jp/">ぬるぽ堂 日本語版DungeonCrawl</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -458,9 +389,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://sakusha.s26.xrea.com/x/FHS/DC.html"
-                        >Dungeon Crawl 日本語版 (勝手にミラー)</a
-                      >
+                      <a href="http://sakusha.s26.xrea.com/x/FHS/DC.html">Dungeon Crawl 日本語版 (勝手にミラー)</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -498,9 +427,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="https://sourceforge.jp/projects/hengband/"
-                        >OSDN</a
-                      >
+                      <a href="https://sourceforge.jp/projects/hengband/">OSDN</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -524,9 +451,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="https://osdn.net/projects/xangband/"
-                        >XAngband(旧名:簡単愚蛮怒)</a
-                      >
+                      <a href="https://osdn.net/projects/xangband/">XAngband(旧名:簡単愚蛮怒)</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -550,9 +475,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://ironhell.sakura.ne.jp/angband/tome/"
-                        >日本語版 T.o.M.E.(旧名：PernAngband)</a
-                      >
+                      <a href="http://ironhell.sakura.ne.jp/angband/tome/">日本語版 T.o.M.E.(旧名：PernAngband)</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -565,9 +488,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://ironhell.sakura.ne.jp/angband/eyangband/"
-                        >日本語版 EyAngband</a
-                      >
+                      <a href="http://ironhell.sakura.ne.jp/angband/eyangband/">日本語版 EyAngband</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -580,9 +501,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://ironhell.sakura.ne.jp/angband/unangband/"
-                        >日本語版 UnAngband</a
-                      >
+                      <a href="http://ironhell.sakura.ne.jp/angband/unangband/">日本語版 UnAngband</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -595,9 +514,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://hengbandforosx.osdn.io/index.html.en"
-                        >Hengband Application for Mac OS X</a
-                      >
+                      <a href="http://hengbandforosx.osdn.io/index.html.en">Hengband Application for Mac OS X</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -621,9 +538,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://lousy.s53.xrea.com/"
-                        >latest lousy diary(旧「シラミ部屋」)</a
-                      >
+                      <a href="http://lousy.s53.xrea.com/">latest lousy diary(旧「シラミ部屋」)</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -635,9 +550,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://www.asahi-net.or.jp/~kh4s-smz/heng/"
-                        >変*愚蛮怒メモ</a
-                      >
+                      <a href="http://www.asahi-net.or.jp/~kh4s-smz/heng/">変*愚蛮怒メモ</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -649,9 +562,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://macband.s15.xrea.com/"
-                        >*band Fan Page(?)</a
-                      >
+                      <a href="http://macband.s15.xrea.com/">*band Fan Page(?)</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -674,9 +585,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://www.coins.tsukuba.ac.jp/~iks/rdl/"
-                        >Roguelike Diary Links 2</a
-                      >
+                      <a href="http://www.coins.tsukuba.ac.jp/~iks/rdl/">Roguelike Diary Links 2</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -694,18 +603,14 @@
                   <td class="tableblock halign-left valign-top">
                     <p class="tableblock">
                       初期から尽力して下さっている開発メンバーhabuさんの旧WEBページです。現在連絡を取るならば<a
-                        href="https://twitter.com/habu1010"
-                        >twitter</a
-                      >へどうぞ。
+                        href="https://twitter.com/habu1010">twitter</a>へどうぞ。
                     </p>
                   </td>
                 </tr>
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://www.kmc.gr.jp/~henkma/heng/index.html"
-                        >変愚蛮怒スポイラー</a
-                      >
+                      <a href="http://www.kmc.gr.jp/~henkma/heng/index.html">変愚蛮怒スポイラー</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -717,10 +622,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a
-                        href="http://plaza16.mbn.or.jp/~irisroom/jangband/jangband.html"
-                        >日本語版アングバンドの部屋</a
-                      >
+                      <a href="http://plaza16.mbn.or.jp/~irisroom/jangband/jangband.html">日本語版アングバンドの部屋</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -732,9 +634,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://panyara.hp.infoseek.co.jp/"
-                        >panyara&#8217;s Homepage</a
-                      >
+                      <a href="http://panyara.hp.infoseek.co.jp/">panyara&#8217;s Homepage</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -747,9 +647,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://isweb41.infoseek.co.jp/play/towisweb/"
-                        >変愚蛮怒 RPM パッケージ</a
-                      >
+                      <a href="http://isweb41.infoseek.co.jp/play/towisweb/">変愚蛮怒 RPM パッケージ</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -761,10 +659,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a
-                        href="http://felicity-web.hp.infoseek.co.jp/indax.shtml"
-                        >Closing the door</a
-                      >
+                      <a href="http://felicity-web.hp.infoseek.co.jp/indax.shtml">Closing the door</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -776,9 +671,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://www.boreas.dti.ne.jp/~xdd/index.html"
-                        >耐酸性のXDD</a
-                      >
+                      <a href="http://www.boreas.dti.ne.jp/~xdd/index.html">耐酸性のXDD</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -790,9 +683,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a href="http://web.sfc.keio.ac.jp/~alba/DB/"
-                        >*鑑定*の巻物</a
-                      >
+                      <a href="http://web.sfc.keio.ac.jp/~alba/DB/">*鑑定*の巻物</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -804,10 +695,7 @@
                 <tr>
                   <th class="tableblock halign-left valign-top">
                     <p class="tableblock">
-                      <a
-                        href="http://www.geocities.co.jp/SiliconValley-SanJose/9606/zg/index.html"
-                        >Zangband 日本語版ＨＱ</a
-                      >
+                      <a href="http://www.geocities.co.jp/SiliconValley-SanJose/9606/zg/index.html">Zangband 日本語版ＨＱ</a>
                     </p>
                   </th>
                   <td class="tableblock halign-left valign-top">
@@ -823,22 +711,9 @@
       </div>
     </div>
 
-    <!--footer-->
-    <footer>
-      <section>
-        各ページへのリンクは御自由にどうぞ。/ Link Free.<br />
-        2021 Hengband Dev Team.
-        <a href="mailto:hengband-dev@lists.sourceforge.jp"
-          >hengband-dev@lists.sourceforge.jp</a
-        ><br />
-      </section>
+    <div v-html="footer"></div>
+  </div>
+</body>
 
-      <section>
-        Powered by
-        <a href="https://osdn.net/" class="footer_banner">
-          <img src="//osdn.net/sflogo.php?group_id=541" border="0" alt="OSDN" />
-        </a>
-      </section>
-    </footer>
-  </body>
 </html>
+<script src="header.js"></script>

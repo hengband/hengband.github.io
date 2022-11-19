@@ -1,53 +1,21 @@
 <!DOCTYPE html>
 
 <html lang="jp">
-  <!--head-->
-  <head>
-    <meta charset="utf-8" />
-    <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
-    <link rel="stylesheet" type="text/css" href="/hengband.css" />
-    <link rel="shortcut icon" href="/image/hangband.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/image/hengband_icon180.png"
-    />
-    <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
-    <title>変愚蛮怒 公式WEB</title>
-  </head>
 
-  <body>
-    <!--header-->
-    <header>
-      <section id="title">
-        <img class="tama1" src="/image/tama.gif" alt="tama" />
-        <img class="tama2" src="/image/tama.gif" alt="tama" />
-        <img class="tama3" src="/image/tama.gif" alt="tama" />
-        <img class="tama4" src="/image/tama.gif" alt="tama" />
-        <img
-          id="hengTitle"
-          src="/image/hengband_title2021.png"
-          alt="変愚蛮怒 Hengband"
-        />
-        <img class="tama4" src="/image/tama.gif" alt="tama" />
-        <img class="tama3" src="/image/tama.gif" alt="tama" />
-        <img class="tama2" src="/image/tama.gif" alt="tama" />
-        <img class="tama1" src="/image/tama.gif" alt="tama" />
-      </section>
+<head>
+  <meta charset="utf-8" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
+  <link rel="stylesheet" type="text/css" href="/hengband.css" />
+  <link rel="shortcut icon" href="/image/hangband.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/image/hengband_icon180.png" />
+  <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
+  <title>変愚蛮怒 公式WEB</title>
+</head>
 
-      <section id="mainMenu">
-        <a href="/index.html">トップ</a>
-        <a href="/download.html">ダウンロード</a>
-        <a href="/score.html">スコア</a>
-        <a href="/development.html">開発</a>
-        <a href="/lists.html">コミュニティ</a>
-        <a href="/history.html">バージョン履歴</a>
-        <a href="/link.html">関連リンク</a>
-        <a href="/jlicense.html">著作権表記</a>
-        <span>English (Coming Soon?)</span>
-      </section>
-    </header>
-
+<body>
+  <div id="app">
+    <div v-html="header"></div>
     <div id="main">
       <!--main contents-->
       <div class="sect1">
@@ -63,7 +31,8 @@
               <li>
                 <p>
                   OSDNからGitHubへの移行は完全に完了しました。それに伴いOSDNへの案内は削除しました。まとまっていない部分が多いので近日さらに加筆したり、
-                  近々GitHubの<a href="https://github.com/hengband/hengband/wiki">Wiki</a>への統合を考えます。特に本格的に開発に参加したい方はこちらまずご覧ください。
+                  近々GitHubの<a
+                    href="https://github.com/hengband/hengband/wiki">Wiki</a>への統合を考えます。特に本格的に開発に参加したい方はこちらまずご覧ください。
                 </p>
               </li>
             </ul>
@@ -76,15 +45,14 @@
         </h2>
         <div class="sectionbody">
           <div class="sect2">
-            <h3
-              id="_とにかくソースに触ってみたい"
-            >
+            <h3 id="_とにかくソースに触ってみたい">
               とにかくソースに触ってみたい
             </h3>
             <div class="paragraph">
               <p><a href="https://github.com/hengband">GitHubサイトより</a>各々の手段でソースが得られます。<br>
-              サブモジュール導入など独自の事情について<a href="https://github.com/hengband/hengband/wiki/Git%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E9%81%8B%E7%94%A8%E8%A6%8F%E7%B4%84">Wiki</a>の当該ページにまとめていますので一度通読ください。
-            </p>
+                サブモジュール導入など独自の事情について<a
+                  href="https://github.com/hengband/hengband/wiki/Git%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E9%81%8B%E7%94%A8%E8%A6%8F%E7%B4%84">Wiki</a>の当該ページにまとめていますので一度通読ください。
+              </p>
             </div>
           </div>
           <div class="sect2">
@@ -114,20 +82,18 @@
             <div class="paragraph">
               <p>以上を踏まえて、<a href="https://github.com/hengband/hengband/issues">GitHubのIssue</a>に上げてください。</p>
             </div>
-                  <div class="ulist">
-                    <ul>
-                      <li>
-                        <p>
-                          上記リンクから先の「バグ報告」のテンプレートに従っていただけるとさらに幸いです。
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
+            <div class="ulist">
+              <ul>
+                <li>
+                  <p>
+                    上記リンクから先の「バグ報告」のテンプレートに従っていただけるとさらに幸いです。
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="sect2">
-            <h3
-              id="_ゲーム中にモンスターやアイテムなどのアイデア新システムを持ち込みたい"
-            >
+            <h3 id="_ゲーム中にモンスターやアイテムなどのアイデア新システムを持ち込みたい">
               ゲーム中にモンスターやアイテムなどのアイデア、新システムを持ち込みたい
             </h3>
             <div class="paragraph">
@@ -168,7 +134,8 @@
               </ul>
             </div>
             <div class="paragraph">
-              <p>以上を踏まえて、持ち込みは現在<a href="https://github.com/sikabane-works/bakabakaband/discussions">Discussions</a>で募集しています。</p>
+              <p>以上を踏まえて、持ち込みは現在<a
+                  href="https://github.com/sikabane-works/bakabakaband/discussions">Discussions</a>で募集しています。</p>
             </div>
           </div>
           <div class="sect2">
@@ -193,17 +160,13 @@
             <ul>
               <li>
                 <p>
-                  <a href="/development/development201110.html"
-                    >2020/11/10 Alpha版の経緯と意義──コード変更の軌跡</a
-                  >
+                  <a href="/development/development201110.html">2020/11/10 Alpha版の経緯と意義──コード変更の軌跡</a>
                 </p>
               </li>
               <li>
                 <p>
-                  <a href="/development/development201103.html"
-                    >2020/11/03
-                    Alpha版の経緯と意義──大規模リファクタリングに伴うエンバグと暗黙の仕様変化の可能性</a
-                  >
+                  <a href="/development/development201103.html">2020/11/03
+                    Alpha版の経緯と意義──大規模リファクタリングに伴うエンバグと暗黙の仕様変化の可能性</a>
                 </p>
               </li>
             </ul>
@@ -212,22 +175,9 @@
       </div>
     </div>
 
-    <!--footer-->
-    <footer>
-      <section>
-        各ページへのリンクは御自由にどうぞ。/ Link Free.<br />
-        2021 Hengband Dev Team.
-        <a href="mailto:hengband-dev@lists.sourceforge.jp"
-          >hengband-dev@lists.sourceforge.jp</a
-        ><br />
-      </section>
+    <div v-html="footer"></div>
+  </div>
+</body>
 
-      <section>
-        Powered by
-        <a href="https://osdn.net/" class="footer_banner">
-          <img src="//osdn.net/sflogo.php?group_id=541" border="0" alt="OSDN" />
-        </a>
-      </section>
-    </footer>
-  </body>
 </html>
+<script src="header.js"></script>

@@ -1,54 +1,22 @@
 <!DOCTYPE html>
 
 <html lang="jp">
-  <!--head-->
+<!--head-->
 
-  <head>
-    <meta charset="utf-8" />
-    <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
-    <link rel="stylesheet" type="text/css" href="/hengband.css" />
-    <link rel="shortcut icon" href="/image/hangband.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/image/hengband_icon180.png"
-    />
-    <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
-    <title>変愚蛮怒 公式WEB</title>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
+  <link rel="stylesheet" type="text/css" href="/hengband.css" />
+  <link rel="shortcut icon" href="/image/hangband.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/image/hengband_icon180.png" />
+  <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
+  <title>変愚蛮怒 公式WEB</title>
+</head>
 
-  <body>
-    <!--header-->
-    <header>
-      <section id="title">
-        <img class="tama1" src="/image/tama.gif" alt="tama" />
-        <img class="tama2" src="/image/tama.gif" alt="tama" />
-        <img class="tama3" src="/image/tama.gif" alt="tama" />
-        <img class="tama4" src="/image/tama.gif" alt="tama" />
-        <img
-          id="hengTitle"
-          src="/image/hengband_title2021.png"
-          alt="変愚蛮怒 Hengband"
-        />
-        <img class="tama4" src="/image/tama.gif" alt="tama" />
-        <img class="tama3" src="/image/tama.gif" alt="tama" />
-        <img class="tama2" src="/image/tama.gif" alt="tama" />
-        <img class="tama1" src="/image/tama.gif" alt="tama" />
-      </section>
-
-      <section id="mainMenu">
-        <a href="/index.html">トップ</a>
-        <a href="/download.html">ダウンロード</a>
-        <a href="/score.html">スコア</a>
-        <a href="/development.html">開発</a>
-        <a href="/lists.html">コミュニティ</a>
-        <a href="/history.html">バージョン履歴</a>
-        <a href="/link.html">関連リンク</a>
-        <a href="/jlicense.html">著作権表記</a>
-        <span>English (Coming Soon?)</span>
-      </section>
-    </header>
-
+<body>
+  <div id="app">
+    <div v-html="header"></div>
     <div id="main">
       <!--main contents-->
       <div class="sect1">
@@ -64,25 +32,18 @@
               <li>
                 <p>
                   何かすぐに確認したい質問、要望などがありましたらDiscussionの<a
-                    href="https://github.com/hengband/hengband/discussions/356"
-                    >開発への質問はこちらまで</a
-                  >へどうぞ。
+                    href="https://github.com/hengband/hengband/discussions/356">開発への質問はこちらまで</a>へどうぞ。
                 </p>
               </li>
               <li>
                 <p>
                   正式なバグ報告などはGitHubのIssueとして<a
-                    href="https://github.com/hengband/hengband/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md&amp;title=%E3%80%90%E3%83%90%E3%82%B0%E3%80%91+%E3%83%90%E3%82%B0%E5%A0%B1%E5%91%8A%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%82%92%E7%B7%A8%E9%9B%86"
-                    >このテンプレート</a
-                  >を用いてよろしくお願いします
+                    href="https://github.com/hengband/hengband/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md&amp;title=%E3%80%90%E3%83%90%E3%82%B0%E3%80%91+%E3%83%90%E3%82%B0%E5%A0%B1%E5%91%8A%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%82%92%E7%B7%A8%E9%9B%86">このテンプレート</a>を用いてよろしくお願いします
                 </p>
               </li>
               <li>
                 <p>
-                  またコミュニティとしてはDiscordの<a
-                    href="https://discord.gg/fGNt7WeDFQ"
-                    >#ぐりっどばぐ</a
-                  >が現在一番活発です。
+                  またコミュニティとしてはDiscordの<a href="https://discord.gg/fGNt7WeDFQ">#ぐりっどばぐ</a>が現在一番活発です。
                 </p>
               </li>
             </ul>
@@ -117,10 +78,7 @@
             </div>
             <div class="paragraph">
               <p>
-                リリースノートは<a
-                  href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha71"
-                  >こちら</a
-                >です。
+                リリースノートは<a href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha71">こちら</a>です。
               </p>
             </div>
             <div class="ulist">
@@ -128,33 +86,25 @@
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha71/Hengband-3.0.0Alpha71-jp.zip"
-                      >3.0.0Alpha71 Windows(日本語版)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha71/Hengband-3.0.0Alpha71-jp.zip">3.0.0Alpha71
+                      Windows(日本語版)</a>
                   </p>
                 </li>
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha71/Hengband-3.0.0Alpha71-en.zip"
-                      >3.0.0Alpha71 Windows(English Version)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha71/Hengband-3.0.0Alpha71-en.zip">3.0.0Alpha71
+                      Windows(English Version)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha71.zip"
-                      >ソース(zip)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha71.zip">ソース(zip)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha71.tar.gz"
-                      >ソース(tar.gz)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha71.tar.gz">ソース(tar.gz)</a>
                   </p>
                 </li>
               </ul>
@@ -173,10 +123,7 @@
             </div>
             <div class="paragraph">
               <p>
-                リリースノートは<a
-                  href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha70"
-                  >こちら</a
-                >です。
+                リリースノートは<a href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha70">こちら</a>です。
               </p>
             </div>
             <div class="ulist">
@@ -184,33 +131,25 @@
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha70/Hengband-3.0.0Alpha70-jp.zip"
-                      >3.0.0Alpha70 Windows(日本語版)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha70/Hengband-3.0.0Alpha70-jp.zip">3.0.0Alpha70
+                      Windows(日本語版)</a>
                   </p>
                 </li>
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha70/Hengband-3.0.0Alpha70-en.zip"
-                      >3.0.0Alpha70 Windows(English Version)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha70/Hengband-3.0.0Alpha70-en.zip">3.0.0Alpha70
+                      Windows(English Version)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha70.zip"
-                      >ソース(zip)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha70.zip">ソース(zip)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha70.tar.gz"
-                      >ソース(tar.gz)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha70.tar.gz">ソース(tar.gz)</a>
                   </p>
                 </li>
               </ul>
@@ -228,10 +167,7 @@
             </div>
             <div class="paragraph">
               <p>
-                リリースノートは<a
-                  href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha69"
-                  >こちら</a
-                >です。
+                リリースノートは<a href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha69">こちら</a>です。
               </p>
             </div>
             <div class="ulist">
@@ -239,33 +175,25 @@
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha69/Hengband-3.0.0Alpha69-jp.zip"
-                      >3.0.0Alpha69 Windows(日本語版)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha69/Hengband-3.0.0Alpha69-jp.zip">3.0.0Alpha69
+                      Windows(日本語版)</a>
                   </p>
                 </li>
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha69/Hengband-3.0.0Alpha69-en.zip"
-                      >3.0.0Alpha69 Windows(English Version)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha69/Hengband-3.0.0Alpha69-en.zip">3.0.0Alpha69
+                      Windows(English Version)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha69.zip"
-                      >ソース(zip)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha69.zip">ソース(zip)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha69.tar.gz"
-                      >ソース(tar.gz)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha69.tar.gz">ソース(tar.gz)</a>
                   </p>
                 </li>
               </ul>
@@ -283,10 +211,7 @@
             </div>
             <div class="paragraph">
               <p>
-                リリースノートは<a
-                  href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha68"
-                  >こちら</a
-                >です。
+                リリースノートは<a href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha68">こちら</a>です。
               </p>
             </div>
             <div class="ulist">
@@ -294,33 +219,25 @@
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha68/Hengband-3.0.0Alpha68-jp.zip"
-                      >3.0.0Alpha68 Windows(日本語版)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha68/Hengband-3.0.0Alpha68-jp.zip">3.0.0Alpha68
+                      Windows(日本語版)</a>
                   </p>
                 </li>
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha68/Hengband-3.0.0Alpha68-en.zip"
-                      >3.0.0Alpha68 Windows(English Version)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha68/Hengband-3.0.0Alpha68-en.zip">3.0.0Alpha68
+                      Windows(English Version)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha68.zip"
-                      >ソース(zip)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha68.zip">ソース(zip)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha68.tar.gz"
-                      >ソース(tar.gz)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha68.tar.gz">ソース(tar.gz)</a>
                   </p>
                 </li>
               </ul>
@@ -338,10 +255,7 @@
             </div>
             <div class="paragraph">
               <p>
-                リリースノートは<a
-                  href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha67"
-                  >こちら</a
-                >です。
+                リリースノートは<a href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha67">こちら</a>です。
               </p>
             </div>
             <div class="ulist">
@@ -349,33 +263,25 @@
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha67/Hengband-3.0.0Alpha67-jp.zip"
-                      >3.0.0Alpha67 Windows(日本語版)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha67/Hengband-3.0.0Alpha67-jp.zip">3.0.0Alpha67
+                      Windows(日本語版)</a>
                   </p>
                 </li>
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha67/Hengband-3.0.0Alpha67-en.zip"
-                      >3.0.0Alpha67 Windows(English Version)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha67/Hengband-3.0.0Alpha67-en.zip">3.0.0Alpha67
+                      Windows(English Version)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha67.zip"
-                      >ソース(zip)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha67.zip">ソース(zip)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha67.tar.gz"
-                      >ソース(tar.gz)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha67.tar.gz">ソース(tar.gz)</a>
                   </p>
                 </li>
               </ul>
@@ -393,10 +299,7 @@
             </div>
             <div class="paragraph">
               <p>
-                リリースノートは<a
-                  href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha66"
-                  >こちら</a
-                >です。
+                リリースノートは<a href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha66">こちら</a>です。
               </p>
             </div>
             <div class="ulist">
@@ -404,33 +307,25 @@
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha66/Hengband-3.0.0Alpha66-jp.zip"
-                      >3.0.0Alpha66 Windows(日本語版)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha66/Hengband-3.0.0Alpha66-jp.zip">3.0.0Alpha66
+                      Windows(日本語版)</a>
                   </p>
                 </li>
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha66/Hengband-3.0.0Alpha66-en.zip"
-                      >3.0.0Alpha66 Windows(English Version)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha66/Hengband-3.0.0Alpha66-en.zip">3.0.0Alpha66
+                      Windows(English Version)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha66.zip"
-                      >ソース(zip)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha66.zip">ソース(zip)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha66.tar.gz"
-                      >ソース(tar.gz)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha66.tar.gz">ソース(tar.gz)</a>
                   </p>
                 </li>
               </ul>
@@ -448,10 +343,7 @@
             </div>
             <div class="paragraph">
               <p>
-                リリースノートは<a
-                  href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha65"
-                  >こちら</a
-                >です。
+                リリースノートは<a href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha65">こちら</a>です。
               </p>
             </div>
             <div class="ulist">
@@ -459,33 +351,25 @@
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha65/Hengband-3.0.0Alpha65-jp.zip"
-                      >3.0.0Alpha65 Windows(日本語版)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha65/Hengband-3.0.0Alpha65-jp.zip">3.0.0Alpha65
+                      Windows(日本語版)</a>
                   </p>
                 </li>
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha65/Hengband-3.0.0Alpha65-en.zip"
-                      >3.0.0Alpha65 Windows(English Version)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha65/Hengband-3.0.0Alpha65-en.zip">3.0.0Alpha65
+                      Windows(English Version)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha65.zip"
-                      >ソース(zip)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha65.zip">ソース(zip)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha65.tar.gz"
-                      >ソース(tar.gz)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha65.tar.gz">ソース(tar.gz)</a>
                   </p>
                 </li>
               </ul>
@@ -514,10 +398,7 @@
             </div>
             <div class="paragraph">
               <p>
-                リリースノートは<a
-                  href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha64"
-                  >こちら</a
-                >です。
+                リリースノートは<a href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha64">こちら</a>です。
               </p>
             </div>
             <div class="ulist">
@@ -525,33 +406,25 @@
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha64/Hengband-3.0.0Alpha64-jp.zip"
-                      >3.0.0Alpha64 Windows(日本語版)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha64/Hengband-3.0.0Alpha64-jp.zip">3.0.0Alpha64
+                      Windows(日本語版)</a>
                   </p>
                 </li>
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha64/Hengband-3.0.0Alpha64-en.zip"
-                      >3.0.0Alpha64 Windows(English Version)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha64/Hengband-3.0.0Alpha64-en.zip">3.0.0Alpha64
+                      Windows(English Version)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha64.zip"
-                      >ソース(zip)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha64.zip">ソース(zip)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha64.tar.gz"
-                      >ソース(tar.gz)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha64.tar.gz">ソース(tar.gz)</a>
                   </p>
                 </li>
               </ul>
@@ -580,10 +453,7 @@
             </div>
             <div class="paragraph">
               <p>
-                リリースノートは<a
-                  href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha63"
-                  >こちら</a
-                >です。
+                リリースノートは<a href="https://github.com/hengband/hengband/releases/tag/3.0.0Alpha63">こちら</a>です。
               </p>
             </div>
             <div class="ulist">
@@ -591,33 +461,25 @@
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha63/Hengband-3.0.0Alpha63-jp.zip"
-                      >3.0.0Alpha63 Windows(日本語版)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha63/Hengband-3.0.0Alpha63-jp.zip">3.0.0Alpha63
+                      Windows(日本語版)</a>
                   </p>
                 </li>
                 <li>
                   <p>
                     <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha63/Hengband-3.0.0Alpha63-en.zip"
-                      >3.0.0Alpha63 Windows(English Version)</a
-                    >
+                      href="https://github.com/hengband/hengband/releases/download/3.0.0Alpha63/Hengband-3.0.0Alpha63-en.zip">3.0.0Alpha63
+                      Windows(English Version)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha63.zip"
-                      >ソース(zip)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha63.zip">ソース(zip)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/3.0.0Alpha63.tar.gz"
-                      >ソース(tar.gz)</a
-                    >
+                    <a href="https://github.com/hengband/hengband/archive/3.0.0Alpha63.tar.gz">ソース(tar.gz)</a>
                   </p>
                 </li>
               </ul>
@@ -658,22 +520,10 @@
       </div>
     </div>
 
-    <!--footer-->
-    <footer>
-      <section>
-        各ページへのリンクは御自由にどうぞ。/ Link Free.<br />
-        2021 Hengband Dev Team.
-        <a href="mailto:hengband-dev@lists.sourceforge.jp"
-          >hengband-dev@lists.sourceforge.jp</a
-        ><br />
-      </section>
+    <div v-html="footer"></div>
+  </div>
 
-      <section>
-        Powered by
-        <a href="https://osdn.net/" class="footer_banner">
-          <img src="//osdn.net/sflogo.php?group_id=541" border="0" alt="OSDN" />
-        </a>
-      </section>
-    </footer>
-  </body>
+</body>
+
 </html>
+<script src="header.js"></script>
