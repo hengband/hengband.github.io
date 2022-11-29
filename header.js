@@ -1,7 +1,9 @@
+
 new Vue({
     el: "#app",
   data: function() {
     return {
+    text: "aaaa",
 	  header: '<header>\
 <section id="title"> \
       <img class="tama1" src="/image/tama.gif" alt="tama" /> \
@@ -42,6 +44,18 @@ new Vue({
         </a>\
       </section>\
     </footer>'
+    }
+  },
+  computed: {
+    markedTest() {
+      var self = this;
+      axios.get("/md/web_update.md")
+      .then(function (response) {
+        self.text = response.data;
+      })
+      .catch(function (error) {
+      });
+      return marked.parse(self.text, {});
     }
   }
 });
