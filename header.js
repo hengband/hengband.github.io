@@ -29,14 +29,13 @@ new Vue({
       <a href="/history.html">バージョン履歴</a> \
       <a href="/link.html">関連リンク</a> \
       <a href="/jlicense.html">著作権表記</a> \
-      <span>English (Coming Soon?)</span> \
     </section></header>',
     footer: '<footer>\
       <section>\
         各ページへのリンクは御自由にどうぞ。/ Link Free.<br />\
         2022 Hengband Dev Team.\
       </section>\
-    </footer>'
+    <section>Sorry, English documentation is under construction.</section></footer>'
     }
   },
   computed: {
