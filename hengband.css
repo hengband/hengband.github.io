@@ -141,6 +141,9 @@ section#mainMenu
 
 section#mainMenu > a {
 	position: relative;
+}
+
+section#mainMenu > a, .menu-button {
 	display: inline-block;
 	padding: 0.25em 0.5em;
 	text-decoration: none;
