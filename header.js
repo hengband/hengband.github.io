@@ -33,7 +33,7 @@ new Vue({
     footer: '<footer>\
       <section>\
         各ページへのリンクは御自由にどうぞ。/ Link Free.<br />\
-        2022 Hengband Dev Team.\
+        2023 Hengband Dev Team.\
       </section>\
     <section>Sorry, English documentation is under construction.</section></footer>'
     }

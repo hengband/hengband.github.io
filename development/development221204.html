@@ -1,171 +1,177 @@
 <!DOCTYPE html>
 
 <html lang="jp">
-  <!--head-->
-  <head>
-    <meta charset="utf-8" />
-    <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
-    <link rel="stylesheet" type="text/css" href="/hengband.css" />
-    <link rel="shortcut icon" href="/image/hangband.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/image/hengband_icon180.png"
-    />
-    <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
-    <title>変愚蛮怒 公式WEB</title>
-  </head>
+<!--head-->
 
-  <body>
-    <!--header-->
-    <header>
-      <section id="title">
-        <img class="tama1" src="/image/tama.gif" alt="tama" />
-        <img class="tama2" src="/image/tama.gif" alt="tama" />
-        <img class="tama3" src="/image/tama.gif" alt="tama" />
-        <img class="tama4" src="/image/tama.gif" alt="tama" />
-        <img
-          id="hengTitle"
-          src="/image/hengband_title2021.png"
-          alt="変愚蛮怒 Hengband"
-        />
-        <img class="tama4" src="/image/tama.gif" alt="tama" />
-        <img class="tama3" src="/image/tama.gif" alt="tama" />
-        <img class="tama2" src="/image/tama.gif" alt="tama" />
-        <img class="tama1" src="/image/tama.gif" alt="tama" />
-      </section>
+<head>
+  <meta charset="utf-8" />
+  <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
+  <link rel="stylesheet" type="text/css" href="/hengband.css" />
+  <link rel="shortcut icon" href="/image/hangband.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/image/hengband_icon180.png" />
+  <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
+  <title>変愚蛮怒 公式WEB</title>
+</head>
 
-      <section id="mainMenu">
-        <a href="/index.html">トップ</a>
-        <a href="/download.html">ダウンロード</a>
-        <a href="/score.html">スコア</a>
-        <a href="/development.html">開発</a>
-        <a href="/lists.html">コミュニティ</a>
-        <a href="/history.html">バージョン履歴</a>
-        <a href="/link.html">関連リンク</a>
-        <a href="/jlicense.html">著作権表記</a>
-      </section>
-    </header>
+<body>
+  <!--header-->
+  <header>
+    <section id="title">
+      <img class="tama1" src="/image/tama.gif" alt="tama" />
+      <img class="tama2" src="/image/tama.gif" alt="tama" />
+      <img class="tama3" src="/image/tama.gif" alt="tama" />
+      <img class="tama4" src="/image/tama.gif" alt="tama" />
+      <img id="hengTitle" src="/image/hengband_title2021.png" alt="変愚蛮怒 Hengband" />
+      <img class="tama4" src="/image/tama.gif" alt="tama" />
+      <img class="tama3" src="/image/tama.gif" alt="tama" />
+      <img class="tama2" src="/image/tama.gif" alt="tama" />
+      <img class="tama1" src="/image/tama.gif" alt="tama" />
+    </section>
 
-    <div id="main">
-      <!--main contents-->
-      <div class="sect1">
-        <h2>
-          変愚蛮怒のコントリビュータになろう
-        </h2>
-        <div>
-          2022/12/04 Deskull
+    <section id="mainMenu">
+      <a href="/index.html">トップ</a>
+      <a href="/download.html">ダウンロード</a>
+      <a href="/score.html">スコア</a>
+      <a href="/development.html">開発</a>
+      <a href="/lists.html">コミュニティ</a>
+      <a href="/history.html">バージョン履歴</a>
+      <a href="/link.html">関連リンク</a>
+      <a href="/jlicense.html">著作権表記</a>
+    </section>
+  </header>
+
+  <div id="main">
+    <!--main contents-->
+    <div class="sect1">
+      <h2>
+        変愚蛮怒のコントリビュータになろう
+      </h2>
+      <div>
+        2022/12/04 Deskull
+      </div>
+      <a href="/development.html" class="menu-button">戻る</a>
+
+      <h3>
+        最初に　～現在の変愚蛮怒～
+      </h3>
+      <div class="sectionbody">
+        <div class="paragraph">
+          <p>
+            ※本文は少々乱文気味です。後日追記します。
+          </p>
+          <p>
+            本記事は<a href="https://adventar.org/calendars/7815">Roguelike Advent Calendar
+              2022</a>の三日目の記事を兼ねつつ、変愚公式より記事とさせていただきます。<br>
+            内容としてタイトル通り、ローグライクのプレイでなく、開発を行う側、特にある程度C/C++とGitHubサービスの利用もご存じの人前提となります。ご了承ください。
+          </p>
+        </div>
+        <div class="paragraph">
+          <p>
+            ここ約2年、惰性で公式Webを放っておいて、変愚蛮怒のAlpha版更新や個人的には2021年エイプリルフールのネタにもさせてもらった<a
+              href="https://sikabane-works.github.io/bakabakaband/">アレ</a>なバリアントの製作を重ねておりました。Deskullでございます。<br>
+            予てより開発の進捗確認からの定期リリース広報などは私の仕事でありましたが、2021年2月から<a
+              href="https://ja.osdn.net/projects/hengband/">OSDN</a>からGitHubへの公式の移管を進めている間にも本ページ自体は
+            長らく放置して、つい最近まで<a href="https://github.com/hengband/hengband.github.io/pull/86/files">OSDNのロゴまでそのままでした。</a>
+            怠慢そのものであります。最近になって慌ててvue.jsなど導入して今時のWebに機能面強化しようと思っています。ゆるして。
+          </p>
+        </div>
+        <div class="paragraph">
+          <p>
+            変愚本体の進捗はというとどうでしょう。とうに3.0.0の正式版か、せめてBeta版にでも進めばいいものをどうしてAlphaで留まっているのは何故かなといえば、
+            これは相変わらず、*bandバリアントの定めです。Angband2.7の頃より煮詰めたる「秘伝のソース」をどうにかしようと特に頑張っているために中々進みません。<br>
+            新しいネタを導入したい、しかしその導入するには過去の絶望な保守性のコードを克服しないと先に進めない、という点については大体現状のスタッフ
+            全員が暗黙にも公然にも了解するところとなっておりまして、Discordの「#変愚蛮怒開発」チャンネルでは日々、これは20～30年越しの今となってはC++では
+            こうだろう、いや、そもそも20～30年前のCの水準でも普通はここで構造体、共用体使うもんだったよな、グローバル変数渡しもマジックナンバーも糞だよ糞！みたいな話がまだ浮かんでおります。<br>
+            一方でどこかでキリ良く、コード上の既存の改変より新要素の追加を重点に置いたBetaへの移行もさっさとすべきではないかとの意見、考えもありまして、
+            この辺りは私Deskullの裁量でいい加減に〆切を定めたいところであります。<br>
+          </p>
+        </div>
+        <h3>
+          可視化とはいいものだ
+        </h3>
+        <div class="paragraph">
+          <p>
+            その辺りについてはまたDiscordなどで引き続き相談しながら、定めたいところなのではありますが本題はこれです。<br>
+            <a href="https://github.com/hengband/hengband/graphs/contributors?from=2014-02-09&to=2022-12-04&type=c">contributor
+              to hengband/hengband</a>
+            <img src="contribute.png"><br>
+            本日2022年12月4日時点の変愚GitHubページより見えるコントリビュータの一覧が以下の通り、各人何コミット、何行コードを追加修正やってきたかが一目瞭然となるわけで。<br>
+            コミット数順に並べると一位はHourier氏、リファクタリングの実働部分大半が彼の功績です。<br>
+            二位backwardsEric氏にはGithubに移行して以来、疾風のように現れて、当時からクッソいい加減だった和訳の指摘、Linux系ビルドで発生した問題などを随所細かに指摘いただいた結果のこの順位です。<br>
+            三位habu氏はおなじみ混沌の覇者やっていただいている変愚初期からの開発勢。Github上の自動テストなどの継続的インテグレーションの構築、ソースの改善をどうすべきか、C++17/20といった最新の規格をどう扱うべきか等、技術的なリーダーシップを今も取ってもらっています。<br>
+            <span
+              class="line-through">私Deskullの立場どこ……ここ……？</span>その他、過去であっても、２、３度程度のソース寄稿であってもGithubはきっちり記録を残してくれています。これらの人々に感謝しつつ、素晴らしい提案をしよう。<br>
+          </p>
+        </div>
+        <div class="paragraph">
+          <p>
+            お前もコントリビュータにならないか？
+          </p>
+        </div>
+        <h3>
+          コントリビュータになるまでのとっかかり方
+        </h3>
+        <div class="paragraph">
+          <p>
+            申し訳ない、時間がないので丁寧な手順については今回は略します。<br>
+            まずやっていただくことは、Githubでオープンソース運用をする際のセオリー通りです。自身のGithubアカウントを取り、変愚蛮怒のマスターリポジトリからフォークをしましょう。<br>
+            自身のクライアントで開発するためにgitの導入は不可欠です。WindowsならばVisualStudio、LinuxならばGCCビルド環境を準備し、gitでcloneをかけてクライアントにリポジトリを作成すればまず開発環境はOKです。<br>
+          </p>
+        </div>
+        <div class="paragraph">
+          <p>
+            具体的に何に貢献してもらうには、大きく分けて三つあるでしょう。
+          <ul>
+            <li>何か新規にゲーム上のアイデアを思いついて、その具体的な改変をプルリクエストする。</li>
+            <ul>
+              <li>これについては事前に<a href="https://github.com/hengband/hengband/issues">Discussion</a>や独自に<a
+                  href="https://github.com/hengband/hengband/discussions">Issue</a>で提案してもらう必要があります（そうでないと、現在の指針に合わない場合は却下される可能性大です）
+              </li>
+            </ul>
+            <li>発見した明白なバグ、不自然な挙動を指摘するため<a
+                href="https://github.com/hengband/hengband/issues/new?assignees=&labels=bug&template=bug_report.md&title=%E3%80%90%E3%83%90%E3%82%B0%E3%80%91+%E3%83%90%E3%82%B0%E5%A0%B1%E5%91%8A%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%82%92%E7%B7%A8%E9%9B%86">Issueに報告を上げた上</a>で、その修正案をプルリクエストする。
+            </li>
+            <ul>
+              <li>これについては、以前からバグ報告を求めている上にその修正まで行うのですから、開発陣としてはほぼ手放しで喜んで受け入れるケースが大です。ぜひよろしくお願いします。</li>
+            </ul>
+            <li>既存の課題となっているIssueから、自分が解決出来そうなものを見つけて、その修正、改善内容をプルリクエストする。</li>
+            <ul>
+              <li>これも常に喉から手が出るほど欲しい人出ですので、概ね歓迎されます。特に自信がないけどとにかく何か直してみたい、という場合は、Issueの中でも<a
+                  href="https://github.com/hengband/hengband/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">good
+                  first issue</a>のついたものが特に取り掛かりよく始めてもらえると思います。</li>
+            </ul>
+          </ul>
+          いずれにせよ、これらを行ってもらう際には、後述するテストに旨く通過してもらうためにもコーディング規約や開発指針に従ってもらう必要があります。
+          先に<a href="https://github.com/hengband/hengband/wiki">Wikiの各種記事をご覧になってください。</a>
+          </p>
+        </div>
+        <div class="paragraph">
+          <p>
+            以上を済ませてマスターリポジトリにプルリクエストを行えば、GitHub内で自動テスト、及び開発スタッフ内でのレビューが行われます。
+          </p>
+          <img src="test.png"><br>
+          <img src="review.png"><br>
+          <p>
+            レビューが通ってマージが行われれば、晴れてコントリビュータの一員です。ありがとうございます！
+          </p>
         </div>
         <a href="/development.html" class="menu-button">戻る</a>
-  
-        <h3>
-          最初に　～現在の変愚蛮怒～
-        </h3>
-        <div class="sectionbody">
-          <div class="paragraph">
-            <p>
-※本文は少々乱文気味です。後日追記します。
-            </p>
-            <p>
-本記事は<a href="https://adventar.org/calendars/7815">Roguelike Advent Calendar 2022</a>の三日目の記事を兼ねつつ、変愚公式より記事とさせていただきます。<br>
-内容としてタイトル通り、ローグライクのプレイでなく、開発を行う側、特にある程度C/C++とGitHubサービスの利用もご存じの人前提となります。ご了承ください。
-            </p>
-          </div>
-          <div class="paragraph">
-            <p>
-ここ約2年、惰性で公式Webを放っておいて、変愚蛮怒のAlpha版更新や個人的には2021年エイプリルフールのネタにもさせてもらった<a href="https://sikabane-works.github.io/bakabakaband/">アレ</a>なバリアントの製作を重ねておりました。Deskullでございます。<br>
-予てより開発の進捗確認からの定期リリース広報などは私の仕事でありましたが、2021年2月から<a href="https://ja.osdn.net/projects/hengband/">OSDN</a>からGitHubへの公式の移管を進めている間にも本ページ自体は
-長らく放置して、つい最近まで<a href="https://github.com/hengband/hengband.github.io/pull/86/files">OSDNのロゴまでそのままでした。</a>
-怠慢そのものであります。最近になって慌ててvue.jsなど導入して今時のWebに機能面強化しようと思っています。ゆるして。
-            </p>
-          </div>
-          <div class="paragraph">
-            <p>
-変愚本体の進捗はというとどうでしょう。とうに3.0.0の正式版か、せめてBeta版にでも進めばいいものをどうしてAlphaで留まっているのは何故かなといえば、
-これは相変わらず、*bandバリアントの定めです。Angband2.7の頃より煮詰めたる「秘伝のソース」をどうにかしようと特に頑張っているために中々進みません。<br>
-新しいネタを導入したい、しかしその導入するには過去の絶望な保守性のコードを克服しないと先に進めない、という点については大体現状のスタッフ
-全員が暗黙にも公然にも了解するところとなっておりまして、Discordの「#変愚蛮怒開発」チャンネルでは日々、これは20～30年越しの今となってはC++では
-こうだろう、いや、そもそも20～30年前のCの水準でも普通はここで構造体、共用体使うもんだったよな、グローバル変数渡しもマジックナンバーも糞だよ糞！みたいな話がまだ浮かんでおります。<br>
-一方でどこかでキリ良く、コード上の既存の改変より新要素の追加を重点に置いたBetaへの移行もさっさとすべきではないかとの意見、考えもありまして、
-この辺りは私Deskullの裁量でいい加減に〆切を定めたいところであります。<br>
-</p>
-          </div>
-          <h3>
-            可視化とはいいものだ
-          </h3>
-          <div class="paragraph">
-            <p>
-その辺りについてはまたDiscordなどで引き続き相談しながら、定めたいところなのではありますが本題はこれです。<br>
-<a href="https://github.com/hengband/hengband/graphs/contributors?from=2014-02-09&to=2022-12-04&type=c">contributor to hengband/hengband</a>
-<img src="contribute.png"><br>
-本日2022年12月4日時点の変愚GitHubページより見えるコントリビュータの一覧が以下の通り、各人何コミット、何行コードを追加修正やってきたかが一目瞭然となるわけで。<br>
-コミット数順に並べると一位はHourier氏、リファクタリングの実働部分大半が彼の功績です。<br>
-二位backwardsEric氏にはGithubに移行して以来、疾風のように現れて、当時からクッソいい加減だった和訳の指摘、Linux系ビルドで発生した問題などを随所細かに指摘いただいた結果のこの順位です。<br>
-三位habu氏はおなじみ混沌の覇者やっていただいている変愚初期からの開発勢。Github上の自動テストなどの継続的インテグレーションの構築、ソースの改善をどうすべきか、C++17/20といった最新の規格をどう扱うべきか等、技術的なリーダーシップを今も取ってもらっています。<br>
-<span class="line-through">私Deskullの立場どこ……ここ……？</span>その他、過去であっても、２、３度程度のソース寄稿であってもGithubはきっちり記録を残してくれています。これらの人々に感謝しつつ、素晴らしい提案をしよう。<br>
-            </p>
-          </div>
-          <div class="paragraph">
-            <p>
-お前もコントリビュータにならないか？
-            </p>
-          </div>
-          <h3>
-            コントリビュータになるまでのとっかかり方
-          </h3>
-          <div class="paragraph">
-            <p>
-申し訳ない、時間がないので丁寧な手順については今回は略します。<br>
-まずやっていただくことは、Githubでオープンソース運用をする際のセオリー通りです。自身のGithubアカウントを取り、変愚蛮怒のマスターリポジトリからフォークをしましょう。<br>
-自身のクライアントで開発するためにgitの導入は不可欠です。WindowsならばVisualStudio、LinuxならばGCCビルド環境を準備し、gitでcloneをかけてクライアントにリポジトリを作成すればまず開発環境はOKです。<br>
-            </p>
-          </div>
-          <div class="paragraph">
-            <p>
-具体的に何に貢献してもらうには、大きく分けて三つあるでしょう。
-<ul>
-  <li>何か新規にゲーム上のアイデアを思いついて、その具体的な改変をプルリクエストする。</li>
-  <ul>
-    <li>これについては事前に<a href="https://github.com/hengband/hengband/issues">Discussion</a>や独自に<a href="https://github.com/hengband/hengband/discussions">Issue</a>で提案してもらう必要があります（そうでないと、現在の指針に合わない場合は却下される可能性大です）</li>
-  </ul>
-  <li>発見した明白なバグ、不自然な挙動を指摘するため<a href="https://github.com/hengband/hengband/issues/new?assignees=&labels=bug&template=bug_report.md&title=%E3%80%90%E3%83%90%E3%82%B0%E3%80%91+%E3%83%90%E3%82%B0%E5%A0%B1%E5%91%8A%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%82%92%E7%B7%A8%E9%9B%86">Issueに報告を上げた上</a>で、その修正案をプルリクエストする。</li>
-  <ul>
-    <li>これについては、以前からバグ報告を求めている上にその修正まで行うのですから、開発陣としてはほぼ手放しで喜んで受け入れるケースが大です。ぜひよろしくお願いします。</li>
-  </ul>
-  <li>既存の課題となっているIssueから、自分が解決出来そうなものを見つけて、その修正、改善内容をプルリクエストする。</li>
-  <ul>
-    <li>これも常に喉から手が出るほど欲しい人出ですので、概ね歓迎されます。特に自信がないけどとにかく何か直してみたい、という場合は、Issueの中でも<a href="https://github.com/hengband/hengband/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">good first issue</a>のついたものが特に取り掛かりよく始めてもらえると思います。</li>
-  </ul>
-</ul>
-いずれにせよ、これらを行ってもらう際には、後述するテストに旨く通過してもらうためにもコーディング規約や開発指針に従ってもらう必要があります。
-先に<a href="https://github.com/hengband/hengband/wiki">Wikiの各種記事をご覧になってください。</a>
-            </p>
-          </div>
-          <div class="paragraph">
-            <p>
-以上を済ませてマスターリポジトリにプルリクエストを行えば、GitHub内で自動テスト、及び開発スタッフ内でのレビューが行われます。
-            </p>
-            <img src="test.png"><br>
-            <img src="review.png"><br>
-            <p>
-レビューが通ってマージが行われれば、晴れてコントリビュータの一員です。ありがとうございます！
-            </p>  
-          </div>
-          <a href="/development.html" class="menu-button">戻る</a>
-        </div>
       </div>
     </div>
+  </div>
 
 
 
 
-    <!--footer-->
-    <footer>
-      <section>
-        各ページへのリンクは御自由にどうぞ。/ Link Free.<br />
-        2022 Hengband Dev Team.
-      </section>
+  <!--footer-->
+  <footer>
+    <section>
+      各ページへのリンクは御自由にどうぞ。/ Link Free.<br />
+      2023 Hengband Dev Team.
+    </section>
     <section>Sorry, English documentation is under construction.
-</section></footer>
-  </body>
+    </section>
+  </footer>
+</body>
+
 </html>
