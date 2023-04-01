@@ -1,24 +1,8 @@
-*,
-*:after,
-*:before {
-	box-sizing: border-box;
-}
-
-a:link {
-	color: #E09990;
-}
-
-a:visited {
-	color: #C09990;
-}
-
-a:active {
-	color: #F0DDDD;
-}
-
-a:hover {
-	color: #F0DDDD;
-}
+*, *:after, *:before { box-sizing: border-box; }
+a:link 		{ color: #E09990;}
+a:visited	{ color: #C09990;}
+a:active	{ color: #F0DDDD;}
+a:hover		{ color: #F0DDDD;}
 
 body {
 	min-height: 100vh;
@@ -34,12 +18,12 @@ body {
 	padding: 0px;
 	border: 0px;
 	margin: 0px;
-	font-family: "メイリオ", "Meiryo", Osaka, "ヒラギノ角ゴ Pro W3", Arial, Helvetica, sans-serif;
+	font-family:"メイリオ","Meiryo",Osaka, "ヒラギノ角ゴ Pro W3", Arial, Helvetica, sans-serif;
 	font-size: 1.0rem;
 	line-height: 1.2rem;
 }
 
-#wrapper {
+#wrapper{
 	background-color: #000000;
 	min-width: 400px;
 	max-width: 800px;
@@ -53,20 +37,20 @@ body {
 #app {
 	width: 100%;
 }
-
 /* ヘッダ/フッタ ////////////////////////////////////////////////// */
 
 header {
-	background-color: #000000;
+	background-color : #000000;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	position: fixed;
-	left: 0;
-	top: 0;
+    left: 0;
+    top: 0;
 }
 
-footer {
+footer
+{
 	background-color: #000000;
 	padding: 1rem 1rem;
 
@@ -76,11 +60,12 @@ footer {
 	width: 100%;
 
 	position: fixed;
-	bottom: 0;
-	left: 0;
+    bottom: 0;
+    left: 0;
 }
 
-footer>section {
+footer > section
+{
 	font-size: 70%;
 	line-height: 100%;
 }
@@ -88,13 +73,14 @@ footer>section {
 
 /* タイトル系統 ////////////////////////////////////////////////// */
 
-section#title {
+section#title
+{
 	width: 60vw;
 	max-width: 50rem;
 	min-height: 4rem;
 	max-height: 8rem;
-	margin-right: auto;
-	margin-left: auto;
+	margin-right : auto;
+	margin-left  : auto;
 
 	display: flex;
 	justify-content: space-around;
@@ -102,32 +88,37 @@ section#title {
 	align-items: flex-end;
 }
 
-img#hengTitle {
+img#hengTitle
+{
 	width: auto;
 	height: 12vh;
 	min-height: 4rem;
 	max-height: 8rem;
 }
 
-img.tama4 {
+img.tama4
+{
 	height: 10vh;
 	min-height: 4rem;
 	max-height: 8rem;
 }
 
-img.tama3 {
+img.tama3
+{
 	height: 5vh;
 	min-height: 2rem;
 	max-height: 4rem;
 }
 
-img.tama2 {
+img.tama2
+{
 	height: 2.5vh;
 	min-height: 1rem;
 	max-height: 2rem;
 }
 
-img.tama1 {
+img.tama1
+{
 	height: 1.25vh;
 	min-height: 0.5rem;
 	max-height: 1rem;
@@ -137,9 +128,10 @@ img.tama1 {
 
 /* メインメニュー系統 ////////////////////////////////////////////////// */
 
-section#mainMenu {
-	margin-right: auto;
-	margin-left: auto;
+section#mainMenu
+{
+	margin-right : auto;
+	margin-left  : auto;
 	background-color: #000000;
 
 	justify-content: center;
@@ -147,25 +139,23 @@ section#mainMenu {
 	display: flex;
 }
 
-section#mainMenu>a {
+section#mainMenu > a {
 	position: relative;
 }
 
-section#mainMenu>a,
-.menu-button {
+section#mainMenu > a, .menu-button {
 	display: inline-block;
 	padding: 0.25em 0.5em;
 	text-decoration: none;
 	background: #302010;
 	color: #FFFFFF;
 	border-radius: 0.3vw;
-	box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
 	font-weight: bold;
-	border: solid 2px #d27d00;
-	/*線色*/
+	border: solid 2px #d27d00;/*線色*/
 }
 
-section#mainMenu>span {
+section#mainMenu > span {
 	position: relative;
 	display: inline-block;
 	padding: 0.25em 0.5em;
@@ -173,13 +163,13 @@ section#mainMenu>span {
 	color: #908080;
 	background: #442200;
 	border-radius: 0.3vw;
-	box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
 	font-weight: bold;
-	border: solid 2px #d27d00;
-	/*線色*/
+	border: solid 2px #d27d00;/*線色*/
 }
 
-section#mainMenu>a:hover {
+section#mainMenu > a:hover
+{
 	background: #A06535;
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
 }
@@ -187,7 +177,8 @@ section#mainMenu>a:hover {
 
 /* 本文系統 ////////////////////////////////////////////////// */
 
-div#main {
+div#main
+{
 	font-size: 0.85rem;
 	line-height: 1.25rem;
 	width: 70%;
@@ -199,23 +190,26 @@ div#main {
 	margin: 10rem auto;
 }
 
-.paragraph>p {
+.paragraph > p
+{
 	margin: 1rem 1.5rem;
 	padding: 0.2rem 0.2rem;
 }
 
-li>p {
-	margin: 0rem;
-	;
+li > p
+{
+	margin: 0rem;;
 	padding: 0.2rem 0.2rem;
 }
 
-.ulist {
+.ulist
+{
 	margin: 0.1rem 0.1rem;
 	padding: 0.1rem 0.1rem;
 }
 
-.content {
+.content
+{
 	padding: 0.5rem;
 	margin: 1rem;
 	display: flex;
@@ -226,19 +220,19 @@ li>p {
 	align-items: center;
 }
 
-.update {
+.update{
 	text-align: center;
 	padding: 6px;
-	margin: 30px 5px;
+	margin:  30px 5px;
 }
 
-ul {
+ul{
 	border: 0px;
 	margin: 0px 1.6rem;
 	padding: 0px;
 }
 
-li {
+li{
 	margin: 0px 1.0rem;
 	padding: 0px;
 }
@@ -248,11 +242,7 @@ li {
 	padding: 10px;
 }
 
-.illust {
-	width: 50vw;
-}
-
-h2 {
+h2{
 	padding: 1.1rem;
 	margin: 1.5rem 0 0.7rem 0;
 	border: 0.5rem #775540 solid;
@@ -260,7 +250,7 @@ h2 {
 	border-radius: 0.8rem;
 }
 
-h3 {
+h3{
 	padding: 0.7rem;
 	margin: 0.6rem;
 	border: 0.3rem #554433 solid;
@@ -268,7 +258,7 @@ h3 {
 	background-color: #100800;
 }
 
-h4 {
+h4{
 	padding: 0.5rem;
 	margin: 0.5rem 1.0rem;
 	border: 0.2rem #332010 solid;
@@ -276,23 +266,27 @@ h4 {
 	background-color: #201000;
 }
 
-.strong {
+.strong
+{
 	font-weight: bold;
 }
 
-.line-through {
+.line-through
+{
 	text-decoration: line-through;
 }
 
 
 /* common footer */
 
-.footer_banner {
+.footer_banner
+{
 	float: right;
 }
 
 
-.topimage {
+.topimage
+{
 	border: 3px #554433 solid;
 	text-align: center;
 }
@@ -331,12 +325,14 @@ pre {
 	box-shadow: 0.4rem 0.4rem 0.15rem rgba(0, 0, 0, 0.9), 0.02rem 0.1rem 2.2rem rgba(255, 255, 255, 0.4);
 }
 
-.button>img {
+.button > img
+{
 	width: auto;
 	max-height: 4.0rem;
 }
 
-.button>span {
+.button > span
+{
 	font-size: 200%;
 	color: #000000;
 }
@@ -348,3 +344,4 @@ pre {
 	margin: 1rem;
 	padding: 1rem;
 }
+
