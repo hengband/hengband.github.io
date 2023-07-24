@@ -49,7 +49,30 @@
             </div>
           </div>
           <div class="sect2">
-            <h3 id="_unixlinux版の導入方法">UNIX/Linux版の導入方法</h3>
+            <h3 id="_unixlinux版の導入方法(Fedora,RedHat系)">UNIX/Linux版の導入方法(Fedora,RedHat系)</h3>
+            <div class="paragraph">
+              <p><a href="https://copr.fedorainfracloud.org/coprs/">Fedora Copr</a>を使ってパッケージが配布されています。パッケージマネージャとしてdnfが使える場合、</p>
+            </div>
+            <div class="listingblock">
+              <div class="content">
+                <pre>
+sudo dnf copr enable whitehara/hengband
+sudo dnf install hengband</pre>
+              </div>
+            </div>
+            <div class="paragraph">
+              <p>と実行すれば、インストールできます。新バージョンが登録された場合、</p>
+            </div>
+            <div class="listingblock">
+              <div class="content">
+                <pre>
+sudo dnf update hengband</pre>
+              </div>
+            </div>
+            <div class="paragraph">
+              <p>と実行すれば、最新版にアップデートされます。詳細は<a href="https://copr.fedorainfracloud.org/coprs/whitehara/hengband/">Fedora Coprのhengband配布ページ</a>もご確認ください。</p>
+            </div>
+            <h3 id="_unixlinux版の導入方法">UNIX/Linux版の導入方法(Fedora,RedHat系以外)</h3>
             <div class="paragraph">
               <p>ソースをダウンロードします。そして、</p>
             </div>
