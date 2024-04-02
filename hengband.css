@@ -242,7 +242,12 @@ li{
 	padding: 10px;
 }
 
+h1{
+	font-size: 1.3rem;
+}
+
 h2{
+	font-size: 1.2rem;
 	padding: 1.1rem;
 	margin: 1.5rem 0 0.7rem 0;
 	border: 0.5rem #775540 solid;
@@ -251,6 +256,7 @@ h2{
 }
 
 h3{
+	font-size: 1.0rem;
 	padding: 0.7rem;
 	margin: 0.6rem;
 	border: 0.3rem #554433 solid;

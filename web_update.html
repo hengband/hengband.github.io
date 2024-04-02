@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 
 <html lang="jp">
-<!--head-->
+  <!--head-->
 
-<head>
-  <meta charset="utf-8" />
-  <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-  <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
-  <link rel="stylesheet" type="text/css" href="/hengband.css" />
-  <link rel="shortcut icon" href="/image/hangband.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/image/hengband_icon180.png" />
-  <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
-  <title>変愚蛮怒 公式WEB</title>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      <link
+      rev="made"
+      href="mailto:hengband-dev@lists.sourceforge.jp"
+    />
+    <link rel="stylesheet" type="text/css" href="/hengband.css" />
+    <link rel="shortcut icon" href="/image/hangband.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/image/hengband_icon180.png"
+    />
+    <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
+    <title>変愚蛮怒 公式WEB</title>
+  </head>
 
-<body>
-  <div id="app">
-    <div v-html="header"></div>
+  <body>
+    <div id="app">
+      <div v-html="header"></div>
 
-    <div id="main">
-      <!--main contents-->
-      <div class="sect1">
-
-        <h2 id="_web更新履歴">WEB更新履歴</h2>
-        <div v-html="markedTest"></div>
+      <div id="main">
+        <!--main contents-->
+        <div class="sect1">
+          <h2 id="_web更新履歴">WEB更新履歴</h2>
+          <div v-html="markedTest"></div>
+        </div>
       </div>
+
+      <div v-html="footer"></div>
     </div>
-
-    <div v-html="footer"></div>
-  </div>
-</body>
-
+  </body>
 </html>
 <script src="header.js"></script>
