@@ -1,112 +1,142 @@
 <!DOCTYPE html>
 
 <html lang="jp">
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      <link
+      rev="made"
+      href="mailto:hengband-dev@lists.sourceforge.jp"
+    />
+    <link rel="stylesheet" type="text/css" href="/hengband.css" />
+    <link rel="shortcut icon" href="/image/hangband.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/image/hengband_icon180.png"
+    />
+    <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
+    <title>変愚蛮怒 公式WEB</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-  <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
-  <link rel="stylesheet" type="text/css" href="/hengband.css" />
-  <link rel="shortcut icon" href="/image/hangband.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/image/hengband_icon180.png" />
-  <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
-  <title>変愚蛮怒 公式WEB</title>
-</head>
+  <body>
+    <div id="app">
+      <div v-html="header"></div>
 
-<body>
-  <div id="app">
-    <div v-html="header"></div>
-
-    <div id="main">
-      <!--main contents-->
-      <div class="sect1">
-        <h2 id="_コミュニティ">コミュニティ</h2>
-        <div class="sectionbody">
-          <div class="paragraph">
-            <p>
-              変愚蛮怒の補足、関連コンテンツ、意見交換の場などを紹介します。
-            </p>
-          </div>
-          <div class="sect2">
-            <h3 id="_スポイラー攻略wiki">スポイラー・攻略Wiki</h3>
-            <div class="ulist">
-              <ul>
-                <li>
-                  <p>
-                    <a href="http://mars.kmc.gr.jp/~dis/heng_wiki/">変愚蛮怒攻略 Wiki</a>
-                    - 最新の攻略情報を追加、編集可能になっています。
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a href="https://hengband.github.io/spoiler/">全自動スポイラー</a>
-                    - GitHubの更新に伴い自動生成されるスポイラー情報です。
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="sect2">
-            <h3 id="_githubのdiscussion">GitHubのDiscussion</h3>
+      <div id="main">
+        <!--main contents-->
+        <div class="sect1">
+          <h2 id="_コミュニティ">コミュニティ</h2>
+          <div class="sectionbody">
             <div class="paragraph">
               <p>
-                <a
-                  href="https://github.com/hengband/hengband/discussions">https://github.com/hengband/hengband/discussions</a>
-                にて、現在アカウント必須になりますが開発への提案にお越しください。
+                変愚蛮怒の補足、関連コンテンツ、意見交換の場などを紹介します。
               </p>
             </div>
-          </div>
-          <div class="sect2">
-            <h3 id="_掲示板">掲示板</h3>
-            <div class="paragraph">
-              <p>
-                したらば掲示板
-                <a href="http://jbbs.livedoor.jp/game/9358/">「＠の溜まり場II」</a>
-                が変愚蛮怒に限らず、ローグライク関係の掲示板の中で最も活発でしょう。書き込みはローカルルールに配慮して行なって下さい。
-              </p>
+            <div class="sect2">
+              <h3 id="_スポイラー攻略wiki">スポイラー・攻略Wiki</h3>
+              <div class="ulist">
+                <ul>
+                  <li>
+                    <p>
+                      <a href="http://mars.kmc.gr.jp/~dis/heng_wiki/"
+                        >変愚蛮怒攻略 Wiki</a
+                      >
+                      - 最新の攻略情報を追加、編集可能になっています。
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <a href="https://hengband.github.io/spoiler/"
+                        >全自動スポイラー</a
+                      >
+                      - GitHubの更新に伴い自動生成されるスポイラー情報です。
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="sect2">
-            <h3 id="_discord">Discord</h3>
-            <div class="paragraph">
-              <p>
-                Discordサーバ
-                <a href="https://discord.com/invite/fGNt7WeDFQ">#ぐりっどばぐ</a>
-                へどうぞ。
-              </p>
+            <div class="sect2">
+              <h3 id="_githubのdiscussion">GitHubのDiscussion</h3>
+              <div class="paragraph">
+                <p>
+                  <a href="https://github.com/hengband/hengband/discussions"
+                    >https://github.com/hengband/hengband/discussions</a
+                  >
+                  にて、現在アカウント必須になりますが開発への提案にお越しください。
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="sect2">
-            <h3 id="_twitterの関連bot">Twitterの関連bot</h3>
-            <div class="ulist">
-              <ul>
-                <li>
-                  <p>
-                    <a href="https://twitter.com/hengscore">変愚蛮怒 新着スコア</a>
-                  </p>
-                </li>
-              </ul>
+            <div class="sect2">
+              <h3 id="_掲示板">掲示板</h3>
+              <div class="paragraph">
+                <p>
+                  したらば掲示板
+                  <a href="http://jbbs.livedoor.jp/game/9358/"
+                    >「＠の溜まり場II」</a
+                  >
+                  が変愚蛮怒に限らず、ローグライク関係の掲示板の中で最も活発でしょう。書き込みはローカルルールに配慮して行なって下さい。
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="sect2">
-            <h3 id="_動画サイト">動画サイト</h3>
-            <div class="paragraph">
-              <p>
-                主に
-                <a href="http://www.nicovideo.jp/tag/%E5%A4%89%E6%84%9A%E8%9B%AE%E6%80%92">ニコニコ動画で「変愚蛮怒」タグ</a>
-                での検索を行うとプレイ動画などを見ることができます。
-                <a href="http://dic.nicovideo.jp/a/%E5%A4%89%E6%84%9A%E8%9B%AE%E6%80%92">ニコニコ大百科</a>
-                上にも記事があります。
-              </p>
+            <div class="sect2">
+              <h3 id="_discord">Discord</h3>
+              <div class="paragraph">
+                <p>
+                  Discordサーバ
+                  <a href="https://discord.com/invite/fGNt7WeDFQ"
+                    >#ぐりっどばぐ</a
+                  >
+                  へどうぞ。
+                </p>
+              </div>
+            </div>
+            <div class="sect2">
+              <h3 id="_twitterの関連bot">Twitterの関連bot</h3>
+              <div class="ulist">
+                <ul>
+                  <li>
+                    <p>
+                      <a href="https://twitter.com/hengscore"
+                        >変愚蛮怒 新着スコア</a
+                      >
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sect2">
+              <h3 id="_動画サイト">動画サイト</h3>
+              <div class="paragraph">
+                <p>
+                  主に
+                  <a
+                    href="http://www.nicovideo.jp/tag/%E5%A4%89%E6%84%9A%E8%9B%AE%E6%80%92"
+                    >ニコニコ動画で「変愚蛮怒」タグ</a
+                  >
+                  での検索を行うとプレイ動画などを見ることができます。
+                  <a
+                    href="http://dic.nicovideo.jp/a/%E5%A4%89%E6%84%9A%E8%9B%AE%E6%80%92"
+                    >ニコニコ大百科</a
+                  >
+                  上にも記事があります。
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div v-html="footer"></div>
     </div>
-
-    <div v-html="footer"></div>
-  </div>
-</body>
-
+  </body>
 </html>
 <script src="header.js"></script>

@@ -1,201 +1,240 @@
 <!DOCTYPE html>
 
 <html lang="jp">
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      <link
+      rev="made"
+      href="mailto:hengband-dev@lists.sourceforge.jp"
+    />
+    <link rel="stylesheet" type="text/css" href="/hengband.css" />
+    <link rel="shortcut icon" href="/image/hangband.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/image/hengband_icon180.png"
+    />
+    <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
+    <title>変愚蛮怒 公式WEB</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-  <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
-  <link rel="stylesheet" type="text/css" href="/hengband.css" />
-  <link rel="shortcut icon" href="/image/hangband.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/image/hengband_icon180.png" />
-  <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
-  <title>変愚蛮怒 公式WEB</title>
-</head>
-
-<body>
-  <div id="app">
-    <div v-html="header"></div>
-    <div id="main">
-      <!--main contents-->
-      <div class="sect1">
-        <h2 id="_公式開発記事">公式開発記事</h2>
-        <div class="sectionbody">
-          <div class="ulist">
-            <ul>
-              <li>
-                <a href="/development/development221206.html">2022/12/06 (Deskull)
-                  変愚蛮怒のDoxygen生成ドキュメント(3.0.0Alpha72)</a>
-              </li>
-              <li>
-                <a href="/development/development221204.html">2022/12/04 (Deskull)
-                  変愚蛮怒のコントリビュータになろう</a>
-              </li>
-              <li>
-                <a href="/development/development201110.html">2020/11/10 (Hourier) Alpha版の経緯と意義──コード変更の軌跡</a>
-              </li>
-              <li>
-                <a href="/development/development201103.html">2020/11/03 (Deskull)
-                  Alpha版の経緯と意義──大規模リファクタリングに伴うエンバグと暗黙の仕様変化の可能性</a>
-              </li>
-            </ul>
+  <body>
+    <div id="app">
+      <div v-html="header"></div>
+      <div id="main">
+        <!--main contents-->
+        <div class="sect1">
+          <h2 id="_公式開発記事">公式開発記事</h2>
+          <div class="sectionbody">
+            <div class="ulist">
+              <ul>
+                <li>
+                  <a href="/development/development221206.html"
+                    >2022/12/06 (Deskull)
+                    変愚蛮怒のDoxygen生成ドキュメント(3.0.0Alpha72)</a
+                  >
+                </li>
+                <li>
+                  <a href="/development/development221204.html"
+                    >2022/12/04 (Deskull) 変愚蛮怒のコントリビュータになろう</a
+                  >
+                </li>
+                <li>
+                  <a href="/development/development201110.html"
+                    >2020/11/10 (Hourier)
+                    Alpha版の経緯と意義──コード変更の軌跡</a
+                  >
+                </li>
+                <li>
+                  <a href="/development/development201103.html"
+                    >2020/11/03 (Deskull)
+                    Alpha版の経緯と意義──大規模リファクタリングに伴うエンバグと暗黙の仕様変化の可能性</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="sect1">
-        <h2 id="_現在の開発状況について">現在の開発状況について</h2>
-        <div class="sectionbody">
-          <div class="ulist">
-            <ul>
-              <li>
+        <div class="sect1">
+          <h2 id="_現在の開発状況について">現在の開発状況について</h2>
+          <div class="sectionbody">
+            <div class="ulist">
+              <ul>
+                <li>
+                  <p>現在3.0.0Alpha71のリリースまでを行いました。</p>
+                </li>
+                <li>
+                  <p>
+                    OSDNからGitHubへの移行は完全に完了しました。それに伴いOSDNへの案内は削除しました。まとまっていない部分が多いので近日さらに加筆したり、
+                    近々GitHubの<a
+                      href="https://github.com/hengband/hengband/wiki"
+                      >Wiki</a
+                    >への統合を考えます。特に本格的に開発に参加したい方はこちらまずご覧ください。
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="sect1">
+          <h2 id="_開発に貢献したい方へ更新20221114">
+            開発に貢献したい方へ(更新…2022/11/14)
+          </h2>
+          <div class="sectionbody">
+            <div class="sect2">
+              <h3 id="_とにかくソースに触ってみたい">
+                とにかくソースに触ってみたい
+              </h3>
+              <div class="paragraph">
                 <p>
-                  現在3.0.0Alpha71のリリースまでを行いました。
+                  <a href="https://github.com/hengband">GitHubサイトより</a
+                  >各々の手段でソースが得られます。<br />
+                  サブモジュール導入など独自の事情について<a
+                    href="https://github.com/hengband/hengband/wiki/Git%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E9%81%8B%E7%94%A8%E8%A6%8F%E7%B4%84"
+                    >Wiki</a
+                  >の当該ページにまとめていますので一度通読ください。
                 </p>
-              </li>
-              <li>
+              </div>
+            </div>
+            <div class="sect2">
+              <h3>変愚開発のコントリビューターになりたい</h3>
+              <div class="paragraph">
                 <p>
-                  OSDNからGitHubへの移行は完全に完了しました。それに伴いOSDNへの案内は削除しました。まとまっていない部分が多いので近日さらに加筆したり、
-                  近々GitHubの<a
-                    href="https://github.com/hengband/hengband/wiki">Wiki</a>への統合を考えます。特に本格的に開発に参加したい方はこちらまずご覧ください。
+                  前述のGitHubで正規にアカウントを取得し、ソースをcloneした上で目的を明確にしている整然としたコミットを心掛けた上、ブランチを作成、プルリクエストを試みてください。その際修正、改良内容について詳述していただければApproveされる可能性は上がります。<br />
+                  修正、改良内容について思い当たる案がなければIssue内の<a
+                    href="https://github.com/hengband/hengband/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"
+                    >Good First Issue</a
+                  >タグにまとめられているものに着手して下さい。特に緊急に修正する必要はないものの、解決に比較的平易なものにこのタグが付けられています。<br />
                 </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="sect1">
-        <h2 id="_開発に貢献したい方へ更新20221114">
-          開発に貢献したい方へ(更新…2022/11/14)
-        </h2>
-        <div class="sectionbody">
-          <div class="sect2">
-            <h3 id="_とにかくソースに触ってみたい">
-              とにかくソースに触ってみたい
-            </h3>
-            <div class="paragraph">
-              <p><a href="https://github.com/hengband">GitHubサイトより</a>各々の手段でソースが得られます。<br>
-                サブモジュール導入など独自の事情について<a
-                  href="https://github.com/hengband/hengband/wiki/Git%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E9%81%8B%E7%94%A8%E8%A6%8F%E7%B4%84">Wiki</a>の当該ページにまとめていますので一度通読ください。
-              </p>
+              </div>
             </div>
-          </div>
-          <div class="sect2">
-            <h3>
-              変愚開発のコントリビューターになりたい
-            </h3>
-            <div class="paragraph">
-              <p>
-                前述のGitHubで正規にアカウントを取得し、ソースをcloneした上で目的を明確にしている整然としたコミットを心掛けた上、ブランチを作成、プルリクエストを試みてください。その際修正、改良内容について詳述していただければApproveされる可能性は上がります。<br>
-                修正、改良内容について思い当たる案がなければIssue内の<a
-                  href="https://github.com/hengband/hengband/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">Good
-                  First Issue</a>タグにまとめられているものに着手して下さい。特に緊急に修正する必要はないものの、解決に比較的平易なものにこのタグが付けられています。<br>
-              </p>
+            <div class="sect2">
+              <h3 id="_バグの報告をしたい">バグの報告をしたい</h3>
+              <div class="paragraph">
+                <p>
+                  3.0.0Alphaのリリースにつき、バグの報告は歓迎しております。
+                </p>
+              </div>
+              <div class="ulist">
+                <ul>
+                  <li>
+                    <p>
+                      開発者やプレイヤー他関係者への誹謗中傷や、開発の貢献にならない諸要素の書き込みはお控えください。
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      念の為不具合内容に重複がないか確認の上、報告いただけると幸いですが、あっても重複上による作業管理は開発側で行います。
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      数十時間のプレイ成果が失われるような多大かつ致命的なバグの場合は、即興でそれらを救済復帰するバージョンをアップすることも一応、想定しています。必要ならばご相談ください。
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="paragraph">
+                <p>
+                  以上を踏まえて、<a
+                    href="https://github.com/hengband/hengband/issues"
+                    >GitHubのIssue</a
+                  >に上げてください。
+                </p>
+              </div>
+              <div class="ulist">
+                <ul>
+                  <li>
+                    <p>
+                      上記リンクから先の「バグ報告」のテンプレートに従っていただけるとさらに幸いです。
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="sect2">
-            <h3 id="_バグの報告をしたい">バグの報告をしたい</h3>
-            <div class="paragraph">
-              <p>3.0.0Alphaのリリースにつき、バグの報告は歓迎しております。</p>
+            <div class="sect2">
+              <h3
+                id="_ゲーム中にモンスターやアイテムなどのアイデア新システムを持ち込みたい"
+              >
+                ゲーム中にモンスターやアイテムなどのアイデア、新システムを持ち込みたい
+              </h3>
+              <div class="paragraph">
+                <p>
+                  変愚蛮怒はAngbandのトールキン的世界に、ゼラズニィやムアコック的な多元宇宙の
+                  <span class="line-through">クッソ汚い掃き溜め</span>
+                  混沌を加えたZangband的鉄獄の有様に愛着を持ち、常日頃からさらに拡張し続けたいと考えています。既に鉄獄にたむろす連中やその所産がもたらす争いに、さらに付け加えたいものがあるならば常にお待ちしています。
+                </p>
+              </div>
+              <div class="ulist">
+                <ul>
+                  <li>
+                    <p>
+                      開発者各人のタスク量の問題や、極端にシステムやフレーバーに合わない場合など、
+                      <strong>必ず採用されるとは限りません。</strong>
+                      また採用されるとしても、現在アクティブな開発者の見解から、意図されない調整が行われる可能性があることはご了承ください。
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      単純なアイデアの提示でも結構ですが、/edit/内のテキストデータに即採用できるようなフォーマットでの提示をしていただくと、採用そのものも、持ち込みした人の意図に適った採用の可能性も高まります。
+                    </p>
+                    <div class="ulist">
+                      <ul>
+                        <li>
+                          <p>
+                            コーディング上の拡張を求めるものならば、実装のためのソースコードの寄稿もしていただくことを推奨します。ただし、2020年11月現在、一部のメンバーは相談と内容次第でそのような拡張にも取り組みたい意欲を示していますので、交渉してみるのもいいでしょう。
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            実際にテキストデータのフォーマット、作成方法、開発情報については同ファイル内に記述されていたり、開発者が個人ブログなどでまとめているものもありますが、散逸していたり、現在のバージョンとは異なる仕様となっているものも多くなっています。近日時間を見てまとめ直しや修正を考えていますのでお待ちください。
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="paragraph">
+                <p>
+                  以上を踏まえて、持ち込みは現在<a
+                    href="https://github.com/hengband/hengband/discussions"
+                    >Discussions</a
+                  >で募集しています。
+                </p>
+              </div>
             </div>
-            <div class="ulist">
-              <ul>
-                <li>
-                  <p>
-                    開発者やプレイヤー他関係者への誹謗中傷や、開発の貢献にならない諸要素の書き込みはお控えください。
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    念の為不具合内容に重複がないか確認の上、報告いただけると幸いですが、あっても重複上による作業管理は開発側で行います。
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    数十時間のプレイ成果が失われるような多大かつ致命的なバグの場合は、即興でそれらを救済復帰するバージョンをアップすることも一応、想定しています。必要ならばご相談ください。
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <div class="paragraph">
-              <p>以上を踏まえて、<a href="https://github.com/hengband/hengband/issues">GitHubのIssue</a>に上げてください。</p>
-            </div>
-            <div class="ulist">
-              <ul>
-                <li>
-                  <p>
-                    上記リンクから先の「バグ報告」のテンプレートに従っていただけるとさらに幸いです。
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="sect2">
-            <h3 id="_ゲーム中にモンスターやアイテムなどのアイデア新システムを持ち込みたい">
-              ゲーム中にモンスターやアイテムなどのアイデア、新システムを持ち込みたい
-            </h3>
-            <div class="paragraph">
-              <p>
-                変愚蛮怒はAngbandのトールキン的世界に、ゼラズニィやムアコック的な多元宇宙の
-                <span class="line-through">クッソ汚い掃き溜め</span>
-                混沌を加えたZangband的鉄獄の有様に愛着を持ち、常日頃からさらに拡張し続けたいと考えています。既に鉄獄にたむろす連中やその所産がもたらす争いに、さらに付け加えたいものがあるならば常にお待ちしています。
-              </p>
-            </div>
-            <div class="ulist">
-              <ul>
-                <li>
-                  <p>
-                    開発者各人のタスク量の問題や、極端にシステムやフレーバーに合わない場合など、
-                    <strong>必ず採用されるとは限りません。</strong>
-                    また採用されるとしても、現在アクティブな開発者の見解から、意図されない調整が行われる可能性があることはご了承ください。
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    単純なアイデアの提示でも結構ですが、/edit/内のテキストデータに即採用できるようなフォーマットでの提示をしていただくと、採用そのものも、持ち込みした人の意図に適った採用の可能性も高まります。
-                  </p>
-                  <div class="ulist">
-                    <ul>
-                      <li>
-                        <p>
-                          コーディング上の拡張を求めるものならば、実装のためのソースコードの寄稿もしていただくことを推奨します。ただし、2020年11月現在、一部のメンバーは相談と内容次第でそのような拡張にも取り組みたい意欲を示していますので、交渉してみるのもいいでしょう。
-                        </p>
-                      </li>
-                      <li>
-                        <p>
-                          実際にテキストデータのフォーマット、作成方法、開発情報については同ファイル内に記述されていたり、開発者が個人ブログなどでまとめているものもありますが、散逸していたり、現在のバージョンとは異なる仕様となっているものも多くなっています。近日時間を見てまとめ直しや修正を考えていますのでお待ちください。
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="paragraph">
-              <p>以上を踏まえて、持ち込みは現在<a
-                  href="https://github.com/hengband/hengband/discussions">Discussions</a>で募集しています。</p>
-            </div>
-          </div>
-          <div class="sect2">
-            <h3 id="_いっそバリアントを作りたい">いっそバリアントを作りたい</h3>
-            <div class="paragraph">
-              <p>
-                オープンソース活動の繁栄の証左として大いに歓迎しております。現在具体的な協力を明示はできませんが、追々何か取り掛かりになるものを用意できないか検討しています。しばらくお待ちください。
-              </p>
-            </div>
-            <div class="paragraph">
-              <p>
-                GitHub移行に伴いフォークも簡単になった上に相互のプルリクエストも容易になりつつます。是非これを機に考えていただけば幸いです。
-              </p>
+            <div class="sect2">
+              <h3 id="_いっそバリアントを作りたい">
+                いっそバリアントを作りたい
+              </h3>
+              <div class="paragraph">
+                <p>
+                  オープンソース活動の繁栄の証左として大いに歓迎しております。現在具体的な協力を明示はできませんが、追々何か取り掛かりになるものを用意できないか検討しています。しばらくお待ちください。
+                </p>
+              </div>
+              <div class="paragraph">
+                <p>
+                  GitHub移行に伴いフォークも簡単になった上に相互のプルリクエストも容易になりつつます。是非これを機に考えていただけば幸いです。
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div v-html="footer"></div>
     </div>
-
-    <div v-html="footer"></div>
-  </div>
-</body>
-
+  </body>
 </html>
 <script src="header.js"></script>
