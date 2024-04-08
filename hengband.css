@@ -351,3 +351,11 @@ pre {
 	padding: 1rem;
 }
 
+.old-release {
+	padding: 0.3rem;
+    border: 0.1rem #775540 solid;
+    height: 30rem;
+    overflow-y: scroll;
+    margin: 0 2rem;
+    background-color: #000000;
+}
