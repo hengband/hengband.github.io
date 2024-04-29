@@ -359,3 +359,7 @@ pre {
     margin: 0 2rem;
     background-color: #000000;
 }
+
+span.fix {
+	text-decoration: line-through;
+}
