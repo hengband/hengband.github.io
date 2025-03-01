@@ -74,13 +74,16 @@
         </div>
 
         <div class="sect1">
-          <h2 id="_動作環境">動作環境</h2>
-          <p>Windowsで現在判明している動作条件は以下の通りです。</p>
+          <h2 id="_動作要件">動作要件</h2>
+          <p>サポート期間中のOSのみサポートします。</p>
           <ul>
-            <li>Windows 10 22H2、Windows 11 23H2、Windows 11 24H2 をサポートあるいは、正規の手段で上記バージョンにアップデート可能なハードウェアのみサポート</li>
-            <li>AVX対応CPU必須 (Intel Core i 2000シリーズ/AMD FX4000シリーズ以上)</li>
-            <li>メモリは上記OSのシステム要件に同じ</li>
-            <li>ディスク容量は水晶空き容量200MB以上</li>
+            <li>OS (注1)：Windows 10 22H2、Windows 11 23H2、Windows 11 24H2、macOS 12.7.4以上、Linux各種 (注2、3)</li>
+            <li>CPU：AVX対応必須 (Intel Core i 2000シリーズ相当以上/AMD FX4000シリーズ相当以上)。要件を満たさないCPUでは起動しません</li>
+            <li>メモリ：OSのシステム要件に同じ</li>
+            <li>ストレージ：最低空き容量200MB以上</li>
+            <li>注1：32ビット版は動作未確認です</li>
+            <li>注2：Ubuntu 24.04、RHEL9以上またはそのブランチのみ動作確認済。Red Hat系については<a href="https://copr.fedorainfracloud.org/coprs/whitehara/hengband/">Fedora copr</a>を参照して下さい</li>
+            <li>注3：BSD系はコンパイル/動作ともに未確認です</li>
           </ul>
 
         </div>
