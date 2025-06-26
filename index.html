@@ -94,7 +94,23 @@
           <h2 id="_過去の告知">過去の告知</h2>
           <div id="notice-md" class="my-3">
             <div v-if="noticeLoading">読み込み中...</div>
-            <div v-else v-html="noticeHtml"></div>
+            <div v-else v-html="noticeHtml" @click="onNoticeClick"></div>
+          </div>
+        </div>
+
+        <!-- モーダル本体 -->
+        <div class="modal fade" id="noticeModal" tabindex="-1" aria-labelledby="noticeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="noticeModalLabel">{{ modalTitle }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+              </div>
+              <div class="modal-body">
+                <div v-if="modalLoading">読み込み中...</div>
+                <div v-else v-html="modalHtml"></div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -121,7 +137,10 @@ new Vue({
     header: '',
     footer: '',
     noticeHtml: '',
-    noticeLoading: true
+    noticeLoading: true,
+    modalHtml: '',
+    modalTitle: '',
+    modalLoading: false
   },
   mounted() {
     if (typeof loadHeader === 'function') loadHeader(this);
@@ -137,6 +156,43 @@ new Vue({
         this.noticeHtml = '<div class="text-danger">告知一覧の読み込みに失敗しました。</div>';
         this.noticeLoading = false;
       });
+  },
+  methods: {
+    onNoticeClick(e) {
+      // aタグかどうか判定
+      let a = e.target.closest('a');
+      if (!a) return;
+      // hrefが/#notice_xxx.md形式か判定
+      let href = a.getAttribute('href');
+      let match = href && href.match(/^\/#notice_(.+\.md)$/);
+      if (!match) return;
+      e.preventDefault();
+
+      // ファイル名を取得
+      let mdFile = 'md/notice_' + match[1];
+      this.modalLoading = true;
+      this.modalHtml = '';
+      this.modalTitle = a.textContent || '告知';
+
+      // モーダル表示
+      let modal = new bootstrap.Modal(document.getElementById('noticeModal'));
+      modal.show();
+
+      // マークダウン取得・表示
+      fetch(mdFile)
+        .then(res => {
+          if (!res.ok) throw new Error();
+          return res.text();
+        })
+        .then(md => {
+          this.modalHtml = marked.parse(md);
+          this.modalLoading = false;
+        })
+        .catch(() => {
+          this.modalHtml = '<div class="text-danger">告知内容の読み込みに失敗しました。</div>';
+          this.modalLoading = false;
+        });
+    }
   }
 });
 </script>
