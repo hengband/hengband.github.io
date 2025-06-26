@@ -1,79 +1,109 @@
 <!DOCTYPE html>
 
 <html lang="jp">
-  <!--head-->
+<!--head-->
 
-  <head>
-    <meta charset="utf-8" />
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <script src="header.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"/>
-    <link
-      rev="made"
-      href="mailto:hengband-dev@lists.sourceforge.jp"
-    />
-    <link rel="stylesheet" type="text/css" href="/hengband.css" />
-    <link rel="shortcut icon" href="/image/hangband.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/image/hengband_icon180.png"
-    />
-    <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
-    <title>変愚蛮怒 公式WEB</title>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="header.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rev="made" href="mailto:hengband-dev@lists.sourceforge.jp" />
+  <link rel="stylesheet" type="text/css" href="/hengband.css" />
+  <link rel="shortcut icon" href="/image/hangband.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/image/hengband_icon180.png" />
+  <link rel="icon" type="image/png" href="/image/hengband_icon256.png" />
+  <title>変愚蛮怒 公式WEB</title>
+</head>
 
-  <body>
-    <div id="app">
-      <div v-html="header"></div>
-      <div id="main">
-        <!--main contents-->
-        <div class="sect1">
-          <h2 id="_クイックアクセス">クイックアクセス</h2>
-          <div class="sectionbody">
+<body>
+  <div id="app">
+    <div v-html="header"></div>
+    <div id="main">
+      <!--main contents-->
+      <div class="sect1">
+        <h2 id="_クイックアクセス">クイックアクセス</h2>
+        <div class="sectionbody">
+          <div class="ulist">
+            <ul>
+              <li>
+                <p>
+                  3.0.1.29-Betaのリリース予定は未定です。しばらくバグ修正や仕様追加のため不定期になると思われます。ご了承ください。
+                </p>
+              </li>
+              <li>
+                <p>
+                  何かすぐに確認したい質問、要望などがありましたらDiscussionの<a
+                    href="https://github.com/hengband/hengband/discussions/356">開発への質問はこちらまで</a>へどうぞ。
+                </p>
+              </li>
+              <li>
+                <p>
+                  正式なバグ報告などはGitHubのIssueとして<a
+                    href="https://github.com/hengband/hengband/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md&amp;title=%E3%80%90%E3%83%90%E3%82%B0%E3%80%91+%E3%83%90%E3%82%B0%E5%A0%B1%E5%91%8A%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%82%92%E7%B7%A8%E9%9B%86">このテンプレート</a>を用いてよろしくお願いします
+                </p>
+              </li>
+              <li>
+                <p>
+                  またコミュニティとしてはDiscordの<a href="https://discord.gg/fGNt7WeDFQ">#ぐりっどばぐ</a>が現在一番活発です。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="sect1">
+        <h2 id="_最新の告知">最新の告知</h2>
+
+        <div class="sect2">
+          <div class="sect2">
+            <h3 id="_20250614_変愚蛮怒3_0_1_28-Betaリリース">
+              (2025/06/14) 変愚蛮怒3.0.1.28(Beta)リリース
+            </h3>
+            <div class="paragraph">
+              新仕様に伴ってモンスター追加などされました。<br />
+            </div>
+            <div class="paragraph">
+              <p>
+                リリースノートは<a href="https://github.com/hengband/hengband/releases/tag/3.0.1.28-Beta">こちら</a>です。
+              </p>
+            </div>
             <div class="ulist">
               <ul>
                 <li>
                   <p>
-                    3.0.1.29-Betaのリリース予定は未定です。しばらくバグ修正や仕様追加のため不定期になると思われます。ご了承ください。
+                    <a
+                      href="https://github.com/hengband/hengband/releases/download/3.0.1.28-Beta/Hengband-3.0.1.28-Beta-jp.zip">Windows(日本語版)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    何かすぐに確認したい質問、要望などがありましたらDiscussionの<a
-                      href="https://github.com/hengband/hengband/discussions/356"
-                      >開発への質問はこちらまで</a
-                    >へどうぞ。
+                    <a
+                      href="https://github.com/hengband/hengband/releases/download/3.0.1.28-Beta/Hengband-3.0.1.28-Beta-en.zip">Windows(English
+                      Version)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    正式なバグ報告などはGitHubのIssueとして<a
-                      href="https://github.com/hengband/hengband/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md&amp;title=%E3%80%90%E3%83%90%E3%82%B0%E3%80%91+%E3%83%90%E3%82%B0%E5%A0%B1%E5%91%8A%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%82%92%E7%B7%A8%E9%9B%86"
-                      >このテンプレート</a
-                    >を用いてよろしくお願いします
+                    <a href="https://github.com/hengband/hengband/archive/refs/tags/3.0.1.28-Beta.zip">ソース(zip)</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    またコミュニティとしてはDiscordの<a
-                      href="https://discord.gg/fGNt7WeDFQ"
-                      >#ぐりっどばぐ</a
-                    >が現在一番活発です。
+                    <a
+                      href="https://github.com/hengband/hengband/archive/refs/tags/3.0.1.28-Beta.tar.gz">ソース(tar.gz)</a>
                   </p>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+
 
         <div class="sect1">
           <h2 id="_動作要件">動作要件</h2>
@@ -84,7 +114,8 @@
             <li>メモリ：OSのシステム要件に同じ</li>
             <li>ストレージ：最低空き容量200MB以上</li>
             <li>注1：32ビット版は動作未確認です</li>
-            <li>注2：Ubuntu 24.04、RHEL9以上またはそのブランチのみ動作確認済。Red Hat系については<a href="https://copr.fedorainfracloud.org/coprs/whitehara/hengband/">Fedora copr</a>を参照して下さい</li>
+            <li>注2：Ubuntu 24.04、RHEL9以上またはそのブランチのみ動作確認済。Red Hat系については<a
+                href="https://copr.fedorainfracloud.org/coprs/whitehara/hengband/">Fedora copr</a>を参照して下さい</li>
             <li>注3：BSD系はコンパイル/動作ともに未確認です</li>
           </ul>
 
@@ -93,7 +124,8 @@
         <div class="sect1">
           <h2 id="_過去の告知">過去の告知</h2>
           <div id="notice-md" class="my-3">
-            <div class="sect2" style="height: 20rem; overflow-y: scroll; padding: 1rem; margin: 1rem; background-color: #200000;">
+            <div class="sect2"
+              style="height: 20rem; overflow-y: scroll; padding: 1rem; margin: 1rem; background-color: #200000;">
               <div v-if="noticeLoading">読み込み中...</div>
               <div v-else v-html="noticeHtml" @click="onNoticeClick"></div>
             </div>
@@ -105,7 +137,8 @@
           <div class="modal-dialog modal-lg">
             <div class="modal-content" style="background-color: #000; border: 0.3rem #554433 solid;">
               <div class="modal-header" style="border-bottom: #554433; color: white;">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる" style="color:white;">×</button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"
+                  style="color:white;">×</button>
               </div>
               <div class="modal-body">
                 <div v-if="modalLoading">読み込み中...</div>
@@ -115,85 +148,117 @@
           </div>
         </div>
 
-          <div class="sect1">
-            <div class="sect2">
-              <h2 id="_web更新履歴">
-                <a href="web_update.html">WEB更新履歴→</a>
-              </h2>
-              <div class="sectionbody"></div>
-            </div>
+        <div class="sect1">
+          <div class="sect2">
+            <h2 id="_web更新履歴">
+              <a href="web_update.html">WEB更新履歴→</a>
+            </h2>
+            <div class="sectionbody"></div>
           </div>
         </div>
       </div>
-
       <div v-html="footer"></div>
     </div>
-  </body>
+
+</body>
+
 </html>
 
 <script>
-new Vue({
-  el: '#app',
-  data: {
-    header: '',
-    footer: '',
-    noticeHtml: '',
-    noticeLoading: true,
-    modalHtml: '',
-    modalTitle: '',
-    modalLoading: false
-  },
-  mounted() {
-    if (typeof loadHeader === 'function') loadHeader(this);
-    if (typeof loadFooter === 'function') loadFooter(this);
+  new Vue({
+    el: '#app',
+    data: function () {
+      return {
+        header: '<header>\
+<section id="title"> \
+      <img class="tama1" src="/image/tama.gif" alt="tama" /> \
+      <img class="tama2" src="/image/tama.gif" alt="tama" /> \
+      <img class="tama3" src="/image/tama.gif" alt="tama" /> \
+      <img class="tama4" src="/image/tama.gif" alt="tama" /> \
+      <img \
+        id="hengTitle" \
+        src="/image/hengband_title2021.png" \
+        alt="変愚蛮怒 Hengband" \
+      /> \
+      <img class="tama4" src="/image/tama.gif" alt="tama" /> \
+      <img class="tama3" src="/image/tama.gif" alt="tama" /> \
+      <img class="tama2" src="/image/tama.gif" alt="tama" /> \
+      <img class="tama1" src="/image/tama.gif" alt="tama" /> \
+    </section> \
+    <section id="mainMenu"> \
+      <a href="/index.html">トップ</a> \
+      <a href="/download.html">ダウンロード</a> \
+      <a href="/score.html">スコア</a> \
+      <a href="/development.html">開発</a> \
+      <a href="/lists.html">コミュニティ</a> \
+      <a href="/history.html">バージョン履歴</a> \
+      <a href="/link.html">関連リンク</a> \
+      <a href="/jlicense.html">著作権表記</a> \
+    </section></header>',
+        footer: '<footer>\
+      <section>\
+        各ページへのリンクは御自由にどうぞ。/ Link Free.<br />\
+        2025 Hengband Dev Team.\
+      </section>\
+    <section>Sorry, English documentation is under construction.</section></footer>',
+        noticeHtml: '',
+        noticeLoading: true,
+        modalHtml: '',
+        modalTitle: '',
+        modalLoading: false
+      }
+    },
+    mounted() {
+      if (typeof loadHeader === 'function') loadHeader(this);
+      if (typeof loadFooter === 'function') loadFooter(this);
 
-    fetch('md/index.md')
-      .then(res => res.text())
-      .then(md => {
-        this.noticeHtml = marked.parse(md);
-        this.noticeLoading = false;
-      })
-      .catch(() => {
-        this.noticeHtml = '<div class="text-danger">告知一覧の読み込みに失敗しました。</div>';
-        this.noticeLoading = false;
-      });
-  },
-  methods: {
-    onNoticeClick(e) {
-      // aタグかどうか判定
-      let a = e.target.closest('a');
-      if (!a) return;
-      // hrefが/#notice_xxx.md形式か判定
-      let href = a.getAttribute('href');
-      let match = href && href.match(/^\/#notice_(.+\.md)$/);
-      if (!match) return;
-      e.preventDefault();
-
-      // ファイル名を取得
-      let mdFile = 'md/notice_' + match[1];
-      this.modalLoading = true;
-      this.modalHtml = '';
-      this.modalTitle = a.textContent || '告知';
-
-      // モーダル表示
-      let modal = new bootstrap.Modal(document.getElementById('noticeModal'));
-      modal.show();
-
-      // マークダウン取得・表示
-      fetch(mdFile)
-        .then(res => {
-          if (!res.ok) throw new Error();
-          return res.text();
-        })
+      fetch('md/index.md')
+        .then(res => res.text())
         .then(md => {
-          this.modalHtml = marked.parse(md);
-          this.modalLoading = false;
+          this.noticeHtml = marked.parse(md);
+          this.noticeLoading = false;
         })
         .catch(() => {
-          this.modalHtml = '<div class="text-danger">告知内容の読み込みに失敗しました。</div>';
-          this.modalLoading = false;
+          this.noticeHtml = '<div class="text-danger">告知一覧の読み込みに失敗しました。</div>';
+          this.noticeLoading = false;
         });
+    },
+    methods: {
+      onNoticeClick(e) {
+        // aタグかどうか判定
+        let a = e.target.closest('a');
+        if (!a) return;
+        // hrefが/#notice_xxx.md形式か判定
+        let href = a.getAttribute('href');
+        let match = href && href.match(/^\/#notice_(.+\.md)$/);
+        if (!match) return;
+        e.preventDefault();
+
+        // ファイル名を取得
+        let mdFile = 'md/notice_' + match[1];
+        this.modalLoading = true;
+        this.modalHtml = '';
+        this.modalTitle = a.textContent || '告知';
+
+        // モーダル表示
+        let modal = new bootstrap.Modal(document.getElementById('noticeModal'));
+        modal.show();
+
+        // マークダウン取得・表示
+        fetch(mdFile)
+          .then(res => {
+            if (!res.ok) throw new Error();
+            return res.text();
+          })
+          .then(md => {
+            this.modalHtml = marked.parse(md);
+            this.modalLoading = false;
+          })
+          .catch(() => {
+            this.modalHtml = '<div class="text-danger">告知内容の読み込みに失敗しました。</div>';
+            this.modalLoading = false;
+          });
+      }
     }
-  }
-});
+  });
 </script>
