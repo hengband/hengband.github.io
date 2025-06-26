@@ -93,18 +93,19 @@
         <div class="sect1">
           <h2 id="_過去の告知">過去の告知</h2>
           <div id="notice-md" class="my-3">
-            <div v-if="noticeLoading">読み込み中...</div>
-            <div v-else v-html="noticeHtml" @click="onNoticeClick"></div>
+            <div class="sect2" style="height: 20rem; overflow-y: scroll; padding: 1rem; margin: 1rem; background-color: #200000;">
+              <div v-if="noticeLoading">読み込み中...</div>
+              <div v-else v-html="noticeHtml" @click="onNoticeClick"></div>
+            </div>
           </div>
         </div>
 
         <!-- モーダル本体 -->
         <div class="modal fade" id="noticeModal" tabindex="-1" aria-labelledby="noticeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="noticeModalLabel">{{ modalTitle }}</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+            <div class="modal-content" style="background-color: #000; border: 0.3rem #554433 solid;">
+              <div class="modal-header" style="border-bottom: #554433; color: white;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる" style="color:white;">×</button>
               </div>
               <div class="modal-body">
                 <div v-if="modalLoading">読み込み中...</div>
