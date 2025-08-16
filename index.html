@@ -61,53 +61,8 @@
         <h2 id="_最新の告知">最新の告知</h2>
 
         <div class="sect2">
-          <div class="sect2">
-            <h3 id="_20250614_変愚蛮怒3_0_1_28-Betaリリース">
-              (2025/06/14) 変愚蛮怒3.0.1.28(Beta)リリース
-            </h3>
-            <div class="paragraph">
-              新仕様に伴ってモンスター追加などされました。<br />
-            </div>
-            <div class="paragraph">
-              <p>
-                リリースノートは<a href="https://github.com/hengband/hengband/releases/tag/3.0.1.28-Beta">こちら</a>です。
-              </p>
-            </div>
-            <div class="ulist">
-              <ul>
-                <li>
-                  <p>
-                    <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.1.28-Beta/Hengband-3.0.1.28-Beta-jp.zip">Windows(日本語版)</a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a
-                      href="https://github.com/hengband/hengband/releases/download/3.0.1.28-Beta/Hengband-3.0.1.28-Beta-en.zip">Windows(English
-                      Version)</a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a href="https://github.com/hengband/hengband/archive/refs/tags/3.0.1.28-Beta.zip">ソース(zip)</a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a
-                      href="https://github.com/hengband/hengband/archive/refs/tags/3.0.1.28-Beta.tar.gz">ソース(tar.gz)</a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a
-                      href="https://copr.fedorainfracloud.org/coprs/whitehara/hengband/build/9164481/">パッケージ(rpm)</a>
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <div v-if="latestLoading">読み込み中...</div>
+          <div v-else v-html="latestHtml"></div>
         </div>
 
 
@@ -207,8 +162,10 @@
         2025 Hengband Dev Team.\
       </section>\
     <section>Sorry, English documentation is under construction.</section></footer>',
-        noticeHtml: '',
-        noticeLoading: true,
+  latestHtml: '',
+  latestLoading: true,
+  noticeHtml: '',
+  noticeLoading: true,
         modalHtml: '',
         modalTitle: '',
         modalLoading: false
@@ -218,6 +175,19 @@
       if (typeof loadHeader === 'function') loadHeader(this);
       if (typeof loadFooter === 'function') loadFooter(this);
 
+      // 最新の告知をMarkdownから読み込む
+      fetch('md/latest.md')
+        .then(res => res.text())
+        .then(md => {
+          this.latestHtml = marked.parse(md);
+          this.latestLoading = false;
+        })
+        .catch(() => {
+          this.latestHtml = '<div class="text-danger">最新の告知の読み込みに失敗しました。</div>';
+          this.latestLoading = false;
+        });
+
+      // 過去の告知
       fetch('md/index.md')
         .then(res => res.text())
         .then(md => {
