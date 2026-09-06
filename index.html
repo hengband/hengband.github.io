@@ -25,6 +25,27 @@
     <div v-html="header"></div>
     <div id="main">
       <!--main contents-->
+      <!-- トップカルーセル : スライドを増やすときはcarousel-indicatorsのbuttonとcarousel-itemを1組ずつ追加する -->
+      <div id="topCarousel" class="carousel slide my-3" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#topCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="変愚蛮怒3.0.2.4-Beta"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/image/hengband3.0.2.4.jpg" class="d-block w-100" alt="変愚蛮怒3.0.2.4-Beta" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#topCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">前へ</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#topCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">次へ</span>
+        </button>
+      </div>
+
       <div class="sect1">
         <h2 id="_クイックアクセス">クイックアクセス</h2>
         <div class="sectionbody">
@@ -173,6 +194,14 @@
     mounted() {
       if (typeof loadHeader === 'function') loadHeader(this);
       if (typeof loadFooter === 'function') loadFooter(this);
+
+      // トップカルーセル初期化(Vueの描画後にBootstrapへ登録する)
+      this.$nextTick(() => {
+        let carouselEl = document.getElementById('topCarousel');
+        if (carouselEl && typeof bootstrap !== 'undefined') {
+          bootstrap.Carousel.getOrCreateInstance(carouselEl);
+        }
+      });
 
       // 最新の告知をMarkdownから読み込む
       fetch('md/latest.md')
