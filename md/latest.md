@@ -1,3 +1,13 @@
+### (2026/10/04) 変愚蛮怒3.0.2.5(Beta) リリース
+
+リリースノートは[こちら](https://github.com/hengband/hengband/releases/tag/3.0.2.5-Beta)です。
+
+- [Windows(日本語版)](https://github.com/hengband/hengband/releases/download/3.0.2.5-Beta/Hengband-3.0.2.5-Beta-jp.zip)
+- [Windows(English Version)](https://github.com/hengband/hengband/releases/download/3.0.2.5-Beta/Hengband-3.0.2.5-Beta-en.zip)
+- [ソース(zip)](https://github.com/hengband/hengband/archive/refs/tags/3.0.2.5-Beta.zip)
+- [ソース(tar.gz)](https://github.com/hengband/hengband/archive/refs/tags/3.0.2.5-Beta.tar.gz)
+
+
 ### (2026/09/10) 変愚蛮怒 ボクセルHD2D版のご紹介
 
 higesho氏により、変愚蛮怒をHD-2Dで描く非公式のフロントエンド[変愚蛮怒 ボクセル HD2D](https://higesho.github.io/)が公開されています。
@@ -9,16 +19,3 @@ higesho氏により、変愚蛮怒をHD-2Dで描く非公式のフロントエ�
 Windows版（OpenGL 4.6対応が必要）とAndroid版（Android 13以降）が[GitHubのリリース](https://github.com/higesho/hengband-hd2d/releases/latest)から入手できます。ソースコードは[higesho/hengband-hd2d](https://github.com/higesho/hengband-hd2d)で公開されています。
 
 本作は有志による非公式の派生版であり、変愚蛮怒開発チームとは直接の関係はありません。本作の不具合は本家の変愚蛮怒ではなく、[hengband-hd2dのIssue](https://github.com/higesho/hengband-hd2d/issues)へ報告してください。
-
-
-### (2026/08/18) 変愚蛮怒Webブラウザ版のご紹介
-
-hanazuki氏により、変愚蛮怒をWebブラウザ上で直接プレイできる[変愚蛮怒ブラウザ版 / Hengband Web](https://hengband.hanazuki.dev/)が公開されています。
-
-<a href="https://hengband.hanazuki.dev/"><img src="/image/hengband_web.png" alt="変愚蛮怒ブラウザ版 / Hengband Web" style="max-width:100%; height:auto;" /></a>
-
-WebAssemblyでビルドされており、インストール不要でブラウザを開くだけで遊べます。
-
-ソースコードは[hanazuki/hengband-web](https://github.com/hanazuki/hengband-web)で公開されています。
-
-本サイトは有志による非公式のプロジェクトであり、変愚蛮怒開発チームとは直接の関係はありません。
