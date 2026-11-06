@@ -1,3 +1,13 @@
+### (2026/11/06) 変愚蛮怒3.0.2.7(Beta) リリース
+
+リリースノートは[こちら](https://github.com/hengband/hengband/releases/tag/3.0.2.7-Beta)です。
+
+- [Windows(日本語版)](https://github.com/hengband/hengband/releases/download/3.0.2.7-Beta/Hengband-3.0.2.7-Beta-jp.zip)
+- [Windows(English Version)](https://github.com/hengband/hengband/releases/download/3.0.2.7-Beta/Hengband-3.0.2.7-Beta-en.zip)
+- [ソース(zip)](https://github.com/hengband/hengband/archive/refs/tags/3.0.2.7-Beta.zip)
+- [ソース(tar.gz)](https://github.com/hengband/hengband/archive/refs/tags/3.0.2.7-Beta.tar.gz)
+
+
 ### (2026/10/26) 変愚蛮怒3.0.2.6(Beta) リリース
 
 リリースノートは[こちら](https://github.com/hengband/hengband/releases/tag/3.0.2.6-Beta)です。
@@ -6,13 +16,3 @@
 - [Windows(English Version)](https://github.com/hengband/hengband/releases/download/3.0.2.6-Beta/Hengband-3.0.2.6-Beta-en.zip)
 - [ソース(zip)](https://github.com/hengband/hengband/archive/refs/tags/3.0.2.6-Beta.zip)
 - [ソース(tar.gz)](https://github.com/hengband/hengband/archive/refs/tags/3.0.2.6-Beta.tar.gz)
-
-
-### (2026/10/04) 変愚蛮怒3.0.2.5(Beta) リリース
-
-リリースノートは[こちら](https://github.com/hengband/hengband/releases/tag/3.0.2.5-Beta)です。
-
-- [Windows(日本語版)](https://github.com/hengband/hengband/releases/download/3.0.2.5-Beta/Hengband-3.0.2.5-Beta-jp.zip)
-- [Windows(English Version)](https://github.com/hengband/hengband/releases/download/3.0.2.5-Beta/Hengband-3.0.2.5-Beta-en.zip)
-- [ソース(zip)](https://github.com/hengband/hengband/archive/refs/tags/3.0.2.5-Beta.zip)
-- [ソース(tar.gz)](https://github.com/hengband/hengband/archive/refs/tags/3.0.2.5-Beta.tar.gz)
